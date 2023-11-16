@@ -1317,16 +1317,6 @@ module StringUtils {
     inPos2 = 0
   }
 }
-module SplitName {
-  internal  {
-    frame = "693 440 96 56"
-    moduleGroupName = ""
-    localMacro = 1
-  }
-  fields  {
-    instanceName = SplitName
-  }
-}
 connections  {
   image_T2.inImage = ImageLoad.output0
   View2D1.inImage = ImageLoad1.output0
