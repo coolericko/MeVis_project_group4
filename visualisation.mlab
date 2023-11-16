@@ -18,7 +18,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_T2.mlimage"
+    filename = $(NETWORK)/contestData/case1_T2.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -113,7 +113,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad1
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_T1_pre_brainmask.mlimage"
+    filename = $(NETWORK)/contestData/case1_T1_pre_brainmask.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -204,11 +204,16 @@ module ImageLoad {
         sizeHint = "479 353"
         wasOpen = no
       }
+      window _automatic {
+        geometry = "1039 198 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
     }
   }
   fields  {
     instanceName = ImageLoad2
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_T1_pre.mlimage"
+    filename = $(NETWORK)/contestData/case1_T1_pre.mlimage
     autoLoad = TRUE
     readRaw = TRUE
     rawX = 512
@@ -303,7 +308,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad3
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_SWI.mlimage"
+    filename = $(NETWORK)/contestData/case1_SWI.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -398,7 +403,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad4
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_T1_post_tumormask.mlimage"
+    filename = $(NETWORK)/contestData/case1_T1_post_tumormask.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -489,11 +494,16 @@ module ImageLoad {
         sizeHint = "479 353"
         wasOpen = no
       }
+      window _automatic {
+        geometry = "650 291 853 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
     }
   }
   fields  {
     instanceName = ImageLoad5
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_T1_post.mlimage"
+    filename = $(NETWORK)/contestData/case1_T1_post.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -588,7 +598,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad6
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_fMRI_tMAP.mlimage"
+    filename = $(NETWORK)/contestData/case1_fMRI_tMAP.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -683,7 +693,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad7
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_fMRI.mlimage"
+    filename = $(NETWORK)/contestData/case1_fMRI.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -765,7 +775,7 @@ module View2D {
 }
 module ImageLoad {
   internal  {
-    frame = "441 471 184 72"
+    frame = "-502 811 184 72"
     moduleGroupName = FLAIR
     showNetworkPanel = true
     windows  {
@@ -778,7 +788,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad8
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_FLAIR.mlimage"
+    filename = $(NETWORK)/contestData/case1_FLAIR.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -799,7 +809,7 @@ module ImageLoad {
 }
 module View2D {
   internal  {
-    frame = "465 351 120 56"
+    frame = "-478 691 120 56"
     moduleGroupName = FLAIR
     windows  {
       window _default {
@@ -858,48 +868,9 @@ module View2D {
     useRelativeLUTIfNoInputImage = TRUE
   }
 }
-module ImageLoad {
-  internal  {
-    frame = "637 77 168 72"
-    moduleGroupName = DTI
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "176 604 479 353"
-        sizeHint = "479 353"
-        wasOpen = no
-      }
-      window _automatic {
-        geometry = "906 429 500 600"
-        sizeHint = "260 223"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = ImageLoad9
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_DTI.mlimage"
-    autoLoad = TRUE
-    readRaw = TRUE
-    rawX = 128
-    rawY = 128
-    rawZ = 72
-    rawC = 62
-    rawT = 1
-    rawU = 1
-    dataTypeRaw = "unsigned int8"
-    planarConfig = Contiguous
-    byteOrder = LittleEndian
-    dataOffset = 0
-    pageSizeHint = "0 0 0 0 0 0"
-    suppressErrorLog = FALSE
-    dicomIgnoreHalfVoxelShift = FALSE
-    enableCheckSumTests = FALSE
-  }
-}
 module View2D {
   internal  {
-    frame = "621 -52 120 56"
+    frame = "434 -18 120 56"
     moduleGroupName = DTI
     windows  {
       window _default {
@@ -958,53 +929,14 @@ module View2D {
     useRelativeLUTIfNoInputImage = TRUE
   }
 }
-module ImageLoad {
-  internal  {
-    frame = "1029 261 168 72"
-    moduleGroupName = ""
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "247 663 479 367"
-        sizeHint = "479 367"
-        wasOpen = no
-      }
-      window _automatic {
-        geometry = "190 106 500 600"
-        sizeHint = "260 223"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = ImageLoad10
-    filename = "//mac/Home/Downloads/Visualization Contest Data/case1/case1_DTI.mlimage"
-    autoLoad = TRUE
-    readRaw = TRUE
-    rawX = 128
-    rawY = 128
-    rawZ = 72
-    rawC = 62
-    rawT = 1
-    rawU = 1
-    dataTypeRaw = "unsigned int8"
-    planarConfig = Contiguous
-    byteOrder = LittleEndian
-    dataOffset = 0
-    pageSizeHint = "0 0 0 0 0 0"
-    suppressErrorLog = FALSE
-    dicomIgnoreHalfVoxelShift = FALSE
-    enableCheckSumTests = FALSE
-  }
-}
 module View3D {
   internal  {
-    frame = "1057 -11 144 56"
-    moduleGroupName = ""
+    frame = "584 -14 144 56"
+    moduleGroupName = DTI
     windows  {
       window _default {
-        geometry = "1047 213 1004 609"
-        sizeHint = "1004 609"
+        geometry = "653 179 1132 609"
+        sizeHint = "1132 609"
         wasOpen = no
       }
     }
@@ -1016,7 +948,7 @@ module View3D {
     inventorOutputOn = FALSE
     lutType = Editor
     rendererType = Slicer
-    currentTimePoint = 1
+    currentTimePoint = 0
     staticSamplingRate = 1
     quality = 0.43709999
     filterVolumeData = FilterLinear
@@ -1034,12 +966,12 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "-259.215026855469 68.1898193359375 190.797790527344"
+    camPosition = "-414.243438720703 108.928359985352 291.480316162109"
     camOrientation = "-0.279589205980301 0.58758133649826 0.759327471256256 4.60666990280151"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 478.64154
-    camNear = 159.8439
-    camFocal = 319.08374
+    camFar = 668.12012
+    camNear = 348.94385
+    camFocal = 508.37289
     camHeight = 0.78539801
     decoration = FALSE
     annotations = TRUE
@@ -1116,6 +1048,285 @@ module View3D {
     clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
   }
 }
+module ImageLoadMulti {
+  internal  {
+    frame = "438 127 160 72"
+    moduleGroupName = DTI
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "555 211 701 760"
+        sizeHint = "691 760"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "719 324 910 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Image_case1_DTI
+    rootPath = $(NETWORK)/contestData/
+    fileListFileName = $(NETWORK)/contestData
+    listFileEncoding = utf_8
+    autoReadFileList = TRUE
+    autoParseFileList = TRUE
+    doNotParse = FALSE
+    autoLoadFiles = TRUE
+    autoSelectFirst = TRUE
+    keepInvalidListEntries = FALSE
+    relativeListBaseDirMode = RelativeToListPath
+    treatAllPathsAsRelative = FALSE
+    fileList = "//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_FLAIR.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_fMRI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_fMRI_tMAP.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_SWI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post_tumormask.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_pre.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_pre_brainmask.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T2.mlimage"
+    setCurrentFileByIndex = 1
+    indexMode = OneBased
+    recursive = FALSE
+    maxRecursionDepth = -1
+    joinImagePairs = TRUE
+    include = ".*\\.di?co?m .*\\.dic .*\\.tiff? .*\\.hdr .*\\.img .*\\.ima .*\\.raw .*\\.p[gpn]m .*\\.mlimage"
+    includeRegExp = TRUE
+    exclude = "result* *slices"
+    excludeRegExp = FALSE
+    ignoreCase = TRUE
+    loop = FALSE
+    readRaw = FALSE
+    rawX = 512
+    rawY = 512
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    iterationDelay = 1
+    startSlice = 36
+    autoSetPreviewAnnotationUnitType = TRUE
+    previewAnnotationUnitType = AsIs
+    rescalingOn = FALSE
+    rescalingOffset = 0
+    rescalingFactor = 1
+    rescalingDataType = Automatic
+    rescalingUseUserMin = FALSE
+    rescalingUserMin = 0
+    rescalingUseUserMax = FALSE
+    rescalingUserMax = 255
+  }
+}
+module ImageLoadMulti {
+  internal  {
+    frame = "-355 23 168 72"
+    moduleGroupName = T1
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "555 211 701 760"
+        sizeHint = "691 760"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "39 320 910 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoadMulti1
+    rootPath = $(NETWORK)/contestData/
+    fileListFileName = $(NETWORK)/contestData
+    listFileEncoding = utf_8
+    autoReadFileList = TRUE
+    autoParseFileList = TRUE
+    doNotParse = FALSE
+    autoLoadFiles = TRUE
+    autoSelectFirst = TRUE
+    keepInvalidListEntries = FALSE
+    relativeListBaseDirMode = RelativeToListPath
+    treatAllPathsAsRelative = FALSE
+    fileList = "//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_FLAIR.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_fMRI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_fMRI_tMAP.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_SWI.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post_tumormask.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_pre.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_pre_brainmask.mlimage
+//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T2.mlimage"
+    setCurrentFileByIndex = 1
+    indexMode = OneBased
+    recursive = FALSE
+    maxRecursionDepth = -1
+    joinImagePairs = TRUE
+    include = ".*\\.di?co?m .*\\.dic .*\\.tiff? .*\\.hdr .*\\.img .*\\.ima .*\\.raw .*\\.p[gpn]m .*\\.mlimage"
+    includeRegExp = TRUE
+    exclude = "result* *slices"
+    excludeRegExp = FALSE
+    ignoreCase = TRUE
+    loop = FALSE
+    readRaw = FALSE
+    rawX = 512
+    rawY = 512
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    iterationDelay = 1
+    startSlice = 36
+    autoSetPreviewAnnotationUnitType = TRUE
+    previewAnnotationUnitType = AsIs
+    rescalingOn = FALSE
+    rescalingOffset = 0
+    rescalingFactor = 1
+    rescalingDataType = Automatic
+    rescalingUseUserMin = FALSE
+    rescalingUserMin = 0
+    rescalingUseUserMax = FALSE
+    rescalingUserMax = 255
+  }
+}
+module StringSplit {
+  internal  {
+    frame = "781 77 88 56"
+    moduleGroupName = DTI
+    windows  {
+      window _default {
+        geometry = "650 275 500 632"
+        sizeHint = "500 632"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "599 674 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringSplit
+    inString = "//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI"
+    separators = /
+    trimWhitespace = TRUE
+    selectedSubStringIndex = 0
+    searchSubstring = ""
+    searchIgnoreCase = FALSE
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "653 101 88 72"
+    moduleGroupName = DTI
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "506 469 655 224"
+        sizeHint = "234 224"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "303 302 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils
+    operationType = Replace
+    string1 = "//Mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI.mlimage"
+    string2 = .mlimage
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "773 173 104 72"
+    moduleGroupName = DTI
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "377 692 777 468"
+        sizeHint = "383 341"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "303 302 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils1
+    operationType = Concatenate
+    string1 = Image
+    string2 = case1_DTI
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = _
+    selectSeparator = 3
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module SplitName {
+  internal  {
+    frame = "693 440 96 56"
+    moduleGroupName = ""
+    localMacro = 1
+  }
+  fields  {
+    instanceName = SplitName
+  }
+}
 connections  {
   image_T2.inImage = ImageLoad.output0
   View2D1.inImage = ImageLoad1.output0
@@ -1126,8 +1337,12 @@ connections  {
   View2D6.inImage = ImageLoad6.output0
   View2D7.inImage = ImageLoad7.output0
   View2D8.inImage = ImageLoad8.output0
-  View2D9.inImage = ImageLoad9.output0
-  View3D.inImage = ImageLoad10.output0
+  View2D9.inImage = Image_case1_DTI.output0
+  View3D.inImage = Image_case1_DTI.output0
+  Image_case1_DTI.instanceName = StringUtils1.result
+  StringSplit.inString = StringUtils.result
+  StringUtils.string1 = Image_case1_DTI.filename
+  StringUtils1.string2 = StringSplit.lastSubString
 }
 networkModel  {
   parentItems  {
