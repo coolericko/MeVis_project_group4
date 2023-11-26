@@ -1,0 +1,921 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.1.15
+network  {
+  watchlist = ""
+}
+module ImageLoad {
+  internal  {
+    frame = "691 114 168 72"
+    moduleGroupName = "Remove Background"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "654 431 479 353"
+        sizeHint = "479 353"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "650 291 853 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad5
+    filename = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI.mlimage"
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module TensorTractography {
+  internal  {
+    frame = "97 237 144 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = TensorTractography
+    timing = -1
+    autoApply = TRUE
+    autoUpdate = TRUE
+    progress = 0
+    tractographyMode = Mevis
+    stopAnisotropy = 0.5
+    shouldStopAnisotropy = FALSE
+    windowLength = 2
+    stopCurvature = 0.5
+    shouldStopCurvature = FALSE
+    stopLength = 300
+    shouldStopLength = TRUE
+    useAveragesForStop = TRUE
+    useAverages = FALSE
+    aveDirWeighting = 0
+    aveCurvWeighting = 1
+    stepLength = 0.1
+    useCurvStepLength = FALSE
+    useCurvature = TRUE
+    useCurvatureWeighting = FALSE
+    useShapeForInterpolation = FALSE
+    mainVectorWeighting = 0
+    noise = 0.0049999999
+    status = "Result is invalid"
+  }
+}
+module Bypass {
+  internal  {
+    frame = "505 1 72 56"
+    moduleGroupName = "Remove Background"
+  }
+  fields  {
+    instanceName = Bypass
+    noBypass = FALSE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "489 129 104 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "755 512 424 235"
+        sizeHint = "424 235"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage1
+    name = $(DemoDataPath)/BrainMultiModal/ProbandDTI.dcm
+    autoLoad = TRUE
+  }
+}
+module Comment {
+  internal  {
+    frame = "945 -303 88 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "835 521 256 208"
+        sizeHint = "256 208"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Comment
+    comment = "air suppress"
+  }
+}
+module Replicate {
+  internal  {
+    frame = "777 -279 88 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "746 124 384 55"
+        sizeHint = "384 55"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Replicate
+    replicationVector = "1 1 1 1 62 1"
+    replicationVectorX = 1
+    replicationVectorY = 1
+    replicationVectorZ = 1
+    replicationVectorC = 1
+    replicationVectorT = 62
+    replicationVectorU = 1
+  }
+}
+module VecBoxConvert {
+  internal  {
+    frame = "513 -295 120 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "502 499 602 239"
+        sizeHint = "602 239"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VecBoxConvert
+    x1 = 1
+    y1 = 1
+    z1 = 1
+    c1 = 1
+    t1 = 62
+    u1 = 1
+    x2 = 0
+    y2 = 0
+    z2 = 0
+    c2 = 0
+    t2 = 0
+    u2 = 0
+    v1 = "1 1 1 1 62 1"
+    v2 = "0 0 0 0 0 0"
+    box = "1 1 1 1 62 1 0 0 0 0 0 0"
+  }
+}
+module SubImage {
+  internal  {
+    frame = "577 -87 88 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "224 243 543 342"
+        sizeHint = "543 342"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = TRUE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 20
+    modifyX = FALSE
+    y = 0
+    sy = 20
+    modifyY = FALSE
+    z = 0
+    sz = 20
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = TRUE
+  }
+}
+module Threshold {
+  internal  {
+    frame = "697 -111 88 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "293 397 268 87"
+        sizeHint = "268 87"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 170
+    relativeThreshold = FALSE
+    comparisonOperator = Less
+    conditionTrueWriteValue = ImgMin
+    userConditionTrueValue = 0
+    conditionFalseWriteValue = ImgMax
+    userConditionFalseValue = 1
+  }
+}
+module Mask {
+  internal  {
+    frame = "685 -359 80 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "721 529 446 124"
+        sizeHint = "358 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = UseSmallestInput
+    blending = 0.5
+    background = 0
+  }
+}
+module Info {
+  internal  {
+    frame = "513 -215 56 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "408 98 564 375"
+        sizeHint = "564 375"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info
+  }
+}
+module Morphology {
+  internal  {
+    frame = "797 -135 96 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "228 253 400 594"
+        sizeHint = "400 594"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Dilation
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module Morphology {
+  internal  {
+    frame = "905 -167 104 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "228 253 400 594"
+        sizeHint = "400 594"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology1
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Erosion
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module Morphology {
+  internal  {
+    frame = "1025 -207 104 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "228 253 400 594"
+        sizeHint = "400 594"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology2
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Erosion
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module Morphology {
+  internal  {
+    frame = "1145 -255 104 72"
+    moduleGroupName = "Remove Background"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "228 253 400 594"
+        sizeHint = "400 594"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology3
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Dilation
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = TRUE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module View3D {
+  internal  {
+    frame = "653 1 144 56"
+    moduleGroupName = "Remove Background"
+    windows  {
+      window _default {
+        geometry = "398 287 1004 609"
+        sizeHint = "1004 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Ramp
+    rendererType = Slicer
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.209999993443489
+    greyWidth = 0.369999915361404
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "189.674301147461 -374.093597412109 53.4878807067871"
+    camOrientation = "0.934440433979034 0.240476414561272 0.262663811445236 1.54235064983368"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 533.60046
+    camNear = 273.33691
+    camFocal = 403.33893
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 128
+    renderer.sizeOutputY = 128
+    renderer.sizeOutputZ = 72
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 128
+    renderer.subVolumeEndY = 128
+    renderer.subVolumeEndZ = 72
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+module TensorTractography {
+  internal  {
+    frame = "2009 -466 144 56"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "1265 604 486 490"
+        sizeHint = "486 490"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TensorTractography1
+    timing = 8.67863479166667
+    autoApply = TRUE
+    autoUpdate = TRUE
+    progress = 1
+    tractographyMode = Mevis
+    stopAnisotropy = 0.20000002
+    shouldStopAnisotropy = TRUE
+    windowLength = 2
+    stopCurvature = 0.30000001
+    shouldStopCurvature = TRUE
+    stopLength = 300
+    shouldStopLength = TRUE
+    useAveragesForStop = FALSE
+    useAverages = FALSE
+    aveDirWeighting = 0
+    aveCurvWeighting = 1
+    stepLength = 2.9999993
+    useCurvStepLength = FALSE
+    useCurvature = TRUE
+    useCurvatureWeighting = FALSE
+    useShapeForInterpolation = FALSE
+    mainVectorWeighting = 0
+    noise = 0.0049999999
+    status = "Result is valid"
+  }
+}
+module TensorShapeExtract {
+  internal  {
+    frame = "2089 -246 144 64"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "824 570 272 121"
+        sizeHint = "272 121"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FAmap
+    shapeMode = FractionalAnisotropy
+    outputMode = Shapes
+    useMainVecScaling = TRUE
+    parameter = 3
+  }
+}
+module MaskToMarkers {
+  internal  {
+    frame = "2069 -346 152 56"
+    moduleGroupName = "DTI fiber tracking"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "814 547 292 166"
+        sizeHint = "292 166"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MaskToMarkers
+    lowerThreshold = 0
+    setType = User
+    type = 0
+    updateMode = AutoUpdate
+    vectorMode = Zero
+  }
+}
+module DTIInfo {
+  internal  {
+    frame = "1741 -218 72 56"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "158 286 508 560"
+        sizeHint = "508 560"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DTIInfo
+    numberOfGradients = 30
+    numberOfMeasurings = 2
+    gradients = "-0.20316298 -0.52240086 -0.82814378
+0.19837686 -0.52297902 -0.82893878
+0.40371078 -0.17805667 -0.89739257
+-0.40407982 -0.73386353 -0.54604375
+-0.20174906 -0.94292772 -0.26492411
+-0.85222679 -0.52036119 -0.05416229
+-0.73158294 -0.52194691 -0.43858632
+-0.40805301 -0.17854710 -0.89532870
+-0.73408896 -0.17835702 -0.65521157
+-0.64898384 -0.73224169 0.20649958
+-0.32126319 -0.94155931 0.10127255
+-0.32402194 -0.52262664 0.78858817
+-0.64949858 -0.52315557 0.55177891
+-0.97823954 -0.17950523 0.10404437
+-0.85470557 -0.17986068 0.48695832
+0.00210645 -0.73366684 0.67950600
+0.00349019 -0.94274104 0.33350730
+0.65403271 -0.52191073 0.54758590
+0.32996047 -0.52309948 0.78580719
+0.19816579 0.17932798 -0.96362412
+0.20433427 -0.17908071 0.96238136
+0.65020293 -0.73202717 0.20340200
+0.32354867 -0.94131631 0.09612516
+0.20068364 -0.94162840 -0.27030057
+0.40459251 -0.73366910 -0.54592538
+0.73371565 -0.17810377 -0.65569848
+0.72961622 -0.52148885 -0.44239065
+0.85194236 -0.52018380 -0.06002662
+0.85786074 -0.18008229 0.48129547
+0.97880262 -0.18003200 0.09764180
+"
+    careUnusalDataSorting = TRUE
+    removeEachXthGradient = 0
+  }
+}
+module DiffusionTensorAnalysis {
+  internal  {
+    frame = "1881 -222 160 64"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "831 501 497 287"
+        sizeHint = "273 257"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VectorField
+    outputMode = DiffusionVector
+    diffusionMode = FractionalAnisotropy
+    diffScale = 1
+    evRegularization = 1
+    diffThreshold = 0
+    gradients = "-0.20316298 -0.52240086 -0.82814378
+0.19837686 -0.52297902 -0.82893878
+0.40371078 -0.17805667 -0.89739257
+-0.40407982 -0.73386353 -0.54604375
+-0.20174906 -0.94292772 -0.26492411
+-0.85222679 -0.52036119 -0.05416229
+-0.73158294 -0.52194691 -0.43858632
+-0.40805301 -0.17854710 -0.89532870
+-0.73408896 -0.17835702 -0.65521157
+-0.64898384 -0.73224169 0.20649958
+-0.32126319 -0.94155931 0.10127255
+-0.32402194 -0.52262664 0.78858817
+-0.64949858 -0.52315557 0.55177891
+-0.97823954 -0.17950523 0.10404437
+-0.85470557 -0.17986068 0.48695832
+0.00210645 -0.73366684 0.67950600
+0.00349019 -0.94274104 0.33350730
+0.65403271 -0.52191073 0.54758590
+0.32996047 -0.52309948 0.78580719
+0.19816579 0.17932798 -0.96362412
+0.20433427 -0.17908071 0.96238136
+0.65020293 -0.73202717 0.20340200
+0.32354867 -0.94131631 0.09612516
+0.20068364 -0.94162840 -0.27030057
+0.40459251 -0.73366910 -0.54592538
+0.73371565 -0.17810377 -0.65569848
+0.72961622 -0.52148885 -0.44239065
+0.85194236 -0.52018380 -0.06002662
+0.85786074 -0.18008229 0.48129547
+0.97880262 -0.18003200 0.09764180
+"
+    bValue = 1000
+    forceFloat = FALSE
+    xFlip = FALSE
+    yFlip = FALSE
+    zFlip = FALSE
+  }
+}
+module DecodeVendorSpecificDicomTags {
+  internal  {
+    frame = "1789 -90 216 56"
+    moduleGroupName = "DTI fiber tracking"
+  }
+  fields  {
+    instanceName = DecodeVendorSpecificDicomTags
+    offsetLastTimePoint = 0
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "1737 -675 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoFiberVis {
+  internal  {
+    frame = "1897 -675 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoFiberVis
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    autoApply = TRUE
+    autoUpdate = TRUE
+    generalColor = "1 1 1"
+    drawLines = TRUE
+    drawSpheres = FALSE
+    optimizePoints = FALSE
+    angleThreshold = 0.99900001
+    sphereRadius = 1
+    computeFiberSet = FALSE
+    alphaValue = 1
+    minFibernessValue = 0
+    colorMode = COLOR_STANDARD
+    enableLighting = FALSE
+    ambient = "0.100000001490116 0.100000001490116 0.100000001490116"
+    diffuse = "1 1 1"
+    specular = "1 1 1"
+    shininess = 1
+    allowClip = TRUE
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "1821 -763 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "680 209 811 723"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+      window _automatic {
+        geometry = "717 330 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539801
+    position = "217.511184692383 135.17170715332 -108.029983520508"
+    orientation = "-0.29917511343956 -0.832336783409119 -0.466593712568283 3.78442192077637"
+    nearDistance = 149.97426
+    farDistance = 415.39911
+    focalDistance = 285.64972
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = FALSE
+    wheelRotationEnabled = FALSE
+  }
+}
+connections  {
+  Bypass.input0 = ImageLoad5.output0
+  Replicate.input0 = Morphology3.output0
+  Replicate.replicationVector = VecBoxConvert.v1
+  VecBoxConvert.t1 = Info.sizeT
+  SubImage.input0 = Bypass.output0
+  Threshold.input0 = SubImage.output0
+  Mask.input0 = Bypass.output0
+  Mask.input1 = Replicate.output0
+  Info.input0 = Bypass.output0
+  Morphology.input0 = Threshold.output0
+  Morphology1.input0 = Morphology.output0
+  Morphology2.input0 = Morphology1.output0
+  Morphology3.input0 = Morphology2.output0
+  View3D.inImage = ImageLoad5.output0
+  TensorTractography1.input0 = VectorField.output0
+  TensorTractography1.markerList = MaskToMarkers.outputXMarkerList
+  FAmap.input0 = VectorField.output0
+  MaskToMarkers.input0 = FAmap.output0
+  DTIInfo.input0 = DecodeVendorSpecificDicomTags.output0
+  VectorField.input0 = DecodeVendorSpecificDicomTags.output0
+  VectorField.gradients = DTIInfo.gradients
+  DecodeVendorSpecificDicomTags.input0 = Mask.output0
+  SoFiberVis.inFiberSetFld = TensorTractography1.outFiberSet
+  SoExaminerViewer.children = "SoBackground.self SoFiberVis.self"
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 152
+        objectName = "Remove Background"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 231
+        objectName = "DTI fiber tracking"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}
