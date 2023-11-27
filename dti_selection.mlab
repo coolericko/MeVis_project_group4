@@ -15,14 +15,14 @@ module ImageLoad {
         wasOpen = no
       }
       window _automatic {
-        geometry = "650 291 853 600"
-        sizeHint = "260 223"
+        geometry = "1060 333 853 605"
+        sizeHint = "260 228"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = ImageLoad5
+    instanceName = Image_case1_DTI
     filename = D:/Docs/MeVis_project_group4/contestData/case1_DTI.mlimage
     autoLoad = TRUE
     readRaw = FALSE
@@ -602,10 +602,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539801
-    position = "46.006233215332 -259.690246582031 146.728454589844"
-    orientation = "-0.952804803848267 0.0160069763660431 -0.303161054849625 5.15814065933228"
-    nearDistance = 168.23805
-    farDistance = 406.67795
+    position = "240.201477050781 -139.159957885742 106.566886901855"
+    orientation = "0.681327879428864 0.529816925525665 0.505060732364655 1.45274376869202"
+    nearDistance = 173.146
+    farDistance = 398.70462
     focalDistance = 285.64972
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -808,23 +808,141 @@ module DecodeVendorSpecificDicomTags {
     offsetLastTimePoint = 0
   }
 }
+module StringSplit {
+  internal  {
+    frame = "1413 701 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "650 275 500 632"
+        sizeHint = "500 632"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "599 674 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringSplit
+    inString = D:/Docs/MeVis_project_group4/contestData/case1_DTI
+    separators = /
+    trimWhitespace = TRUE
+    selectedSubStringIndex = 0
+    searchSubstring = ""
+    searchIgnoreCase = FALSE
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1245 701 88 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "506 469 655 224"
+        sizeHint = "234 224"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1692 331 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils
+    operationType = Replace
+    string1 = D:/Docs/MeVis_project_group4/contestData/case1_DTI.mlimage
+    string2 = .mlimage
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = ""
+    selectSeparator = 0
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
+module StringUtils {
+  internal  {
+    frame = "1409 805 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "377 692 777 468"
+        sizeHint = "383 341"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "303 302 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StringUtils1
+    operationType = Concatenate
+    string1 = Image
+    string2 = case1_DTI
+    string3 = ""
+    string4 = ""
+    string5 = ""
+    string6 = ""
+    stringPrefix = [
+    stringPostfix = ]
+    toggle1 = TRUE
+    toggle2 = TRUE
+    toggle3 = FALSE
+    toggle4 = FALSE
+    toggle5 = FALSE
+    toggle6 = FALSE
+    togglePrefix = FALSE
+    togglePostfix = FALSE
+    separator = _
+    selectSeparator = 3
+    toggleIgnoreCase = FALSE
+    inPos1 = 0
+    inPos2 = 0
+  }
+}
 connections  {
+  Image_case1_DTI.instanceName = StringUtils1.result
   SoView2DCSOExtensibleEditor.inCSOList = CSOManager2.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOSplineEditor.self
   SoCSOSplineEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
-  OrthoView2D.image = ImageLoad5.output0
+  OrthoView2D.image = Image_case1_DTI.output0
   OrthoView2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
   CSOConvertToImage.input0 = Resample3D.output0
   CSOConvertToImage.inCSOList = CSOManager2.outCSOList
   SoFiberVis1.inFiberSetFld = TensorTractography1.outFiberSet
   SoExaminerViewer2.children = "SoBackground1.self SoFiberVis1.self"
-  Resample3D.input0 = ImageLoad5.output0
+  Resample3D.input0 = Image_case1_DTI.output0
   TensorTractography1.input0 = DiffusionTensorAnalysis1.output0
   TensorTractography1.markerList = CSOConvertToImage.outputXMarkerList
   DTIInfo.input0 = DecodeVendorSpecificDicomTags.output0
   DiffusionTensorAnalysis1.input0 = DecodeVendorSpecificDicomTags.output0
   DiffusionTensorAnalysis1.gradients = DTIInfo.gradients
-  DecodeVendorSpecificDicomTags.input0 = ImageLoad5.output0
+  DecodeVendorSpecificDicomTags.input0 = Image_case1_DTI.output0
+  StringSplit.inString = StringUtils.result
+  StringUtils.string1 = Image_case1_DTI.filename
+  StringUtils1.string2 = StringSplit.lastSubString
 }
 networkModel  {
   parentItems  {
