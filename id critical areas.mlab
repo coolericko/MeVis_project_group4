@@ -5,17 +5,17 @@ network  {
 }
 module ImageLoad {
   internal  {
-    frame = "121 365 160 72"
+    frame = "-71 437 160 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "481 296 479 353"
+        geometry = "747 479 479 353"
         sizeHint = "479 353"
         wasOpen = no
       }
       window _automatic {
-        geometry = "114 172 856 600"
+        geometry = "122 264 856 600"
         sizeHint = "260 223"
         wasOpen = no
       }
@@ -23,7 +23,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad
-    filename = $(NETWORK)/contestData/case1_T2.mlimage
+    filename = $(NETWORK)/contestData/case1_T1_post.mlimage
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -42,68 +42,287 @@ module ImageLoad {
     enableCheckSumTests = FALSE
   }
 }
-module View2D {
+module OrthoView2D {
   internal  {
-    frame = "141 245 120 56"
+    frame = "-83 77 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "430 269 400 400"
+        geometry = "22 29 755 1002"
+        sizeHint = "400 430"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "110 250 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 641.514953613281
+    grayCenter = 983.801574707031
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "-5.60408782958984 62.5557861328125 -13.614387512207"
+    coloredMode = FALSE
+  }
+}
+module GetVoxelValue {
+  internal  {
+    frame = "97 213 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _automatic {
+        geometry = "341 328 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "713 423 494 291"
+        sizeHint = "494 291"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GetVoxelValue
+    position = "-5.60408782958984 62.5557861328125 -13.614387512207 0 0 0"
+    updateMode = AutoClear
+    coordinateType = World
+    interpolation = NearestNeighbor
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "385 285 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "552 349 408 402"
+        sizeHint = "408 402"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "528 316 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = ImgOrig
+    upperType = UserDef
+    centerWidthSet = TRUE
+    threshCenter = 1226
+    threshWidth = 1000
+    threshMin = 726
+    threshMax = 1726
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 1
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "261 53 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "388 214 708 659"
+        sizeHint = "400 430"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "485 311 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 1207.10998535156
+    grayCenter = 583.747009277344
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "-5.60408782958984 62.5557861328125 -13.614387512207"
+    coloredMode = FALSE
+  }
+}
+module IsoSurface {
+  internal  {
+    frame = "609 85 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1071 482 337 318"
+        sizeHint = "337 318"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1119 368 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IsoSurface
+    isoValue = 726
+    quality = 1
+    useInterpolation = TRUE
+    useSmoothing = FALSE
+    smoothingPasses = 5
+    smoothingFactor = 0.2
+    usePolygonReduction = FALSE
+    targetReduction = 70
+    autoUpdate = FALSE
+    autoApply = FALSE
+    selectedTab = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "677 -139 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1209 395 593 507"
         sizeHint = "400 400"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = View2D
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    view2DExtensionsOn = TRUE
-    startSlice = 0
-    numSlices = 1
-    numXSlices = 1
-    sliceStep = 1
-    slab = 1
-    blendMode = BLEND_REPLACE
-    timePoint = 0
-    maxTimePoint = 0
-    filterMode = FILTER_LINEAR
-    standardKeys = TRUE
-    cineMode = CINE_ZT
-    cineDirection = CINE_FORWARD
-    cineRepeat = CINE_ONCE
-    cineSpeed = 0.1
-    cineAlwaysReset = TRUE
-    snapToCenter = TRUE
-    zoomMode = VIEW2D_AUTO_ZOOM
-    unzoomOnImageChange = FALSE
-    sliceZoom = 1
-    sliceZoomSynced = 1
-    baseColor = "1 1 1"
-    margin = "2 2"
-    sliceOrigin = "0 0"
-    useShaders = TRUE
-    useManagedInteraction = FALSE
-    lutCenter = 50
-    lutWidth = 100
-    annotationOn = TRUE
-    annotationMode = ANNO_MODE_AUTO
-    annotationSizeMode = ANNO_SHOW_DETAILED
-    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
-    annotationFontSize = ANNO_SIZE_AUTO
-    annoCoords = Voxel
-    annoCTValue = AsIs
-    borderOn = FALSE
-    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    valueHighPrecision = TRUE
-    showColorChannelValues = FALSE
-    colorChannelSeparator = " / "
-    maxPrecision = 4
-    enableSlicing = TRUE
-    useRelativeLUTIfNoInputImage = TRUE
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "113.272125244141 297.542572021484 20.4572601318359"
+    orientation = "0.108766838908195 0.659764409065247 0.74355947971344 2.80869102478027"
+    nearDistance = 178.2058
+    farDistance = 445.48233
+    focalDistance = 328.84894
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
   }
 }
 connections  {
-  View2D.inImage = ImageLoad.output0
+  OrthoView2D.image = ImageLoad.output0
+  GetVoxelValue.input0 = ImageLoad.output0
+  GetVoxelValue.position = OrthoView2D.worldPosition
+  GetVoxelValue.update = GetVoxelValue.position
+  IntervalThreshold.input0 = ImageLoad.output0
+  IntervalThreshold.threshCenter = GetVoxelValue.outputValue
+  OrthoView2D1.image = IntervalThreshold.output0
+  OrthoView2D1.grayWidth = OrthoView2D.grayWidth
+  OrthoView2D1.grayCenter = OrthoView2D.grayCenter
+  OrthoView2D1.worldPosition = OrthoView2D.worldPosition
+  IsoSurface.inImage = IntervalThreshold.output0
+  IsoSurface.isoValue = IntervalThreshold.threshMin
+  SoExaminerViewer.children = IsoSurface.outScene
 }
 networkModel = ""
