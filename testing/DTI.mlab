@@ -23,7 +23,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad5
-    filename = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_DTI.mlimage"
+    filename = "C:/Users/Rens/Documents/MSc-CS/Medical Visualisation/MeVis_project_group4/contestData/case1_DTI.mlimage"
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -470,7 +470,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography1
-    timing = 0.102744333333333
+    timing = 0.0268638
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -664,7 +664,7 @@ module SoExaminerViewer {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "61 147 811 723"
+        geometry = "677 154 525 471"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -723,10 +723,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539801
-    position = "-30.3378658294678 238.733963012695 138.779312133789"
-    orientation = "0.215638399124146 -0.491774469614029 -0.843598246574402 3.61926102638245"
-    nearDistance = 155.2186
-    farDistance = 369.28088
+    position = "137.745590209961 104.181129455566 231.537979125977"
+    orientation = "0.22197137773037 0.249235138297081 0.94266152381897 2.90521478652954"
+    nearDistance = 159.10359
+    farDistance = 392.36304
     focalDistance = 285.64972
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -751,8 +751,8 @@ module View3D {
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
-        geometry = "587 126 1004 609"
-        sizeHint = "1004 609"
+        geometry = "355 166 1000 609"
+        sizeHint = "1000 609"
         wasOpen = no
       }
     }
@@ -782,11 +782,11 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "440.901763916016 78.909538269043 265.22216796875"
-    camOrientation = "0.337346792221069 0.58642590045929 0.736411452293396 1.70679688453674"
+    camPosition = "509.191467285156 34.9289703369141 13.1501026153564"
+    camOrientation = "0.580131530761719 0.543117523193359 0.607017815113068 2.22452545166016"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 654.21619
-    camNear = 362.82004
+    camFar = 627.27136
+    camNear = 389.71097
     camFocal = 508.37289
     camHeight = 0.78539801
     decoration = FALSE
@@ -943,7 +943,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 2
+    numUndos = 3
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -1221,7 +1221,7 @@ module OrthoView2D {
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "1006 277 718 641"
+        geometry = "74 173 718 641"
         sizeHint = "400 430"
         wasOpen = no
       }
@@ -1262,7 +1262,7 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "1.18717205524445 0.429660141468048 22.0265445709229"
+    worldPosition = "39.4153442382813 -76.4109344482422 -3.37167739868164"
     coloredMode = FALSE
   }
 }
