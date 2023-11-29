@@ -76,15 +76,15 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 641.514953613281
-    grayCenter = 983.801574707031
+    grayWidth = 979.444885253906
+    grayCenter = 882.880249023438
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-5.60408782958984 62.5557861328125 -13.614387512207"
+    worldPosition = "-2.25076293945313 -18.5454406738281 -6.4444580078125"
     coloredMode = FALSE
   }
 }
@@ -108,7 +108,7 @@ module GetVoxelValue {
   }
   fields  {
     instanceName = GetVoxelValue
-    position = "-5.60408782958984 62.5557861328125 -13.614387512207 0 0 0"
+    position = "-2.25076293945313 -18.5454406738281 -6.4444580078125 0 0 0"
     updateMode = AutoClear
     coordinateType = World
     interpolation = NearestNeighbor
@@ -137,10 +137,10 @@ module IntervalThreshold {
     innerType = ImgOrig
     upperType = UserDef
     centerWidthSet = TRUE
-    threshCenter = 1226
-    threshWidth = 1000
-    threshMin = 726
-    threshMax = 1726
+    threshCenter = 885
+    threshWidth = 300
+    threshMin = 735
+    threshMax = 1035
     lowerUserValue = 0
     innerUserValue = 0
     upperUserValue = 1
@@ -155,7 +155,7 @@ module OrthoView2D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "388 214 708 659"
+        geometry = "144 184 708 659"
         sizeHint = "400 430"
         wasOpen = no
       }
@@ -183,7 +183,7 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1207.10998535156
+    grayWidth = 1035
     grayCenter = 583.747009277344
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -191,18 +191,18 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-5.60408782958984 62.5557861328125 -13.614387512207"
+    worldPosition = "-2.25076293945313 -18.5454406738281 -6.4444580078125"
     coloredMode = FALSE
   }
 }
 module IsoSurface {
   internal  {
-    frame = "609 85 128 56"
+    frame = "737 37 128 56"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "1071 482 337 318"
+        geometry = "1507 697 337 318"
         sizeHint = "337 318"
         wasOpen = no
       }
@@ -215,7 +215,7 @@ module IsoSurface {
   }
   fields  {
     instanceName = IsoSurface
-    isoValue = 726
+    isoValue = 1
     quality = 1
     useInterpolation = TRUE
     useSmoothing = FALSE
@@ -230,11 +230,11 @@ module IsoSurface {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "677 -139 136 56"
+    frame = "741 -131 136 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "1209 395 593 507"
+        geometry = "1260 109 593 507"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -288,11 +288,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "113.272125244141 297.542572021484 20.4572601318359"
-    orientation = "0.108766838908195 0.659764409065247 0.74355947971344 2.80869102478027"
-    nearDistance = 178.2058
-    farDistance = 445.48233
-    focalDistance = 328.84894
+    position = "224.807250976563 179.462371826172 12.5912055969238"
+    orientation = "0.339979588985443 0.604431748390198 0.720469295978546 2.5620903968811"
+    nearDistance = 145.93266
+    farDistance = 424.83096
+    focalDistance = 299.87128
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -310,6 +310,77 @@ module SoExaminerViewer {
     wheelRotationEnabled = TRUE
   }
 }
+module FastMorphology {
+  internal  {
+    frame = "725 181 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1137 459 342 384"
+        sizeHint = "341 384"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FastMorphology
+    morphologicOperation = Opening
+    xSize = 1
+    ySize = 1
+    zSize = 1
+    cSize = 0
+    tSize = 0
+    uSize = 0
+    useInputMaxValue = FALSE
+    userSetMaxValue = 1
+    autoUpdate = TRUE
+    useGreyScaleMorphology = FALSE
+    boundaryHandling = "Propagate boundary values"
+    boundaryFillValue = 0
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "509 45 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "276 234 655 647"
+        sizeHint = "400 430"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D2
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 1
+    grayCenter = 1
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "7.68527984619141 -15.3972625732422 -10.8941612243652"
+    coloredMode = FALSE
+  }
+}
 connections  {
   OrthoView2D.image = ImageLoad.output0
   GetVoxelValue.input0 = ImageLoad.output0
@@ -321,8 +392,9 @@ connections  {
   OrthoView2D1.grayWidth = OrthoView2D.grayWidth
   OrthoView2D1.grayCenter = OrthoView2D.grayCenter
   OrthoView2D1.worldPosition = OrthoView2D.worldPosition
-  IsoSurface.inImage = IntervalThreshold.output0
-  IsoSurface.isoValue = IntervalThreshold.threshMin
+  IsoSurface.inImage = FastMorphology.output0
   SoExaminerViewer.children = IsoSurface.outScene
+  FastMorphology.input0 = IntervalThreshold.output0
+  OrthoView2D2.image = FastMorphology.output0
 }
 networkModel = ""
