@@ -1,0 +1,85 @@
+Interface {
+  Parameters {
+  }
+}
+
+
+Commands {
+
+}
+
+
+Window MyViewer {
+
+  // Vertical and Horizontal are layout controls.
+  Vertical {
+    expandY = YES
+    
+    TabView {
+      TabViewItem "DVR" {
+        Splitter {
+          Box 3DView {
+            Viewer SoCustomExaminerViewer1.self {
+              expandX = True
+              expandY = True
+              type    = SoCustomExaminerViewer
+            }
+            preferredWidth  = 800
+            preferredHeight = 800
+          }    
+
+          Box Settings {
+            preferredWidth  = 600
+            preferredHeight = 800
+          }  
+
+          Box LUT {
+            TabView {
+              TabViewItem "Head" {
+                Viewer SoLUTEditor2.self {
+                  expandX = True
+                  expandY = True
+                }
+              }
+              TabViewItem "Tumor" {
+                Viewer SoLUTEditor2D.self {
+                  expandX = True
+                  expandY = True
+                }
+              }
+              TabViewItem "test" {
+                
+              }
+            }
+            preferredWidth  = 800
+            preferredHeight = 800
+          }
+        }
+      }
+      
+      TabViewItem "DTI" {
+        Splitter {
+          Box 2DView {
+            Viewer OrthoView2D1.self {
+              expandX = True
+              expandY = True
+            }
+            preferredWidth  = 600
+            preferredHeight = 800
+          }    
+
+          Box Settings {
+            preferredWidth  = 600
+            preferredHeight = 800
+          }  
+
+          Viewer SoExaminerViewer2.self {
+            expandX = True
+            expandY = True
+            type    = SoExaminerViewer
+          }
+        }
+      }
+    }
+  }
+}
