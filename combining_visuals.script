@@ -69,12 +69,16 @@ Window MyViewer {
           }    
 
           Box Settings {
+			Viewer CSOManager3.self {
+			  expandX = True
+              expandY = True
+			}
             preferredWidth  = 600
             preferredHeight = 800
           }  
           
           Box 3DView {
-            Viewer SoExaminerViewer2.self {
+            Viewer SoExaminerViewer.self {
               expandX = True
               expandY = True
               type    = SoExaminerViewer
