@@ -64,7 +64,7 @@ Window MyViewer {
               expandX = True
               expandY = True
             }
-            preferredWidth  = 600
+            preferredWidth  = 400
             preferredHeight = 800
           }    
 
@@ -72,11 +72,13 @@ Window MyViewer {
             preferredWidth  = 600
             preferredHeight = 800
           }  
-
-          Viewer SoExaminerViewer2.self {
-            expandX = True
-            expandY = True
-            type    = SoExaminerViewer
+          
+          Box 3DView {
+            Viewer SoExaminerViewer2.self {
+              expandX = True
+              expandY = True
+              type    = SoExaminerViewer
+            }
           }
         }
       }
