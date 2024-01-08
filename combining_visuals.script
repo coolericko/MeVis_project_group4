@@ -1,18 +1,22 @@
 Description {
-  Field currentIndex     { persistent = no }
-  Field currentPosition  { persistent = no }
-  Field currentColor     { persistent = no }
-  Field currentOpacity   { persistent = no }
+
 }
 
 Interface {
+  Inputs {
+
+  }
+  Outputs {
+    
+  }
   Parameters {
+
   }
 }
 
 
 Commands {
-
+  source = $(LOCAL)/combining_visuals.py
 }
 
 
@@ -36,34 +40,70 @@ Window MyViewer {
           }    
 
           Box Settings {
-            preferredWidth  = 600
+            preferredWidth  = 400
             preferredHeight = 800
+            
+            Box LUTs {
+              ListView SoLUTEditor2D.lutList {
+                name                    = lutListView
+                layout                  = "e"
+                header                  = No
+                selectionMode           = Single
+                visibleRows             = 8
+                selectionChangedCommand = lutSelected
+                itemRenamedCommand      = lutRenamed
+              }
+              Field SoLUTEditor2D.lutListItem {}
+              Field SoLUTEditor2D.addLut {}
+              Field SoLUTEditor2D.removeLut {}
+              Field SoLUTEditor2D.newLutName {}
+              Field SoLUTEditor2D.lutNameChanged {}
+              
+              ListView SoLUTEditor2D.tagList {
+                name                    = tagListView
+                selectionChangedCommand = tagSelected
+              }
+              Field SoLUTEditor2D.tagListItems {}
+              Field SoLUTEditor2D.assignToLut{}
+              Field SoLUTEditor2D.clear{}
+            }
           }  
 
           Box LUT {
             TabView {
               TabViewItem "Head" {
-                Category Editor {
-                  Panel { panel = editor window = Editor } 
+                Vertical {
+                  Box Editor {
+                    Panel { module = SoLUTEditor2D panel = editor }
+                  }
+                  Box Settings {
+                    Field SoLUTEditor2D.relativeLut {}
+                    Field SoLUTEditor2D.alphaFactor { slider = yes }
+                    Field SoLUTEditor2D.colorInterpolation {}
+                  }
                 }
               }
               TabViewItem "Tumor" {
-                Viewer SoLUTEditor2D.self {
-                  expandX = True
-                  expandY = True
-                  type = SoRenderArea
+                Vertical {
+                  Box Editor {
+                    Panel { module = SoLUTEditor2 panel = editor }
+                  }
+                  Box Settings {
+                    Field SoLUTEditor2.relativeLut {}
+                    Field SoLUTEditor2.alphaFactor { slider = yes }
+                    Field SoLUTEditor2.colorInterpolation {}
+                  }
+                  Box Range {
+                    Panel { module = SoLUTEditor2 panel = range }
+                  }
                 }
               }
-              TabViewItem "test" {
-                
-              }
             }
-            preferredWidth  = 800
+            preferredWidth  = 400
             preferredHeight = 800
           }
         }
       }
-      
       TabViewItem "DTI" {
         Splitter {
           Box 3DView {
@@ -71,7 +111,7 @@ Window MyViewer {
               expandX = True
               expandY = True
               type    = SoExaminerViewer
-              preferredWidth  = 600
+              preferredWidth  = 800
               preferredHeight = 800
             }
           }
@@ -80,7 +120,7 @@ Window MyViewer {
               expandX = True
               expandY = True
             }
-            preferredWidth  = 600
+            preferredWidth  = 400
             preferredHeight = 800
           }  
           
@@ -91,58 +131,10 @@ Window MyViewer {
               expandY = True
               SoRenderArea
             }
-            Category Editor {
-              Panel { panel = editor window = Editor } 
-            }
-            preferredWidth  = 400
+            preferredWidth  = 700
             preferredHeight = 800
           }   
         }
-      }
-    }
-  }
-}
-
-
-Window Editor {
-  maximized = yes
-  Category Editor {
-    panelName = editor
-    Viewer self { type = SoRenderArea
-      panelName = alphaEditor
-    }
-    IntervalSlider { lowerField = viewMin upperField = viewMax }
-    Horizontal {      
-      TabView {
-        TabViewItem "Edit" {
-            
-          Grid {
-            Field currentIndex     { x=0 y=0 title = "Index:" step = 1 expandX = Yes }
-            Label                  { x=0 y=1 expandX = Yes }
-            Field currentPosition  { x=0 y=2 title = "Position:" expandX = Yes }
-            Field currentColor     { x=0 y=3 title = "Color:" expandX = Yes }
-            Field currentOpacity   { x=0 y=4 title = "Opacity:" format = "%1.3f" step = 0.1 expandX = Yes }
-            ColorEdit currentColor { x=1 y=2 y2=4 mode = triangle w = 80 h = 80 expandX = no expandY = no }
-          }
-        }
-        TabViewItem "Window/Level" {
-          Field window { slider = yes }
-          Field level  { slider = yes }
-        }
-      }
-      Box "General" {
-        expandX = yes
-        expandY = yes
-        margin  = 2
-        Field viewRangeInfo { title = "Range:" }
-        Field colorInterpolation { title = "Col. Interpol.:" enumAutoFormat = no }
-        Label {}
-        Horizontal{
-          alignY = bottom
-          Button undo { expandX = yes tooltip = "Press CTRL-Z in the editor." }
-          Button redo { expandX = yes tooltip = "Press CTRL-Y in the editor." }
-        }
-        Button resetToRamp {expandX = yes alignY = bottom}
       }
     }
   }

@@ -911,7 +911,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography1
-    timing = 0.0404291
+    timing = -1
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -1165,7 +1165,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539801
     position = "231.343078613281 158.509094238281 4.64622688293457"
-    orientation = "-0.532363653182983 -0.474644720554352 -0.700928926467896 3.2575352191925"
+    orientation = "-0.532363593578339 -0.474644720554352 -0.70092898607254 3.2575352191925"
     nearDistance = 176.69705
     farDistance = 368.9534
     focalDistance = 285.64972
@@ -1514,7 +1514,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "259.911987304688 46.20751953125 85.55419921875"
-    orientation = "-0.373743087053299 -0.640557885169983 -0.670821666717529 4.29306554794312"
+    orientation = "-0.373743087053299 -0.640557944774628 -0.670821666717529 4.29306554794312"
     nearDistance = 61.726757
     farDistance = 454.92999
     focalDistance = 273.62784
@@ -1731,7 +1731,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "0.120171926915646 0.281654387712479 -0.268234193325043"
-    orientation = "-0.962025701999664 0.26624983549118 -0.0601463206112385 2.29820036888123"
+    orientation = "-0.962025701999664 0.266249805688858 -0.0601463131606579 2.29820036888123"
     nearDistance = 1.6131258
     farDistance = 3.6131258
     focalDistance = 0.40708619
@@ -1871,7 +1871,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 15
+    numUndos = 0
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -2190,7 +2190,7 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "25.7560348510742 4.36563873291016 62.4545745849609"
+    worldPosition = "1.18717205524445 0.429660141468048 22.0265445709229"
     coloredMode = FALSE
   }
 }
@@ -2329,11 +2329,11 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-309.531585693359 -215.679641723633 -47.0310592651367"
-    orientation = "-0.831518054008484 0.366510540246964 0.417429804801941 4.34323453903198"
-    nearDistance = 222.03595
-    farDistance = 526.81586
-    focalDistance = 380.18335
+    position = "-254.309799194336 -228.361831665039 53.5129737854004"
+    orientation = "-0.795003056526184 0.383796662092209 0.469755500555038 4.72960472106934"
+    nearDistance = 173.31915
+    farDistance = 508.25082
+    focalDistance = 369.0408
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -2511,11 +2511,16 @@ module SoLUTEditor2D {
         sizeHint = "866 648"
         wasOpen = no
       }
+      window _automatic {
+        geometry = "1030 457 500 600"
+        sizeHint = "260 228"
+        wasOpen = no
+      }
     }
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "0 0 0"
+    currentColor = "1 1 1"
     currentOpacity = 0
     currentPosition = 0
     currentIndex = 0
@@ -2529,8 +2534,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 761.483703613281 0.0530464015901089 0 0.218174993991852, 1077.41845703125 1 0 0.0392156876623631, 1174.62902832031 1 1 1, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 0.00409500021487474 0, 761.483703613281 0, 1077.41845703125 0.602446496486664, 1174.62902832031 0.706422030925751, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 477.953002929688 0 0 0, 858.693969726562 0 0 0, 964.005981445312 0 0 0, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 477.953002929688 0, 858.693969726562 0, 964.005981445312 0, 4095 0.957186996936798 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -2555,10 +2560,10 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 0.096000001
-    newLutName = "Detailed brain context"
+    tagAlpha = 1
+    newLutName = asdfb
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
-<General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.321101, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
+<General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
 <Veins=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 761.484 0.0530464 0 0.218175 0, 1077.42 1 0 0.0392157 0.602446, 1174.63 1 1 1 0.706422, 4095 1 1 1 1]>"
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
@@ -3017,8 +3022,8 @@ module SoLUTEditor {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 216.622589111328 0.259570509195328 0 0.476190477609634, 216.626678466797 0.545098066329956 0 1, 874.821960449219 0.635335326194763 0.198366388678551 1, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 216.622589111328 0, 216.626678466797 1, 874.821960449219 0, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0.259570509195328 0 0.476190477609634, 0.00819000042974949 0.545098066329956 0 1, 531.536437988281 0 0 0, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 0.00409500021487474 0, 0.00819000042974949 1, 531.536437988281 0, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -3368,7 +3373,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 2
+    numUndos = 0
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -3687,7 +3692,7 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "-4.3779296875 -3.61985015869141 22.3880767822266"
+    worldPosition = "1.18717205524445 0.429660141468048 22.0265445709229"
     coloredMode = FALSE
   }
 }
