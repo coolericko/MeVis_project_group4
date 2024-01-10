@@ -10,7 +10,18 @@ Interface {
     
   }
   Parameters {
-
+    Field "DTI Image" {
+      type         = String
+      internalName = LocalImage.name
+    }
+    Field "Post data" {
+      type         = String
+      internalName = LocalImage4.name
+    }
+    Field "Tumor Mask" {
+      type         = String
+      internalName = LocalImage3.name
+    }
   }
 }
 
@@ -25,8 +36,27 @@ Window MyViewer {
   // Vertical and Horizontal are layout controls.
   Vertical {
     expandY = YES
-    
+        
     TabView {
+      TabViewItem "Sources" {
+        Box Sources {
+          Vertical {
+            Field "DTI Image" {
+              name         = "DTI"
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Post data" {
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Tumor Mask" {
+              browseButton = True
+              browseMode   = open
+            }
+          }
+        }
+      }
       TabViewItem "DVR" {
         Splitter {
           Box 3DView {
@@ -53,7 +83,6 @@ Window MyViewer {
                 selectionChangedCommand = lutSelected
                 itemRenamedCommand      = lutRenamed
               }
-              Field SoLUTEditor2D.lutListItem {}
               Field SoLUTEditor2D.addLut {}
               Field SoLUTEditor2D.removeLut {}
               Field SoLUTEditor2D.newLutName {}
