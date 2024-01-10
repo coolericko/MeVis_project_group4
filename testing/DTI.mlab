@@ -5,7 +5,7 @@ network  {
 }
 module ImageLoad {
   internal  {
-    frame = "696 111 168 72"
+    frame = "933 790 168 72"
     moduleGroupName = "Remove Background"
     showNetworkPanel = true
     windows  {
@@ -44,7 +44,7 @@ module ImageLoad {
 }
 module Replicate {
   internal  {
-    frame = "901 -355 88 56"
+    frame = "1138 324 88 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -67,7 +67,7 @@ module Replicate {
 }
 module VecBoxConvert {
   internal  {
-    frame = "709 -259 120 56"
+    frame = "946 420 120 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -98,7 +98,7 @@ module VecBoxConvert {
 }
 module SubImage {
   internal  {
-    frame = "789 -3 88 56"
+    frame = "1026 676 88 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -139,7 +139,7 @@ module SubImage {
 }
 module Threshold {
   internal  {
-    frame = "702 -114 88 56"
+    frame = "939 565 88 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -162,7 +162,7 @@ module Threshold {
 }
 module Mask {
   internal  {
-    frame = "497 -299 80 56"
+    frame = "734 380 80 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -182,7 +182,7 @@ module Mask {
 }
 module Info {
   internal  {
-    frame = "637 -187 56 56"
+    frame = "874 492 56 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -198,7 +198,7 @@ module Info {
 }
 module Morphology {
   internal  {
-    frame = "802 -138 96 56"
+    frame = "1039 541 96 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -233,7 +233,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "910 -170 104 56"
+    frame = "1147 509 104 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -268,7 +268,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "1030 -210 104 56"
+    frame = "1267 469 104 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -303,7 +303,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "1150 -258 104 72"
+    frame = "1387 421 104 72"
     moduleGroupName = "Remove Background"
     showNetworkPanel = true
     windows  {
@@ -339,11 +339,11 @@ module Morphology {
 }
 module View3D {
   internal  {
-    frame = "953 93 144 56"
+    frame = "1190 772 144 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
-        geometry = "103 294 1004 609"
+        geometry = "14 344 1004 609"
         sizeHint = "1004 609"
         wasOpen = no
       }
@@ -374,11 +374,11 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "500.207092285156 -98.5101699829102 -6.09445571899414"
-    camOrientation = "-0.681327819824219 -0.489703983068466 -0.544042646884918 4.19301128387451"
+    camPosition = "458.451080322266 -223.432647705078 43.3096084594727"
+    camOrientation = "-0.754549562931061 -0.383936613798141 -0.532210230827332 4.37166500091553"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 652.87347
-    camNear = 364.15988
+    camFar = 668.90863
+    camNear = 348.15704
     camFocal = 508.37289
     camHeight = 0.78539801
     decoration = FALSE
@@ -458,19 +458,19 @@ module View3D {
 }
 module TensorTractography {
   internal  {
-    frame = "1837 -478 144 56"
+    frame = "1841 -467 144 56"
     moduleGroupName = "DTI fiber tracking"
     windows  {
       window _default {
-        geometry = "1265 604 486 490"
-        sizeHint = "486 490"
+        geometry = "1028 410 487 490"
+        sizeHint = "487 490"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = TensorTractography1
-    timing = 0.102744333333333
+    timing = 0.0228003333333333
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -616,7 +616,7 @@ module DecodeVendorSpecificDicomTags {
 }
 module SoBackground {
   internal  {
-    frame = "1569 -675 112 56"
+    frame = "1769 -1059 112 56"
     moduleGroupName = ""
   }
   fields  {
@@ -629,7 +629,7 @@ module SoBackground {
 }
 module SoFiberVis {
   internal  {
-    frame = "1729 -675 96 56"
+    frame = "1961 -1083 96 56"
     moduleGroupName = ""
   }
   fields  {
@@ -660,11 +660,11 @@ module SoFiberVis {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "1653 -763 136 56"
+    frame = "1845 -1211 136 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "61 147 811 723"
+        geometry = "602 422 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -722,12 +722,12 @@ module SoExaminerViewer {
     perspective = TRUE
     stereoViewing = FALSE
     stereoOffset = 3
-    height = 0.78539801
-    position = "-30.3378658294678 238.733963012695 138.779312133789"
-    orientation = "0.215638399124146 -0.491774469614029 -0.843598246574402 3.61926102638245"
-    nearDistance = 155.2186
-    farDistance = 369.28088
-    focalDistance = 285.64972
+    height = 0.78539819
+    position = "-119.731857299805 262.213623046875 119.436660766602"
+    orientation = "0.0800930634140968 -0.580680131912231 -0.810182392597198 2.65184617042542"
+    nearDistance = 189.6254
+    farDistance = 413.29703
+    focalDistance = 301.2771
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -747,7 +747,7 @@ module SoExaminerViewer {
 }
 module View3D {
   internal  {
-    frame = "510 -446 144 56"
+    frame = "747 233 144 56"
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
@@ -866,12 +866,12 @@ module View3D {
 }
 module CSOManager {
   internal  {
-    frame = "1957 322 112 56"
+    frame = "2029 434 112 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "413 621 692 565"
-        sizeHint = "692 565"
+        geometry = "425 210 696 561"
+        sizeHint = "696 561"
         wasOpen = no
       }
     }
@@ -943,7 +943,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 2
+    numUndos = 0
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -961,13 +961,13 @@ module CSOManager {
     outputApplicationEventsDebug = FALSE
     csoTreeView = ""
     groupTreeView = ""
-    numSelectedCSOs = 1
+    numSelectedCSOs = 0
     numSelectedGroups = 0
     selectedCSOsGroupIds = ""
-    csoTabSelected = TRUE
+    csoTabSelected = FALSE
     groupTabSelected = FALSE
     selectionTabSelected = FALSE
-    notificationTabSelected = FALSE
+    notificationTabSelected = TRUE
     defaultTabSelected = FALSE
     csoCommonTabSelected = TRUE
     csoVisualsTabSelected = FALSE
@@ -985,7 +985,7 @@ module CSOManager {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "2097 234 200 56"
+    frame = "2253 405 200 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
@@ -1034,7 +1034,7 @@ module SoView2DCSOExtensibleEditor {
 }
 module SoCSOSplineEditor {
   internal  {
-    frame = "2125 338 144 56"
+    frame = "2281 509 144 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
@@ -1088,7 +1088,7 @@ module SoCSOSplineEditor {
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "2105 426 184 56"
+    frame = "2261 597 184 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
@@ -1217,11 +1217,11 @@ module SoCSOVisualizationSettings {
 }
 module OrthoView2D {
   internal  {
-    frame = "1969 154 120 56"
+    frame = "2477 229 120 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "1006 277 718 641"
+        geometry = "700 376 400 430"
         sizeHint = "400 430"
         wasOpen = no
       }
@@ -1242,7 +1242,7 @@ module OrthoView2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     synchronizePosition = FALSE
-    layout = LAYOUT_CUBE_EQUAL
+    layout = LAYOUT_SAGITTAL
     filterMode = FILTER_LINEAR
     synchronizeZoom = TRUE
     synchronizePanning = FALSE
@@ -1254,21 +1254,21 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 588.838989257813
-    grayCenter = 266.434997558594
+    grayWidth = 1207.10998535156
+    grayCenter = 583.747009277344
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_SHORT
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "1.18717205524445 0.429660141468048 22.0265445709229"
+    worldPosition = "2.99522638320923 -13.4995937347412 -7.93282127380371"
     coloredMode = FALSE
   }
 }
 module CSOVoxelizeContours {
   internal  {
-    frame = "1761 222 152 64"
+    frame = "1833 334 152 64"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
@@ -1317,7 +1317,7 @@ module CSOVoxelizeContours {
 }
 module Resample3D {
   internal  {
-    frame = "1777 354 104 56"
+    frame = "1849 466 104 56"
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
@@ -1343,13 +1343,1068 @@ module Resample3D {
 }
 module Bypass {
   internal  {
-    frame = "1809 546 104 56"
+    frame = "1881 658 104 56"
     moduleGroupName = "Mask for fibers"
     showNetworkPanel = true
   }
   fields  {
     instanceName = Bypass
     noBypass = FALSE
+  }
+}
+module CSOSave {
+  internal  {
+    frame = "2016 283 88 56"
+    moduleGroupName = "Mask for fibers"
+    windows  {
+      window _default {
+        geometry = "756 467 500 168"
+        sizeHint = "500 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOSave
+    taskVerboseLogging = FALSE
+    fileName = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
+    autoApply = TRUE
+    saveSuccess = TRUE
+    binary = TRUE
+    listenToFinishedNotifications = FALSE
+  }
+}
+module View2D {
+  internal  {
+    frame = "2173 245 120 56"
+    moduleGroupName = "Mask for fibers"
+    windows  {
+      window _default {
+        geometry = "700 391 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1030 268 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.211579188704491
+    lutWidth = 0.43751722574234
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_SHORT
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "2497 749 192 72"
+    moduleGroupName = "Mask for fibers"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1041 392 479 353"
+        sizeHint = "479 353"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad
+    filename = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post.mlimage"
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "2090 606 112 64"
+    moduleGroupName = "Mask for fibers"
+    windows  {
+      window _default {
+        geometry = "932 288 696 561"
+        sizeHint = "696 561"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOList
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 0
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 1
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = TRUE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = FALSE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = FALSE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = FALSE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module LocalCSOLoad {
+  internal  {
+    frame = "2102 698 120 56"
+    moduleGroupName = "Mask for fibers"
+    windows  {
+      window _default {
+        geometry = "719 503 489 252"
+        sizeHint = "489 252"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalCSOLoad
+    name = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
+    autoApply = TRUE
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "1977 533 112 56"
+    moduleGroupName = "Mask for fibers"
+    windows  {
+      window _default {
+        geometry = "38 265 696 561"
+        sizeHint = "696 561"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager
+    workDirectlyOnInputCSOList = TRUE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 0
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 1
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = TRUE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = TRUE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = TRUE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = TRUE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module VoxelizeFibers {
+  internal  {
+    frame = "2073 -587 112 56"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "600 528 238 124"
+        sizeHint = "238 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VoxelizeFibers
+    thresholdForInterpolation = 2
+    interpolationStepSize = 1
+    autoApply = TRUE
+    autoUpdate = TRUE
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "2229 -603 136 72"
+    moduleGroupName = "DTI fiber tracking"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "675 439 469 305"
+        sizeHint = "450 305"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module View3D {
+  internal  {
+    frame = "2441 -683 144 56"
+    moduleGroupName = "DTI fiber tracking"
+    windows  {
+      window _default {
+        geometry = "298 422 1132 609"
+        sizeHint = "1132 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D2
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Editor
+    rendererType = Slicer
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.320000022649765
+    greyWidth = 0.635000228881836
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "-195.273223876953 -60.4495124816895 187.293365478516"
+    camOrientation = "0.504806160926819 -0.422640442848206 -0.752692341804504 1.42992985248566"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 423.86337
+    camNear = 106.30573
+    camFocal = 264.92606
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 128
+    renderer.sizeOutputY = 128
+    renderer.sizeOutputZ = 72
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 128
+    renderer.subVolumeEndY = 128
+    renderer.subVolumeEndZ = 72
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+module Bypass {
+  internal  {
+    frame = "2206 -179 112 56"
+    moduleGroupName = "DTI fiber tracking"
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass1
+    noBypass = FALSE
+  }
+}
+module Scale {
+  internal  {
+    frame = "2417 -563 192 72"
+    moduleGroupName = "DTI fiber tracking"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "843 462 235 337"
+        sizeHint = "235 337"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Scale
+    inputMin = 0
+    inputMax = 67
+    updateMode = AutoUpdateMinMaxOn
+    useTrueRange = FALSE
+    typeSelect = UInt16
+    outputMin = 0
+    outputMax = 65555
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "3019 -984 184 72"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "654 431 479 353"
+        sizeHint = "479 353"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "650 291 853 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad1
+    filename = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post_tumormask.mlimage"
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module SoDepthPeelRenderer {
+  internal  {
+    frame = "2727 -1744 160 56"
+    moduleGroupName = "Distance calculations"
+    windows  {
+      window _default {
+        geometry = "814 471 287 218"
+        sizeHint = "270 218"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoDepthPeelRenderer1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    useStencilBuffer = FALSE
+    layers = 4
+    simulatedAlpha = 1
+    opaqueBackgroundPass = TRUE
+    sceneDepthCompare = FALSE
+    debugLayers = FALSE
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "2715 -1640 168 72"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "868 388 337 404"
+        sizeHint = "337 404"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer1
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = TRUE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_LUT_VALUES
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = "LUT,LUT Perpendicular,LUT Tangential"
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "2911 -1512 112 56"
+    moduleGroupName = "Distance calculations"
+    windows  {
+      window _default {
+        geometry = "1795 268 525 450"
+        sizeHint = "525 450"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1053 228 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor1
+    rangeMin = -0.47765899
+    rangeMax = 1.15326
+    viewMin = -0.47765899
+    viewMax = 1.15326
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
+    alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
+    alphaFactor = 1
+    newRangeMin = 9.5278778
+    newRangeMax = 116.26673
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    marginColor = "0.830999970436096 0.815999984741211 0.783999979496002"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module WEMSurfaceDistance {
+  internal  {
+    frame = "2687 -1488 192 72"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1554 404 357 429"
+        sizeHint = "333 429"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "482 228 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMSurfaceDistance2
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = TRUE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    relativeError = 0
+    numEntries = 200
+    shouldComputeSignedDistances = FALSE
+    addEdgesToNearestNodes = FALSE
+    shouldNormalizeDist = TRUE
+    useLUTPrimitiveValueList = TRUE
+    customPrimitiveValueList = "Surface Distance"
+  }
+}
+module IsoSurface {
+  internal  {
+    frame = "3023 -1148 128 64"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "733 432 335 318"
+        sizeHint = "335 318"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Cancer
+    isoValue = 100
+    quality = 1
+    useInterpolation = TRUE
+    useSmoothing = FALSE
+    smoothingPasses = 5
+    smoothingFactor = 0.2
+    usePolygonReduction = FALSE
+    targetReduction = 70
+    autoUpdate = TRUE
+    autoApply = TRUE
+    selectedTab = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "2999 -1408 144 56"
+    moduleGroupName = "Distance calculations"
+    windows  {
+      window _viewer {
+        geometry = "139 196 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer4
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "239.89778137207 -343.727081298828 126.430976867676"
+    orientation = "0.83234566450119 0.540438234806061 0.122992493212223 1.38188350200653"
+    nearDistance = 327.36047
+    farDistance = 548.7417
+    focalDistance = 411.18527
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "3083 -1280 168 72"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "222 301 449 500"
+        sizeHint = "449 500"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer3
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0.133333340287209 0.792156875133514 0.603921592235565"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module IsoSurface {
+  internal  {
+    frame = "2827 -1084 136 64"
+    moduleGroupName = "Distance calculations"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "733 432 335 318"
+        sizeHint = "335 318"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubStructure
+    isoValue = 80
+    quality = 1
+    useInterpolation = TRUE
+    useSmoothing = TRUE
+    smoothingPasses = 5
+    smoothingFactor = 0.2
+    usePolygonReduction = FALSE
+    targetReduction = 70
+    autoUpdate = TRUE
+    autoApply = TRUE
+    selectedTab = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "3041 -1887 144 56"
+    moduleGroupName = "Distance calculations"
+    windows  {
+      window _viewer {
+        geometry = "604 255 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer5
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = FALSE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "120.66731262207 -75.5889282226563 135.365432739258"
+    orientation = "0.606667578220367 0.419090151786804 0.675512909889221 1.22722744941711"
+    nearDistance = 75.469841
+    farDistance = 303.64868
+    focalDistance = 233.21576
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
   }
 }
 connections  {
@@ -1375,15 +2430,39 @@ connections  {
   SoFiberVis.inFiberSetFld = TensorTractography1.outFiberSet
   SoExaminerViewer.children = "SoBackground.self SoFiberVis.self"
   View3D1.inImage = Mask.output0
+  CSOManager2.inCSOList = CSOList.outCSOList
   SoView2DCSOExtensibleEditor.inCSOList = CSOManager2.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOSplineEditor.self
   SoCSOSplineEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
-  OrthoView2D.image = Bypass.output0
+  OrthoView2D.image = ImageLoad.output0
   OrthoView2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
   CSOConvertToImage.input0 = Resample3D.output0
   CSOConvertToImage.inCSOList = CSOManager2.outCSOList
   Resample3D.input0 = Bypass.output0
   Bypass.input0 = SubImage.output0
+  CSOSave.inCSOList = CSOManager2.outCSOList
+  View2D1.inImage = ImageLoad.output0
+  View2D1.inInvPreLUT = SoView2DCSOExtensibleEditor.self
+  CSOList.inCSOList = LocalCSOLoad.outCSOList
+  CSOManager.inCSOList = CSOList.outCSOList
+  VoxelizeFibers.input0 = Bypass1.output0
+  VoxelizeFibers.inputFibers = TensorTractography1.outFiberSet
+  MinMaxScan.input0 = VoxelizeFibers.output0
+  View3D2.inImage = Scale.output0
+  Bypass1.input0 = SubImage.output0
+  Scale.input0 = MinMaxScan.output0
+  SoDepthPeelRenderer1.children = SoWEMRenderer1.self
+  SoWEMRenderer1.inWEM = WEMSurfaceDistance2.outWEM
+  SoWEMRenderer1.inLUT = SoLUTEditor1.outLUT
+  SoLUTEditor1.newRangeMin = WEMSurfaceDistance2.minimumDistance
+  SoLUTEditor1.newRangeMax = WEMSurfaceDistance2.maximumDistance
+  WEMSurfaceDistance2.inWEM = SubStructure.outWEM
+  WEMSurfaceDistance2.inWEM2 = Cancer.outWEM
+  Cancer.inImage = ImageLoad1.output0
+  SoExaminerViewer4.children = "SubStructure.outScene SoWEMRenderer3.self"
+  SoWEMRenderer3.inWEM = Cancer.outWEM
+  SubStructure.inImage = Scale.output0
+  SoExaminerViewer5.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self"
 }
 networkModel  {
   parentItems  {
@@ -1413,6 +2492,17 @@ networkModel  {
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 83
         objectName = "Mask for fibers"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 199
+        objectName = "Distance calculations"
         parentUniqueId = 0
         color  {
           r = 45
