@@ -12,7 +12,7 @@ Interface {
   Parameters {
     Field "DTI Image" {
       type         = String
-      internalName = LocalImage.name
+      internalName = LocalImage5.name
     }
     Field "Post data" {
       type         = String
@@ -38,11 +38,10 @@ Window MyViewer {
     expandY = YES
         
     TabView {
-      TabViewItem "Sources" {
-        Box Sources {
+      TabViewItem "Source" {
+        Box "Input images" {
           Vertical {
             Field "DTI Image" {
-              name         = "DTI"
               browseButton = True
               browseMode   = open
             }
@@ -135,19 +134,49 @@ Window MyViewer {
       }
       TabViewItem "DTI" {
         Splitter {
-          Box 3DView {
-            Viewer SoExaminerViewer.self {
-              expandX = True
-              expandY = True
-              type    = SoExaminerViewer
-              preferredWidth  = 800
-              preferredHeight = 800
+          TabView {
+            TabView "Fiber Tracking" {
+              Box 3DView {
+                Viewer SoExaminerViewer3.self {
+                  expandX         = True
+                  expandY         = True
+                  type            = SoExaminerViewer
+                  preferredWidth  = 800
+                  preferredHeight = 800
+                }
+              }
+            }
+            TabView "Distance view" {
+              Box 3DView {
+                Viewer SoExaminerViewer4.self {
+                  expandX         = True
+                  expandY         = True
+                  type            = SoExaminerViewer
+                  preferredWidth  = 800
+                  preferredHeight = 800
+                }
+              }
             }
           }
           Box Settings {
-            Viewer CSOManager3.self {
-              expandX = True
-              expandY = True
+            Box "CSO" {        
+              ListView CSOList.csoTreeView {
+                name                    = csoListView
+                sortByColumn            = 1
+                selectionMode           = Single
+                selectionChangedCommand = CSOSelected
+                headerTitles            = "Id|Label"
+                visibleRows             = 10
+                columnSeparator = "|"
+              }
+              FieldListener csoDisplayTree   { command = updateCSOListView   }
+              FieldListener csoSelectedItems { command = updateCSOListViewSelection }
+              Horizontal {
+                alignX = Left             
+                Field CSOList.csoRemoveSelected {
+                  title = "Remove"
+                }
+              }
             }
             preferredWidth  = 400
             preferredHeight = 800
@@ -155,10 +184,11 @@ Window MyViewer {
           
 
           Box 2DView {
-            Viewer OrthoView2D1.self {
+            Field OrthoView2D.layout {}
+            Viewer OrthoView2D.self {
               expandX = True
               expandY = True
-              SoRenderArea
+              type = SoRenderArea
             }
             preferredWidth  = 700
             preferredHeight = 800
