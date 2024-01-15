@@ -65,8 +65,8 @@ module SoCustomExaminerViewer {
     height = 0.78539819
     position = "183.339141845703 -316.306488037109 70.1324615478516"
     orientation = "-0.925640642642975 -0.200036510825157 -0.321208298206329 4.90985727310181"
-    nearDistance = 181.51173
-    farDistance = 537.14923
+    nearDistance = 181.5117
+    farDistance = 537.14917
     focalDistance = 369.0408
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -1273,7 +1273,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.0032918
+    timing = 0.00961295833333333
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -1533,10 +1533,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-188.552001953125 -176.718078613281 -0.147018432617188"
-    orientation = "0.844557046890259 -0.0299132093787193 -0.53462940454483 2.114253282547"
-    nearDistance = 177.15178
-    farDistance = 361.34241
+    position = "225.712615966797 38.3002128601074 154.824325561523"
+    orientation = "0.43411260843277 0.35174036026001 0.829352200031281 2.20501232147217"
+    nearDistance = 174.05731
+    farDistance = 364.00107
     focalDistance = 264.31421
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -2150,10 +2150,10 @@ module CSOManager {
     outputApplicationEventsDebug = FALSE
     csoTreeView = ""
     groupTreeView = ""
-    numSelectedCSOs = 1
+    numSelectedCSOs = 0
     numSelectedGroups = 0
     selectedCSOsGroupIds = ""
-    csoTabSelected = TRUE
+    csoTabSelected = FALSE
     groupTabSelected = FALSE
     selectionTabSelected = FALSE
     notificationTabSelected = FALSE
@@ -2273,7 +2273,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "38.0866889953613 -472.665008544922 -163.836227416992"
-    camOrientation = "0.984877467155457 -0.115100167691708 0.129492551088333 1.96816670894623"
+    camOrientation = "0.984877526760101 -0.115100175142288 0.129492551088333 1.96816670894623"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 647.94598
     camNear = 369.07748
@@ -2812,7 +2812,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "152.679473876953 148.983856201172 210.364028930664"
-    orientation = "0.306064337491989 0.206128388643265 0.929427683353424 3.2597815990448"
+    orientation = "0.306064307689667 0.206128373742104 0.929427623748779 3.2597815990448"
     nearDistance = 172.63326
     farDistance = 387.62195
     focalDistance = 279.61945
@@ -2842,7 +2842,7 @@ module BaseSwitch {
       window _default {
         geometry = "815 520 291 101"
         sizeHint = "291 101"
-                wasOpen = no
+        wasOpen = no
       }
     }
   }
@@ -2868,7 +2868,7 @@ module LocalCSOLoad {
   }
   fields  {
     instanceName = Pyramidal_tract
-    name = $(NETWORK)/Pyramidal_tract.cs
+    name = $(NETWORK)/Pyramidal_tract.cso
     autoApply = TRUE
   }
 }
