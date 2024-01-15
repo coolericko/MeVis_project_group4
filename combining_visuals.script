@@ -160,7 +160,7 @@ Window MyViewer {
           }
           Box Settings {
             Box "CSO" {        
-              ListView CSOList.csoTreeView {
+              ListView CSOList.csoDisplayTree {
                 name                    = csoListView
                 sortByColumn            = 1
                 selectionMode           = Single
