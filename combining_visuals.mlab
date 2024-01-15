@@ -63,10 +63,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-255.779327392578 -232.271423339844 36.757438659668"
-    orientation = "-0.80437433719635 0.319254398345947 0.501057505607605 4.6290078163147"
-    nearDistance = 178.19629
-    farDistance = 505.17346
+    position = "183.339141845703 -316.306488037109 70.1324615478516"
+    orientation = "-0.925640642642975 -0.200036510825157 -0.321208298206329 4.90985727310181"
+    nearDistance = 181.51173
+    farDistance = 537.14923
     focalDistance = 369.0408
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -254,7 +254,7 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "0 0 0"
+    currentColor = "1 1 1"
     currentOpacity = 0
     currentPosition = 0
     currentIndex = 0
@@ -268,8 +268,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 404.338012695312 0.0536246001720428 0.0536246001720428 0.0536246001720428, 404.342010498047 0.0777311027050018 0.0777311027050018 0.0777311027050018, 628.018981933594 0.361681014299393 0.361681014299393 0.361681014299393, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 404.338012695312 0, 404.342010498047 0.055214699357748, 628.018981933594 0.00613497011363506, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 761.484008789062 0.0530464015901089 0 0.218174993991852, 1077.42004394531 1 0 0.0392156988382339, 1174.63000488281 1 1 1, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 0.00409500021487474 0, 761.484008789062 0, 1077.42004394531 0.602446019649506, 1174.63000488281 0.706421971321106, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -294,7 +294,7 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 0.096000001
+    tagAlpha = 1
     newLutName = asdfb
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
 <General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
@@ -303,7 +303,7 @@ module SoLUTEditor2D {
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
 <Veins,1,1,(1 1 1)>
-<Untitled,1,1,(1 1 1)>
+<,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
@@ -2960,12 +2960,12 @@ module PythonArithmetic {
     calculateOutputSubImage = "out = numpy.zeros(in0.shape)
 out = numpy.squeeze(out)
 
-#img_in = numpy.squeeze(in0)
-#cone = numpy.squeeze(in1)
-#out[0:100, 0:100, 0:100] = numpy.clip(out[0:100, 0:100, 0:100] + cone[0:100, 0:100, 0:100], 0, maxVoxelValue)"
+img_in = numpy.squeeze(in0)
+cone = numpy.squeeze(in1)
+out[0:coneSize, 0:coneSize, 0:coneSize] = numpy.clip(out[0:coneSize, 0:coneSize, 0:coneSize] + cone[0:coneSize, 0:coneSize, 0:coneSize], 0, maxVoxelValue)"
     calculateInputSubImageBox = ""
     calculateOutputImageProperties = "outImage.setImageExtent(inImage0.imageExtent())
-outImage.setPageExtent(inImage0.pageExtent())
+outImage.setPageExtent(inImage0.ImageExtent())
 "
     numberOfInputs = 2
     doubleConstant0 = 0
@@ -3014,10 +3014,17 @@ module Mask {
     frame = "749 1245 120 72"
     moduleGroupName = Masking
     showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "784 508 441 124"
+        sizeHint = "353 124"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = Mask
-    mode = MaskedOriginal
+    mode = MaskedOriginalInv
     outputImageSize = InvalidateOutputIfSizesDiffer
     blending = 0.5
     background = 0
@@ -3042,15 +3049,15 @@ module Reformat {
   }
   fields  {
     instanceName = Reformat
-    matrix = "1 0 0 0
-0 1 0 0
-0 0 1 0
+    matrix = "1 0 0 -50
+0 1 0 -50
+0 0 1 -50
 0 0 0 1"
     useInventorComposition = FALSE
     composeMatrix = TRUE
     scale = "1 1 1"
     rotation = "0 0 1 0"
-    translation = "0 0 0"
+    translation = "50 50 50"
     center = "3.5189102292059 -13.6830211728816 -8.18044732138458"
     fillValue = 0
     interactive = TRUE
