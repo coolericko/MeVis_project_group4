@@ -72,28 +72,42 @@ Window MyViewer {
             preferredWidth  = 400
             preferredHeight = 800
             
-            Box LUTs {
-              ListView SoLUTEditor2D.lutList {
-                name                    = lutListView
-                layout                  = "e"
-                header                  = No
-                selectionMode           = Single
-                visibleRows             = 8
-                selectionChangedCommand = lutSelected
-                itemRenamedCommand      = lutRenamed
-              }
-              Field SoLUTEditor2D.addLut {}
-              Field SoLUTEditor2D.removeLut {}
-              Field SoLUTEditor2D.newLutName {}
-              Field SoLUTEditor2D.lutNameChanged {}
+            TabView {
+              TabViewItem "LUT Settings" {
+                Box LUTs {
+                  ListView SoLUTEditor2D.lutList {
+                    name                    = lutListView
+                    layout                  = "e"
+                    header                  = No
+                    selectionMode           = Single
+                    visibleRows             = 8
+                    selectionChangedCommand = lutSelected
+                    itemRenamedCommand      = lutRenamed
+                  }
+                  Field SoLUTEditor2D.addLut {}
+                  Field SoLUTEditor2D.removeLut {}
+                  Field SoLUTEditor2D.newLutName {}
+                  Field SoLUTEditor2D.lutNameChanged {}
               
-              ListView SoLUTEditor2D.tagList {
-                name                    = tagListView
-                selectionChangedCommand = tagSelected
+                  ListView SoLUTEditor2D.tagList {
+                    name                    = tagListView
+                    selectionChangedCommand = tagSelected
+                  }
+                  Field SoLUTEditor2D.tagListItems {}
+                  Field SoLUTEditor2D.assignToLut{}
+                  Field SoLUTEditor2D.clear{}
+                }
               }
-              Field SoLUTEditor2D.tagListItems {}
-              Field SoLUTEditor2D.assignToLut{}
-              Field SoLUTEditor2D.clear{}
+              TabViewItem "Mask Settings" {
+                Field Reformat.composeMatrix {}
+                Box Components { dependsOn = Reformat.composeMatrix layout = Vertical
+                  Field Reformat.resetMatrix {}
+                  Field Reformat.scale {}
+                  Field Reformat.translation {}
+                  Field Reformat.center      {}
+                  Field Reformat.rotation    {}
+                }
+              }
             }
           }  
 
@@ -170,8 +184,6 @@ Window MyViewer {
                 visibleRows             = 10
                 columnSeparator = "|"
               }
-              FieldListener csoDisplayTree   { command = updateCSOListView   }
-              FieldListener csoSelectedItems { command = updateCSOListViewSelection }
               Horizontal {
                 alignX = Left             
                 Field CSOList.csoRemoveSelected {

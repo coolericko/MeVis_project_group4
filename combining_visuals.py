@@ -17,10 +17,3 @@ def tagSelected():
   
 def CSOSelected():
   ctx.field('CSOManager.CSOListItem').value = ctx.control('CSOListView').currentItem().text(0)
-  
-  
-def CSOName():
-  if ctx.field('BaseSwitch.currentInput').value == 0
-    name = ctx.field('LocalCSOLoad').name
-  else
-    name = ctx.field('LocalCSOLoad1').name
