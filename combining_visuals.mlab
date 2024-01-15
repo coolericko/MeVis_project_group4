@@ -63,10 +63,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-326.436614990234 -109.841987609863 -80.6306457519531"
-    orientation = "-0.681707203388214 0.604270040988922 0.4124715924263 4.34310436248779"
-    nearDistance = 223.81021
-    farDistance = 476.63879
+    position = "-255.779327392578 -232.271423339844 36.757438659668"
+    orientation = "-0.80437433719635 0.319254398345947 0.501057505607605 4.6290078163147"
+    nearDistance = 178.19629
+    farDistance = 505.17346
     focalDistance = 369.0408
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -811,6 +811,11 @@ module LocalImage {
       window _default {
         geometry = "974 674 613 166"
         sizeHint = "613 166"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "710 270 500 600"
+        sizeHint = "260 223"
         wasOpen = no
       }
     }
@@ -2243,6 +2248,11 @@ module LocalCSOLoad {
         sizeHint = "489 252"
         wasOpen = no
       }
+      window _automatic {
+        geometry = "710 270 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
     }
   }
   fields  {
@@ -2928,13 +2938,258 @@ module LocalCSOLoad {
     autoApply = TRUE
   }
 }
+module PythonArithmetic {
+  internal  {
+    frame = "1273 1413 128 56"
+    moduleGroupName = Masking
+    windows  {
+      window _default {
+        geometry = "195 247 485 508"
+        sizeHint = "485 508"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "556 246 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic
+    calculateOutputSubImage = "out = numpy.zeros(in0.shape)
+out = numpy.squeeze(out)
+
+img_in = numpy.squeeze(in0)
+cone = numpy.squeeze(in1)
+out[0:100, 0:100, 0:100] = numpy.clip(out[0:100, 0:100, 0:100] + cone[0:100, 0:100, 0:100], 0, maxVoxelValue)"
+    calculateInputSubImageBox = ""
+    calculateOutputImageProperties = "outImage.setImageExtent(inImage0.imageExtent())
+outImage.setPageExtent(inImage0.pageExtent())
+"
+    numberOfInputs = 2
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 0
+    doubleConstant3 = 0
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = ""
+    doubleConstantName1 = ""
+    doubleConstantName2 = ""
+    doubleConstantName3 = ""
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 2759
+    intConstant1 = 100
+    intConstant2 = 0
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = maxVoxelValue
+    intConstantName1 = coneSize
+    intConstantName2 = ""
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = TRUE
+    minVoxelValue = 0
+    maxVoxelValue = 2759
+    setDataType = FALSE
+    dataType = "unsigned int8"
+    inputDataType0 = "output type"
+    inputDataType1 = "output type"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module Mask {
+  internal  {
+    frame = "749 1245 120 72"
+    moduleGroupName = Masking
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 0
+  }
+}
+module Reformat {
+  internal  {
+    frame = "1205 1293 120 56"
+    moduleGroupName = Masking
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "759 257 418 626"
+        sizeHint = "402 626"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Reformat
+    matrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useInventorComposition = FALSE
+    composeMatrix = TRUE
+    scale = "1 1 1"
+    rotation = "0 0 1 0"
+    translation = "0 0 0"
+    center = "3.5189102292059 -13.6830211728816 -8.18044732138458"
+    fillValue = 0
+    interactive = TRUE
+    autoCenter = TRUE
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    button1Translate = Pressed
+    button2Translate = Released
+    button3Translate = Released
+    shiftTranslate = Released
+    ctrlTranslate = Released
+    altTranslate = Released
+    button1Rotate = Pressed
+    button2Rotate = Released
+    button3Rotate = Released
+    shiftRotate = Pressed
+    ctrlRotate = Released
+    altRotate = Released
+    updateMode = AutoUpdate
+  }
+}
+module VoxelizeInventorScene {
+  internal  {
+    frame = "1337 1557 192 56"
+    moduleGroupName = Masking
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1003 312 395 365"
+        sizeHint = "381 357"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "710 270 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VoxelizeInventorScene
+    allowCollectPoints = FALSE
+    allowCollectLines = FALSE
+    allowCollectTriangles = TRUE
+    voxelValue = 2759
+    lineWidth = 1
+    useAntiAliasing = TRUE
+    copyInputImage = TRUE
+    drawStyleAsScene = FALSE
+    voxelizeFilled = TRUE
+    includeBorderOnFill = FALSE
+    fillColor = "1 1 1"
+    fillAlpha = 1
+    voxelizeSurface = FALSE
+    autoUpdateInvScene = FALSE
+    autoUpdateMLImage = FALSE
+    autoUpdateParameter = FALSE
+    distanceMode = VoxelDistance
+    voxelizeColored = FALSE
+    showNumCollectedPrimitives = FALSE
+    useSuperSampling = FALSE
+  }
+}
+module GenerateImageForBoundingBox {
+  internal  {
+    frame = "1257 1677 208 56"
+    moduleGroupName = Masking
+    windows  {
+      window _default {
+        geometry = "775 397 370 346"
+        sizeHint = "370 346"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GenerateImageForBoundingBox
+    boundingBoxMode = InventorInput
+    minBoundingBox = "0 0 0"
+    maxBoundingBox = "1 1 1"
+    margin = "0 0 0"
+    voxelSetup = ImageExtent
+    imageExtent = "100 100 100"
+    voxelSize = "1 1 1"
+    voxelMargin = 0
+    dataType = float
+    updateMode = Off
+  }
+}
+module SoCone {
+  internal  {
+    frame = "1481 1677 80 56"
+    moduleGroupName = Masking
+    windows  {
+      window _default {
+        geometry = "875 472 198 196"
+        sizeHint = "171 196"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCone
+    parts = ALL
+    bottomRadius = 1
+    height = 2
+    sides = 0
+    sections = 0
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "1021 1485 152 72"
+    moduleGroupName = Masking
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "485 360 466 305"
+        sizeHint = "448 305"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1236 368 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan1
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
 connections  {
   SoCustomExaminerViewer1.children = "SoBackground3.self SoLUTEditor2.outInventorLUT SoGVRVolumeRenderer3.self SoLUTEditor2D.outInventorLUT SoGVRTagVolume.self SoGVRVolumeRenderer1.self"
-  Histogram.input0 = LocalImage4.outImage
-  SoGVRVolumeRenderer1.image = LocalImage4.outImage
+  Histogram.input0 = Mask.output0
+  SoGVRVolumeRenderer1.image = Mask.output0
   SoLUTEditor2D.inHistogram = Histogram.outputHistogramCurve
   DisplayLUT2.inLUT = SoLUTEditor2D.outLUT
-  SoGVRTagVolume.image = LocalImage4.outImage
+  SoGVRTagVolume.image = Mask.output0
   SoGVRVolumeRenderer3.image = LocalImage3.outImage
   DisplayLUT3.inLUT = SoLUTEditor2.outLUT
   Replicate1.input0 = Morphology7.output0
@@ -2991,6 +3246,20 @@ connections  {
   SoExaminerViewer5.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self"
   BaseSwitch.inputBaseObject0 = LocalCSOLoad.outCSOList
   BaseSwitch.inputBaseObject1 = LocalCSOLoad1.outCSOList
+  PythonArithmetic.input0 = LocalImage4.outImage
+  PythonArithmetic.input1 = VoxelizeInventorScene.output0
+  PythonArithmetic.intConstant0 = MinMaxScan1.maxValue
+  PythonArithmetic.minVoxelValue = MinMaxScan1.minValue
+  PythonArithmetic.maxVoxelValue = MinMaxScan1.maxValue
+  Mask.input0 = LocalImage4.outImage
+  Mask.input1 = Reformat.output0
+  Reformat.input0 = PythonArithmetic.output0
+  Reformat.input1 = PythonArithmetic.output0
+  VoxelizeInventorScene.input0 = GenerateImageForBoundingBox.output0
+  VoxelizeInventorScene.inInventorScene = SoCone.self
+  VoxelizeInventorScene.voxelValue = MinMaxScan1.maxValue
+  GenerateImageForBoundingBox.inputInventorScene = SoCone.self
+  MinMaxScan1.input0 = LocalImage4.outImage
 }
 networkModel  {
   parentItems  {
@@ -3009,6 +3278,17 @@ networkModel  {
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 283
         objectName = "DTI & Distance"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 173
+        objectName = Masking
         parentUniqueId = 0
         color  {
           r = 45
