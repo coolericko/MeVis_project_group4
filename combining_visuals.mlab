@@ -254,7 +254,7 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "1 1 1"
+    currentColor = "0 0 0"
     currentOpacity = 0
     currentPosition = 0
     currentIndex = 0
@@ -268,8 +268,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 761.484008789062 0.0530464015901089 0 0.218174993991852, 1077.42004394531 1 0 0.0392156988382339, 1174.63000488281 1 1 1, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 0.00409500021487474 0, 761.484008789062 0, 1077.42004394531 0.602446019649506, 1174.63000488281 0.706421971321106, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 404.338012695312 0.0536246001720428 0.0536246001720428 0.0536246001720428, 404.342010498047 0.0777311027050018 0.0777311027050018 0.0777311027050018, 628.018981933594 0.361681014299393 0.361681014299393 0.361681014299393, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 404.338012695312 0, 404.342010498047 0.055214699357748, 628.018981933594 0.00613497011363506, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -294,7 +294,7 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 1
+    tagAlpha = 0.096000001
     newLutName = asdfb
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
 <General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
@@ -1273,7 +1273,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.0040787
+    timing = 0.0032918
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -2339,7 +2339,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "38.0866889953613 -472.665008544922 -163.836227416992"
-    camOrientation = "0.984877407550812 -0.115100167691708 0.129492551088333 1.96816670894623"
+    camOrientation = "0.984877467155457 -0.115100167691708 0.129492551088333 1.96816670894623"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 647.94598
     camNear = 369.07748
@@ -2878,7 +2878,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "152.679473876953 148.983856201172 210.364028930664"
-    orientation = "0.306064337491989 0.206128388643265 0.929427623748779 3.2597815990448"
+    orientation = "0.306064337491989 0.206128388643265 0.929427683353424 3.2597815990448"
     nearDistance = 172.63326
     farDistance = 387.62195
     focalDistance = 279.61945
@@ -2944,7 +2944,7 @@ module PythonArithmetic {
     moduleGroupName = Masking
     windows  {
       window _default {
-        geometry = "195 247 485 508"
+        geometry = "247 235 485 508"
         sizeHint = "485 508"
         wasOpen = no
       }
@@ -2965,7 +2965,7 @@ cone = numpy.squeeze(in1)
 out[0:coneSize, 0:coneSize, 0:coneSize] = numpy.clip(out[0:coneSize, 0:coneSize, 0:coneSize] + cone[0:coneSize, 0:coneSize, 0:coneSize], 0, maxVoxelValue)"
     calculateInputSubImageBox = ""
     calculateOutputImageProperties = "outImage.setImageExtent(inImage0.imageExtent())
-outImage.setPageExtent(inImage0.ImageExtent())
+outImage.setPageExtent(inImage0.imageExtent())
 "
     numberOfInputs = 2
     doubleConstant0 = 0
