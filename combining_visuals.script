@@ -160,6 +160,17 @@ Window MyViewer {
           }
           Box Settings {
             Field BaseSwitch.currentInput {}
+            Label {
+              title = "Current CSO input: Optic Nerve"
+              textWrap = WordBreak
+              visibleOn = "* BaseSwitch.currentInput == 0 *"
+            }
+            Label {
+              title = "Current CSO input: Pyramidal tract"
+              textWrap = WordBreak
+              visibleOn = "* BaseSwitch.currentInput == 1 *"
+            }
+            
             Box "CSO" {        
               ListView CSOList.csoDisplayTree {
                 name                    = csoListView
