@@ -343,7 +343,7 @@ module View3D {
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
-        geometry = "14 344 1004 609"
+        geometry = "351 99 1004 609"
         sizeHint = "1004 609"
         wasOpen = no
       }
@@ -374,12 +374,12 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "458.451080322266 -223.432647705078 43.3096084594727"
-    camOrientation = "-0.754549562931061 -0.383936613798141 -0.532210230827332 4.37166500091553"
+    camPosition = "209.249710083008 -153.059326171875 92.2905349731445"
+    camOrientation = "-0.766209185123444 -0.34367573261261 -0.542964577674866 4.6726245880127"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 668.90863
-    camNear = 348.15704
-    camFocal = 508.37289
+    camFar = 443.39188
+    camNear = 90.83403
+    camFocal = 266.93701
     camHeight = 0.78539801
     decoration = FALSE
     annotations = TRUE
@@ -458,7 +458,7 @@ module View3D {
 }
 module TensorTractography {
   internal  {
-    frame = "1841 -467 144 56"
+    frame = "1767 -603 144 56"
     moduleGroupName = "DTI fiber tracking"
     windows  {
       window _default {
@@ -470,7 +470,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography1
-    timing = 0.0228003333333333
+    timing = -1
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -498,7 +498,7 @@ module TensorTractography {
 }
 module DTIInfo {
   internal  {
-    frame = "1569 -230 72 56"
+    frame = "1495 -366 72 56"
     moduleGroupName = "DTI fiber tracking"
     windows  {
       window _default {
@@ -549,7 +549,7 @@ module DTIInfo {
 }
 module DiffusionTensorAnalysis {
   internal  {
-    frame = "1709 -234 160 64"
+    frame = "1635 -370 160 64"
     moduleGroupName = "DTI fiber tracking"
     windows  {
       window _default {
@@ -606,7 +606,7 @@ module DiffusionTensorAnalysis {
 }
 module DecodeVendorSpecificDicomTags {
   internal  {
-    frame = "1617 -102 216 56"
+    frame = "1543 -238 216 56"
     moduleGroupName = "DTI fiber tracking"
   }
   fields  {
@@ -664,7 +664,7 @@ module SoExaminerViewer {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "602 422 400 400"
+        geometry = "343 252 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -723,11 +723,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-119.731857299805 262.213623046875 119.436660766602"
-    orientation = "0.0800930634140968 -0.580680131912231 -0.810182392597198 2.65184617042542"
-    nearDistance = 189.6254
-    farDistance = 413.29703
-    focalDistance = 301.2771
+    position = "-100.747360229492 286.119964599609 56.4215278625488"
+    orientation = "0.213042572140694 -0.620640873908997 -0.754597723484039 3.08921670913696"
+    nearDistance = 206.4248
+    farDistance = 394.04608
+    focalDistance = 297.00861
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -751,7 +751,7 @@ module View3D {
     moduleGroupName = "Remove Background"
     windows  {
       window _default {
-        geometry = "587 126 1004 609"
+        geometry = "1 130 1004 609"
         sizeHint = "1004 609"
         wasOpen = no
       }
@@ -782,7 +782,7 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "440.901763916016 78.909538269043 265.22216796875"
+    camPosition = "440.901763916016 78.9095306396484 265.22216796875"
     camOrientation = "0.337346792221069 0.58642590045929 0.736411452293396 1.70679688453674"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 654.21619
@@ -870,7 +870,7 @@ module CSOManager {
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "425 210 696 561"
+        geometry = "318 566 696 561"
         sizeHint = "696 561"
         wasOpen = no
       }
@@ -943,8 +943,8 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 0
-    numRedos = 0
+    numUndos = 10
+    numRedos = 2
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
     useSelectionGroupNotification = FALSE
@@ -1221,7 +1221,7 @@ module OrthoView2D {
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "700 376 400 430"
+        geometry = "1081 29 718 1048"
         sizeHint = "400 430"
         wasOpen = no
       }
@@ -1242,7 +1242,7 @@ module OrthoView2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     synchronizePosition = FALSE
-    layout = LAYOUT_SAGITTAL
+    layout = LAYOUT_AXIAL
     filterMode = FILTER_LINEAR
     synchronizeZoom = TRUE
     synchronizePanning = FALSE
@@ -1367,7 +1367,7 @@ module CSOSave {
   fields  {
     instanceName = CSOSave
     taskVerboseLogging = FALSE
-    fileName = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
+    fileName = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/Pyramidal_tract.cso"
     autoApply = TRUE
     saveSuccess = TRUE
     binary = TRUE
@@ -1380,7 +1380,7 @@ module View2D {
     moduleGroupName = "Mask for fibers"
     windows  {
       window _default {
-        geometry = "700 391 400 400"
+        geometry = "483 659 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1396,7 +1396,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 0
+    startSlice = 71
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -1553,8 +1553,8 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 0
-    numRedos = 0
+    numUndos = 10
+    numRedos = 2
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
     useSelectionGroupNotification = FALSE
@@ -1609,319 +1609,6 @@ module LocalCSOLoad {
     instanceName = LocalCSOLoad
     name = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
     autoApply = TRUE
-  }
-}
-module CSOManager {
-  internal  {
-    frame = "1977 533 112 56"
-    moduleGroupName = "Mask for fibers"
-    windows  {
-      window _default {
-        geometry = "38 265 696 561"
-        sizeHint = "696 561"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = CSOManager
-    workDirectlyOnInputCSOList = TRUE
-    updateCsoDisplayTree = TRUE
-    updateGroupDisplayTree = TRUE
-    selectLastCreatedGroup = TRUE
-    selectionColoringMode = SelectionColorModeFixed
-    selectionLineWidthMode = SelectionLineWidthWiden
-    selectionBrightenColor = 0.2
-    selectionFixedColor = "1 1 0.600000023841858"
-    selectionWidenLineWidth = 1
-    selectionFixedLineWidth = 2
-    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
-    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
-    selectedSeedPointBrightenColor = 0.5
-    selectedSeedPointFixedColor = "0 1 0"
-    selectedSeedPointEnlargeSize = 1
-    selectedSeedPointSize = 1
-    csoDefaultLabel = ""
-    csoDefaultLabelAddUniqueId = FALSE
-    csoDefaultLabelUniqueIdFormat = " (%i)"
-    csoDefaultLabelAddUniqueIdAlways = FALSE
-    csoDefaultDescription = ""
-    csoDefaultShowState = TRUE
-    csoDefaultVoxelizeState = TRUE
-    csoDefaultEditableState = TRUE
-    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
-    groupDefaultLabel = ""
-    groupDefaultLabelAddUniqueId = FALSE
-    groupDefaultLabelUniqueIdFormat = " (%i)"
-    groupDefaultLabelAddUniqueIdAlways = FALSE
-    groupDefaultDescription = ""
-    groupDefaultUseTimePointIndex = FALSE
-    groupDefaultTimePointIndex = 0
-    groupDefaultUseShowState = FALSE
-    groupDefaultShowState = TRUE
-    groupDefaultUseVoxelizeState = FALSE
-    groupDefaultVoxelizeState = TRUE
-    groupDefaultUseEditableState = FALSE
-    groupDefaultEditableState = TRUE
-    groupDefaultUsePathPointStyle = FALSE
-    groupDefaultPathPointStyle = LineStyleSolid
-    groupDefaultUsePathPointWidth = FALSE
-    groupDefaultPathPointWidth = 1
-    groupDefaultUsePathPointColor = FALSE
-    groupDefaultPathPointColor = "1 1 1"
-    groupDefaultUsePathPointAlpha = FALSE
-    groupDefaultPathPointAlpha = 1
-    groupDefaultUseSeedPointStyle = FALSE
-    groupDefaultSeedPointStyle = MarkerModeRect
-    groupDefaultUseSeedPointSize = FALSE
-    groupDefaultSeedPointSize = 3
-    groupDefaultUseSeedPointColor = FALSE
-    groupDefaultSeedPointColor = "0 1 0"
-    groupDefaultUseSeedPointAlpha = FALSE
-    groupDefaultSeedPointAlpha = 1
-    groupDefaultUseVoxelWriteMode = FALSE
-    groupDefaultVoxelWriteMode = VoxelWriteModeModule
-    groupDefaultUseVoxelWriteValue = FALSE
-    groupDefaultVoxelWriteValue = 1024
-    groupDefaultNumMaximumCSOs = 0
-    groupDefaultOverflowHandling = RemoveFirst
-    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
-    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
-    listSingleRemoveEmptyGroupHandling = RemoveAlways
-    listDefaultRemoveEmptyGroupHandling = RemoveAlways
-    enableUndoRedo = TRUE
-    numUndos = 0
-    numRedos = 0
-    undoStackLimit = 16
-    useSelectionCSONotification = FALSE
-    useSelectionGroupNotification = FALSE
-    useFinishedCSONotification = FALSE
-    useFinishedGroupNotification = FALSE
-    useCSOMovedNotification = FALSE
-    useRepaintNotification = FALSE
-    useInteractionInitNotification = FALSE
-    useStartNewCSONotification = FALSE
-    enableSelectionNotification = TRUE
-    enableFinishedNotification = TRUE
-    enableCSOMovedNotification = TRUE
-    enableRepaintNotification = TRUE
-    outputApplicationEventsDebug = FALSE
-    csoTreeView = ""
-    groupTreeView = ""
-    numSelectedCSOs = 1
-    numSelectedGroups = 0
-    selectedCSOsGroupIds = ""
-    csoTabSelected = TRUE
-    groupTabSelected = FALSE
-    selectionTabSelected = FALSE
-    notificationTabSelected = FALSE
-    defaultTabSelected = FALSE
-    csoCommonTabSelected = TRUE
-    csoVisualsTabSelected = FALSE
-    groupCommonTabSelected = TRUE
-    groupVisualsTabSelected = FALSE
-    groupMiscTabSelected = FALSE
-    notificationControlTabSelected = TRUE
-    notificationOutputCSOTabSelected = FALSE
-    notificationOutputGroupTabSelected = FALSE
-    defaultCSOCommonTabSelected = TRUE
-    defaultGroupCommonTabSelected = FALSE
-    defaultGroupVisualsTabSelected = FALSE
-    defaultGroupMiscTabSelected = FALSE
-  }
-}
-module VoxelizeFibers {
-  internal  {
-    frame = "2073 -587 112 56"
-    moduleGroupName = "DTI fiber tracking"
-    windows  {
-      window _default {
-        geometry = "600 528 238 124"
-        sizeHint = "238 124"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = VoxelizeFibers
-    thresholdForInterpolation = 2
-    interpolationStepSize = 1
-    autoApply = TRUE
-    autoUpdate = TRUE
-  }
-}
-module MinMaxScan {
-  internal  {
-    frame = "2229 -603 136 72"
-    moduleGroupName = "DTI fiber tracking"
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "675 439 469 305"
-        sizeHint = "450 305"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = MinMaxScan
-    updateMode = AutoUpdate
-    typeSelect = "Proposed Data Type"
-    preferredIntType = PreferUnsigned
-  }
-}
-module View3D {
-  internal  {
-    frame = "2441 -683 144 56"
-    moduleGroupName = "DTI fiber tracking"
-    windows  {
-      window _default {
-        geometry = "298 422 1132 609"
-        sizeHint = "1132 609"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = View3D2
-    autoViewAll = TRUE
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    lutType = Editor
-    rendererType = Slicer
-    currentTimePoint = 0
-    staticSamplingRate = 1
-    quality = 1
-    filterVolumeData = FilterLinear
-    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
-    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
-    lutEditorRelativeLut = FALSE
-    lutEditorColorInterpolation = InterpolateRGB
-    lutEditorAlphaFactor = 1
-    orientationProjectionType = PERSPECTIVE
-    orientationLocation = LOWER_RIGHT
-    orientationOn = TRUE
-    orientationModel = CUBE
-    greyCenter = 0.320000022649765
-    greyWidth = 0.635000228881836
-    alphaFactor = 1
-    colorFactor = "1 1 1"
-    camType = TRUE
-    camPosition = "-195.273223876953 -60.4495124816895 187.293365478516"
-    camOrientation = "0.504806160926819 -0.422640442848206 -0.752692341804504 1.42992985248566"
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 423.86337
-    camNear = 106.30573
-    camFocal = 264.92606
-    camHeight = 0.78539801
-    decoration = FALSE
-    annotations = TRUE
-    background = TRUE
-    mode = VolumeRendering
-    interactiveQuality = Medium
-  }
-  internalFields  {
-    renderer.gradientQuality = GradientQualityAutomatic
-    renderer.enhancementAlphaMix = 0.25
-    renderer.boundaryEnhancement = FALSE
-    renderer.boundaryEnhancementFactor = 1
-    renderer.boundaryEnhancementExponent = 1
-    renderer.boundaryEnhancementGradientBias = 0
-    renderer.silhouetteEnhancement = FALSE
-    renderer.silhouetteEnhancementExponent = 1
-    renderer.silhouetteEnhancementFactor = 1
-    renderer.toneShading = FALSE
-    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
-    renderer.toneShadingColdColor = "0 0 0.400000005960464"
-    renderer.toneShadingWarmDiffuse = 0.60000002
-    renderer.toneShadingColdDiffuse = 0.2
-    renderer.toneShadingAngle = 45
-    renderer.materialAmbient = 0.60000002
-    renderer.materialDiffuse = 1
-    renderer.materialSpecular = 1
-    renderer.materialSpecularity = 32
-    renderer.light1Enabled = TRUE
-    renderer.light1DiffuseIntensity = 1
-    renderer.light1SpecularIntensity = 1
-    renderer.light1Color = "1 1 1"
-    renderer.light1PolarPhi = 45
-    renderer.light1PolarRho = 0
-    renderer.light2Enabled = FALSE
-    renderer.light2DiffuseIntensity = 1
-    renderer.light2SpecularIntensity = 1
-    renderer.light2Color = "1 1 1"
-    renderer.light2PolarPhi = 0
-    renderer.light2PolarRho = 0
-    renderer.light3Enabled = FALSE
-    renderer.light3DiffuseIntensity = 1
-    renderer.light3SpecularIntensity = 1
-    renderer.light3Color = "1 1 1"
-    renderer.light3PolarPhi = -45
-    renderer.light3PolarRho = 0
-    renderer.sizeOutputX = 128
-    renderer.sizeOutputY = 128
-    renderer.sizeOutputZ = 72
-    renderer.subVolumeStartX = 0
-    renderer.subVolumeStartY = 0
-    renderer.subVolumeStartZ = 0
-    renderer.subVolumeEndX = 128
-    renderer.subVolumeEndY = 128
-    renderer.subVolumeEndZ = 72
-    clip.hideGeometry = FALSE
-    clip.on = FALSE
-    clip.left = FALSE
-    clip.right = FALSE
-    clip.top = FALSE
-    clip.bottom = FALSE
-    clip.rear = FALSE
-    clip.front = FALSE
-    clip.translation0 = "1 0 0"
-    clip.translation1 = "-1 0 0"
-    clip.translation2 = "0 1 0"
-    clip.translation3 = "0 -1 0"
-    clip.translation4 = "0 0 1"
-    clip.translation5 = "0 0 -1"
-    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
-    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
-    clip.rotation2 = "0 0 -1 3.1415901184082"
-    clip.rotation3 = "0 0 1 0"
-    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
-    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
-  }
-}
-module Bypass {
-  internal  {
-    frame = "2206 -179 112 56"
-    moduleGroupName = "DTI fiber tracking"
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = Bypass1
-    noBypass = FALSE
-  }
-}
-module Scale {
-  internal  {
-    frame = "2417 -563 192 72"
-    moduleGroupName = "DTI fiber tracking"
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "843 462 235 337"
-        sizeHint = "235 337"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = Scale
-    inputMin = 0
-    inputMax = 67
-    updateMode = AutoUpdateMinMaxOn
-    useTrueRange = FALSE
-    typeSelect = UInt16
-    outputMin = 0
-    outputMax = 65555
   }
 }
 module ImageLoad {
@@ -2026,7 +1713,7 @@ module SoWEMRenderer {
     faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
     faceAlphaValue = 1
     faceShininessValue = 1
-    primitiveValueLists = "LUT,LUT Perpendicular,LUT Tangential"
+    primitiveValueLists = LUT
     selectedPrimitiveValueList = LUT
     selectedPrimitiveValueAlphaList = LUT
     primitiveValueListValid = TRUE
@@ -2072,8 +1759,8 @@ module SoLUTEditor {
     colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
     alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
     alphaFactor = 1
-    newRangeMin = 9.5278778
-    newRangeMax = 116.26673
+    newRangeMin = 0
+    newRangeMax = 0
     newRangeMode = ClipFormerLUT
     colorEditorHeight = 24
     showColorEditor = TRUE
@@ -2225,7 +1912,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "239.89778137207 -343.727081298828 126.430976867676"
-    orientation = "0.83234566450119 0.540438234806061 0.122992493212223 1.38188350200653"
+    orientation = "0.832345724105835 0.540438294410706 0.122992508113384 1.38188350200653"
     nearDistance = 327.36047
     farDistance = 548.7417
     focalDistance = 411.18527
@@ -2385,11 +2072,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "120.66731262207 -75.5889282226563 135.365432739258"
-    orientation = "0.606667578220367 0.419090151786804 0.675512909889221 1.22722744941711"
-    nearDistance = 75.469841
-    farDistance = 303.64868
-    focalDistance = 233.21576
+    position = "-160.131057739258 -43.393497467041 -56.8058891296387"
+    orientation = "-0.61414110660553 0.769340455532074 0.175914853811264 4.36599206924438"
+    nearDistance = 181.86349
+    farDistance = 212.11092
+    focalDistance = 144.40062
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -2405,6 +2092,200 @@ module SoExaminerViewer {
     recordRotation = TRUE
     wheelZoomEnabled = TRUE
     wheelRotationEnabled = TRUE
+  }
+}
+module VoxelizeFibers {
+  internal  {
+    frame = "2344 -631 112 56"
+    moduleGroupName = "Voxelise vector field"
+    windows  {
+      window _default {
+        geometry = "600 528 238 124"
+        sizeHint = "238 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VoxelizeFibers
+    thresholdForInterpolation = 2
+    interpolationStepSize = 1
+    autoApply = TRUE
+    autoUpdate = TRUE
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "2500 -647 136 72"
+    moduleGroupName = "Voxelise vector field"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "675 439 469 305"
+        sizeHint = "450 305"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module View3D {
+  internal  {
+    frame = "2908 -725 144 56"
+    moduleGroupName = "Voxelise vector field"
+    windows  {
+      window _default {
+        geometry = "562 412 1132 609"
+        sizeHint = "1132 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D2
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Editor
+    rendererType = Slicer
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.320000022649765
+    greyWidth = 0.635000228881836
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "47.4486083984375 136.916900634766 114.874412536621"
+    camOrientation = "0.157390862703323 0.450880944728851 0.878598093986511 3.17174673080444"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 336.38257
+    camNear = 8.8018274
+    camFocal = 172.42857
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 128
+    renderer.sizeOutputY = 128
+    renderer.sizeOutputZ = 72
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 128
+    renderer.subVolumeEndY = 128
+    renderer.subVolumeEndZ = 72
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+module Scale {
+  internal  {
+    frame = "2681 -651 192 72"
+    moduleGroupName = "Voxelise vector field"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "843 462 235 337"
+        sizeHint = "235 337"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Scale
+    inputMin = 0
+    inputMax = 0
+    updateMode = AutoUpdateMinMaxOn
+    useTrueRange = FALSE
+    typeSelect = UInt16
+    outputMin = 0
+    outputMax = 65555
+  }
+}
+module Bypass {
+  internal  {
+    frame = "2352 -455 112 56"
+    moduleGroupName = "Voxelise vector field"
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = Bypass1
+    noBypass = FALSE
   }
 }
 connections  {
@@ -2444,13 +2325,6 @@ connections  {
   View2D1.inImage = ImageLoad.output0
   View2D1.inInvPreLUT = SoView2DCSOExtensibleEditor.self
   CSOList.inCSOList = LocalCSOLoad.outCSOList
-  CSOManager.inCSOList = CSOList.outCSOList
-  VoxelizeFibers.input0 = Bypass1.output0
-  VoxelizeFibers.inputFibers = TensorTractography1.outFiberSet
-  MinMaxScan.input0 = VoxelizeFibers.output0
-  View3D2.inImage = Scale.output0
-  Bypass1.input0 = SubImage.output0
-  Scale.input0 = MinMaxScan.output0
   SoDepthPeelRenderer1.children = SoWEMRenderer1.self
   SoWEMRenderer1.inWEM = WEMSurfaceDistance2.outWEM
   SoWEMRenderer1.inLUT = SoLUTEditor1.outLUT
@@ -2463,6 +2337,12 @@ connections  {
   SoWEMRenderer3.inWEM = Cancer.outWEM
   SubStructure.inImage = Scale.output0
   SoExaminerViewer5.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self"
+  VoxelizeFibers.input0 = Bypass1.output0
+  VoxelizeFibers.inputFibers = TensorTractography1.outFiberSet
+  MinMaxScan.input0 = VoxelizeFibers.output0
+  View3D2.inImage = Scale.output0
+  Scale.input0 = MinMaxScan.output0
+  Bypass1.input0 = SubImage.output0
 }
 networkModel  {
   parentItems  {
@@ -2503,6 +2383,17 @@ networkModel  {
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 199
         objectName = "Distance calculations"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 142
+        objectName = "Voxelise vector field"
         parentUniqueId = 0
         color  {
           r = 45
