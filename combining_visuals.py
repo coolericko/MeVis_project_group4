@@ -19,30 +19,8 @@ def CSOSelected():
   ctx.field('CSOManager.CSOListItem').value = ctx.control('CSOListView').currentItem().text(0)
   
   
-  
-# CSO Manager
-def updateCSOListView(field=None):
-  listView = ctx.control("csoListView")
-  alreadyCalledLater = listView.property("listNeedsUpdate") or listView.property("selectionNeedsUpdate")
-  if not alreadyCalledLater:
-    ctx.callLater(0, "updateCSOListViewLater")
-  listView.setProperty("listNeedsUpdate", True)
-  
-def updateCSOListViewSelection(field=None):
-  listView = ctx.control("csoListView")
-  alreadyCalledLater = listView.property("listNeedsUpdate") or listView.property("selectionNeedsUpdate")
-  if not alreadyCalledLater:
-    ctx.callLater(0, "updateCSOListViewLater")
-  listView.setProperty("selectionNeedsUpdate", True)
-  
-def updateCSOListViewLater():  
-  listView = ctx.control("csoListView")
-  if listView.property("listNeedsUpdate"):
-    listView.setProperty("listNeedsUpdate", None)
-    buildCSOListView()
-  listView.setProperty("selectionNeedsUpdate", None)
-  csoSelectionChanged()
-  
-def build():
-  csoDisplayTree = ctx.field("CSOManager.csoDisplayTree").stringValue()
-  csoStrings = csoDisplayTree.split("|")
+def CSOName():
+  if ctx.field('BaseSwitch.currentInput').value == 0
+    name = ctx.field('LocalCSOLoad').name
+  else
+    name = ctx.field('LocalCSOLoad1').name

@@ -63,10 +63,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-254.309799194336 -228.361831665039 53.5129737854004"
-    orientation = "-0.795003056526184 0.383796662092209 0.469755500555038 4.72960472106934"
-    nearDistance = 173.31915
-    farDistance = 508.25079
+    position = "-326.436614990234 -109.841987609863 -80.6306457519531"
+    orientation = "-0.681707203388214 0.604270040988922 0.4124715924263 4.34310436248779"
+    nearDistance = 223.81021
+    farDistance = 476.63879
     focalDistance = 369.0408
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -254,10 +254,10 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "0 0 0"
-    currentOpacity = 0
-    currentPosition = 0
-    currentIndex = 0
+    currentColor = "0.0777310952544212 0.0777310952544212 0.0777310952544212"
+    currentOpacity = 0.055214725
+    currentPosition = 404.34232
+    currentIndex = 2
     rangeMin = 0
     rangeMax = 4095
     viewMin = 0
@@ -268,8 +268,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 477.953002929688 0 0 0, 858.693969726562 0 0 0, 964.005981445312 0 0 0, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 477.953002929688 0, 858.693969726562 0, 964.005981445312 0, 4095 0.957186996936798 ]"
+    colorPoints = "[ 0 0 0 0, 404.338226318359 0.053624615073204 0.053624615073204 0.053624615073204, 404.342315673828 0.0777310952544212 0.0777310952544212 0.0777310952544212, 628.018798828125 0.361680895090103 0.361680895090103 0.361680895090103, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 404.338226318359 0, 404.342315673828 0.0552147254347801, 628.018798828125 0.00613496918231249, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -294,15 +294,16 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 0.096000001
+    tagAlpha = 1
     newLutName = asdfb
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
 <General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
+<Untitled=false,1,[0 0 0 0 0, 404.338 0.0536246 0.0536246 0.0536246 0, 404.342 0.0777311 0.0777311 0.0777311 0.0552147, 628.019 0.361681 0.361681 0.361681 0.00613497, 4095 1 1 1 1]>,
 <Veins=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 761.484 0.0530464 0 0.218175 0, 1077.42 1 0 0.0392157 0.602446, 1174.63 1 1 1 0.706422, 4095 1 1 1 1]>"
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
 <Veins,1,1,(1 1 1)>
-<,1,1,(1 1 1)>
+<Untitled,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
@@ -784,8 +785,8 @@ module SoLUTEditor {
 }
 module LocalImage {
   internal  {
-    frame = "624 846 184 72"
-    moduleGroupName = "Combined DVR Imaging"
+    frame = "-707 1685 184 72"
+    moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
@@ -803,8 +804,8 @@ module LocalImage {
 }
 module LocalImage {
   internal  {
-    frame = "1206 850 192 72"
-    moduleGroupName = "Combined DVR Imaging"
+    frame = "-343 1645 192 72"
+    moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
@@ -1267,7 +1268,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.0009698
+    timing = 0.00361
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -1405,6 +1406,13 @@ module DecodeVendorSpecificDicomTags {
   internal  {
     frame = "-1567 557 224 56"
     moduleGroupName = "DTI & Distance"
+    windows  {
+      window _default {
+        geometry = "861 558 199 24"
+        sizeHint = "199 24"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = DecodeVendorSpecificDicomTags1
@@ -1520,10 +1528,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-156.749176025391 -190.249893188477 100.918022155762"
-    orientation = "0.661476075649261 0.163608565926552 -0.731902837753296 2.10593152046204"
-    nearDistance = 186.42505
-    farDistance = 331.56857
+    position = "-188.552001953125 -176.718078613281 -0.147018432617188"
+    orientation = "0.844557046890259 -0.0299132093787193 -0.53462940454483 2.114253282547"
+    nearDistance = 177.15178
+    farDistance = 361.34241
     focalDistance = 264.31421
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -1580,7 +1588,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "-486.504913330078 -63.3395614624023 146.545928955078"
-    camOrientation = "0.505762994289398 -0.677370607852936 -0.534203052520752 1.62479448318481"
+    camOrientation = "0.505762994289398 -0.677370548248291 -0.534202992916107 1.62479448318481"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 647.72223
     camNear = 369.30099
@@ -1932,7 +1940,7 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1200.21252441406
+    grayWidth = 1207.10998535156
     grayCenter = 583.747009277344
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_SHORT
@@ -1940,7 +1948,7 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "-1.97020018100739 -14.0858430862427 -7.90365982055664"
+    worldPosition = "2.99522638320923 -13.4995937347412 -7.93282127380371"
     coloredMode = FALSE
   }
 }
@@ -2035,28 +2043,6 @@ module Bypass {
     noBypass = FALSE
   }
 }
-module CSOSave {
-  internal  {
-    frame = "-891 701 88 56"
-    moduleGroupName = "DTI & Distance"
-    windows  {
-      window _default {
-        geometry = "756 467 500 168"
-        sizeHint = "500 168"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = CSOSave
-    taskVerboseLogging = FALSE
-    fileName = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
-    autoApply = TRUE
-    saveSuccess = TRUE
-    binary = TRUE
-    listenToFinishedNotifications = FALSE
-  }
-}
 module View2D {
   internal  {
     frame = "-731 661 120 56"
@@ -2079,7 +2065,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 92
+    startSlice = 0
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -2207,7 +2193,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 16
+    numUndos = 0
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -2249,7 +2235,7 @@ module CSOManager {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "-803 1117 120 56"
+    frame = "-907 1149 120 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2261,7 +2247,7 @@ module LocalCSOLoad {
   }
   fields  {
     instanceName = LocalCSOLoad
-    name = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/test.cso"
+    name = $(NETWORK)/optic_nerve.cso
     autoApply = TRUE
   }
 }
@@ -2343,7 +2329,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "38.0866889953613 -472.665008544922 -163.836227416992"
-    camOrientation = "0.984877407550812 -0.115100175142288 0.129492565989494 1.96816670894623"
+    camOrientation = "0.984877467155457 -0.115100182592869 0.129492565989494 1.96816670894623"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 647.94598
     camNear = 369.07748
@@ -2451,51 +2437,12 @@ module Scale {
   fields  {
     instanceName = Scale
     inputMin = 0
-    inputMax = 25
+    inputMax = 39
     updateMode = AutoUpdateMinMaxOn
     useTrueRange = FALSE
     typeSelect = UInt16
     outputMin = 0
     outputMax = 65555
-  }
-}
-module ImageLoad {
-  internal  {
-    frame = "-147 61 184 72"
-    moduleGroupName = "DTI & Distance"
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "654 431 479 353"
-        sizeHint = "479 353"
-        wasOpen = no
-      }
-      window _automatic {
-        geometry = "650 291 853 600"
-        sizeHint = "260 223"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = ImageLoad1
-    filename = "//mac/Home/Documents/GitHub/MeVis_project_group4/contestData/case1_T1_post_tumormask.mlimage"
-    autoLoad = TRUE
-    readRaw = FALSE
-    rawX = 1
-    rawY = 1
-    rawZ = 1
-    rawC = 1
-    rawT = 1
-    rawU = 1
-    dataTypeRaw = "unsigned int8"
-    planarConfig = Contiguous
-    byteOrder = LittleEndian
-    dataOffset = 0
-    pageSizeHint = "0 0 0 0 0 0"
-    suppressErrorLog = FALSE
-    dicomIgnoreHalfVoxelShift = FALSE
-    enableCheckSumTests = FALSE
   }
 }
 module SoDepthPeelRenderer {
@@ -2561,7 +2508,7 @@ module SoWEMRenderer {
     faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
     faceAlphaValue = 1
     faceShininessValue = 1
-    primitiveValueLists = LUT
+    primitiveValueLists = "LUT,LUT Perpendicular,LUT Tangential"
     selectedPrimitiveValueList = LUT
     selectedPrimitiveValueAlphaList = LUT
     primitiveValueListValid = TRUE
@@ -2581,8 +2528,8 @@ module SoLUTEditor {
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
-        geometry = "1795 268 525 450"
-        sizeHint = "525 450"
+        geometry = "696 345 528 450"
+        sizeHint = "528 450"
         wasOpen = no
       }
       window _automatic {
@@ -2607,8 +2554,8 @@ module SoLUTEditor {
     colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
     alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
     alphaFactor = 1
-    newRangeMin = 0
-    newRangeMax = 0
+    newRangeMin = 10.112528
+    newRangeMax = 115.98571
     newRangeMode = ClipFormerLUT
     colorEditorHeight = 24
     showColorEditor = TRUE
@@ -2759,10 +2706,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-8.78374481201172 474.984039306641 -207.151153564453"
-    orientation = "-0.6628657579422 0.635221123695374 0.396362364292145 2.31993699073792"
-    nearDistance = 452.97556
-    farDistance = 599.49133
+    position = "516.91748046875 120.587356567383 44.5642013549805"
+    orientation = "-0.348796755075455 0.933889925479889 -0.0786797478795052 1.54517316818237"
+    nearDistance = 444.18216
+    farDistance = 612.88165
     focalDistance = 561.15039
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -2818,14 +2765,14 @@ module SoWEMRenderer {
     faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
     faceAlphaValue = 1
     faceShininessValue = 1
-    primitiveValueLists = ""
-    selectedPrimitiveValueList = ""
-    selectedPrimitiveValueAlphaList = ""
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
     primitiveValueListValid = TRUE
     primitiveValueListAlphaValid = TRUE
     overwriteAlphaWithPVL = FALSE
     wemPatchToRender = -1
-    maxWEMPatchIndex = -1
+    maxWEMPatchIndex = 0
     cachePatches = FALSE
     sendAdjacency = FALSE
     hitModifierKey = AllModifiersMask
@@ -2866,7 +2813,7 @@ module SoExaminerViewer {
     moduleGroupName = "DTI & Distance"
     windows  {
       window _viewer {
-        geometry = "418 297 400 400"
+        geometry = "193 246 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -2901,7 +2848,7 @@ module SoExaminerViewer {
     headlight = TRUE
     decoration = TRUE
     popupMenuEnabled = FALSE
-    viewing = FALSE
+    viewing = TRUE
     autoClipping = TRUE
     drawStyle = VIEW_AS_IS
     interactiveDrawStyle = VIEW_LOW_COMPLEXITY
@@ -2920,10 +2867,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-58.4681701660156 -238.48356628418 44.4041023254395"
-    orientation = "0.597015142440796 -0.603469669818878 0.528580367565155 1.77240312099457"
-    nearDistance = 182.29665
-    farDistance = 311.35855
+    position = "152.679473876953 148.983856201172 210.364028930664"
+    orientation = "0.306064367294312 0.206128403544426 0.929427683353424 3.2597815990448"
+    nearDistance = 172.63326
+    farDistance = 387.62195
     focalDistance = 279.61945
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -2942,23 +2889,43 @@ module SoExaminerViewer {
     wheelRotationEnabled = TRUE
   }
 }
-module LocalImage {
+module BaseSwitch {
   internal  {
-    frame = "-159 1149 192 72"
+    frame = "-837 1006 136 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "974 674 613 166"
-        sizeHint = "613 166"
+        geometry = "815 520 291 101"
+        sizeHint = "291 101"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = LocalImage6
-    name = $(NETWORK)/contestData/case1_T1_post.mlimage
-    autoLoad = TRUE
+    instanceName = BaseSwitch
+    currentInput = 1
+    currentOutput = 0
+    numberOfInputs = 2
+    numberOfOutputs = 1
+  }
+}
+module LocalCSOLoad {
+  internal  {
+    frame = "-747 1149 120 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _default {
+        geometry = "719 503 489 252"
+        sizeHint = "489 252"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalCSOLoad1
+    name = $(NETWORK)/Pyramidal_tract.cso
+    autoApply = TRUE
   }
 }
 connections  {
@@ -2995,16 +2962,15 @@ connections  {
   SoView2DCSOExtensibleEditor.inCSOList = CSOList.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOSplineEditor.self
   SoCSOSplineEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
-  OrthoView2D.image = LocalImage6.outImage
+  OrthoView2D.image = LocalImage4.outImage
   OrthoView2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
   CSOConvertToImage.input0 = Resample3D2.output0
   CSOConvertToImage.inCSOList = CSOList.outCSOList
   Resample3D2.input0 = Bypass2.output0
   Bypass2.input0 = LocalImage5.outImage
-  CSOSave.inCSOList = CSOList.outCSOList
-  View2D1.inImage = LocalImage6.outImage
+  View2D1.inImage = LocalImage4.outImage
   View2D1.inInvPreLUT = SoView2DCSOExtensibleEditor.self
-  CSOList.inCSOList = LocalCSOLoad.outCSOList
+  CSOList.inCSOList = BaseSwitch.outputBaseObject0
   VoxelizeFibers.input0 = Bypass3.output0
   VoxelizeFibers.inputFibers = TensorTractography2.outFiberSet
   MinMaxScan.input0 = VoxelizeFibers.output0
@@ -3018,11 +2984,13 @@ connections  {
   SoLUTEditor3.newRangeMax = WEMSurfaceDistance2.maximumDistance
   WEMSurfaceDistance2.inWEM = SubStructure.outWEM
   WEMSurfaceDistance2.inWEM2 = Cancer.outWEM
-  Cancer.inImage = ImageLoad1.output0
+  Cancer.inImage = LocalImage3.outImage
   SoExaminerViewer4.children = "SubStructure.outScene SoWEMRenderer3.self"
   SoWEMRenderer3.inWEM = Cancer.outWEM
   SubStructure.inImage = Scale.output0
   SoExaminerViewer5.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self"
+  BaseSwitch.inputBaseObject0 = LocalCSOLoad.outCSOList
+  BaseSwitch.inputBaseObject1 = LocalCSOLoad1.outCSOList
 }
 networkModel  {
   parentItems  {

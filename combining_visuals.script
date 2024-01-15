@@ -148,7 +148,7 @@ Window MyViewer {
             }
             TabView "Distance view" {
               Box 3DView {
-                Viewer SoExaminerViewer4.self {
+                Viewer SoExaminerViewer5.self {
                   expandX         = True
                   expandY         = True
                   type            = SoExaminerViewer
@@ -159,6 +159,7 @@ Window MyViewer {
             }
           }
           Box Settings {
+            Field BaseSwitch.currentInput {}
             Box "CSO" {        
               ListView CSOList.csoDisplayTree {
                 name                    = csoListView
