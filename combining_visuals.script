@@ -56,10 +56,10 @@ Window MyViewer {
           }
         }
       }
-      TabViewItem "DVR" {
-        Splitter {
+      TabViewItem "Viewer" {
+        Horizontal {
           Box 3DView {
-            Viewer SoCustomExaminerViewer1.self {
+            Viewer SoCustomExaminerViewer2.self {
               expandX = True
               expandY = True
               type    = SoCustomExaminerViewer
@@ -99,6 +99,7 @@ Window MyViewer {
                 }
               }
               TabViewItem "Mask Settings" {
+                CheckBox Switch.currentInput { title = "Show mask"}
                 Field Reformat.composeMatrix {}
                 Box Components { dependsOn = Reformat.composeMatrix layout = Vertical
                   Field Reformat.resetMatrix {}
@@ -108,8 +109,62 @@ Window MyViewer {
                   Field Reformat.rotation    {}
                 }
               }
+              TabViewItem "DTI" {
+                Vertical {
+                  Box Settings {
+                    CheckBox BaseSwitch.currentInput {}
+                    Label {
+                      title     = "Current CSO input: Optic Nerve"
+                      textWrap  = WordBreak
+                      visibleOn = "* BaseSwitch.currentInput == 0 *"
+                    }
+                    Label {
+                      title     = "Current CSO input: Pyramidal tract"
+                      textWrap  = WordBreak
+                      visibleOn = "* BaseSwitch.currentInput == 1 *"
+                    }
+                    
+                    CheckBox SoSwitch1.whichChild {
+                      title = "Toggle DTI"
+                    }
+                    
+                    CheckBox SoSwitch.whichChild {
+                      title = "DTI Mode"
+                    }
+                    Label {
+                      title = "Current mode: Fiber tracking view"
+                      textWrap  = WordBreak
+                      visibleOn = "* SoSwitch.currentInput == 0 *"
+                    }
+                    Label {
+                      title     = "Current mode: Distance calculation view"
+                      textWrap  = WordBreak
+                      visibleOn = "* SoSwitch.currentInput == 1 *"
+                    }
+                  }
+                  Box "DTI - CSO" {        
+                    ListView CSOList.csoDisplayTree {
+                      name                    = csoListView
+                      sortByColumn            = 1
+                      selectionMode           = Single
+                      selectionChangedCommand = CSOSelected
+                      headerTitles            = "Id|Label"
+                      visibleRows             = 10
+                      columnSeparator         = "|"
+                    }
+                    Horizontal {
+                      alignX = Left             
+                      Field CSOList.csoRemoveSelected {
+                        title = "Remove"
+                      }
+                    }
+                  }
+                  preferredWidth  = 400
+                  preferredHeight = 800
+                }  
+              }
             }
-          }  
+          }
 
           Box LUT {
             TabView {
@@ -140,83 +195,22 @@ Window MyViewer {
                   }
                 }
               }
-            }
-            preferredWidth  = 400
-            preferredHeight = 800
-          }
-        }
-      }
-      TabViewItem "DTI" {
-        Splitter {
-          TabView {
-            TabView "Fiber Tracking" {
-              Box 3DView {
-                Viewer SoExaminerViewer3.self {
-                  expandX         = True
-                  expandY         = True
-                  type            = SoExaminerViewer
-                  preferredWidth  = 800
+              TabViewItem "CSO selection" {
+                Box 2DView {
+                  Field OrthoView2D.layout {}
+                  Viewer OrthoView2D.self {
+                    expandX = True
+                    expandY = True
+                    type    = SoRenderArea
+                  }
+                  preferredWidth  = 700
                   preferredHeight = 800
-                }
-              }
-            }
-            TabView "Distance view" {
-              Box 3DView {
-                Viewer SoExaminerViewer5.self {
-                  expandX         = True
-                  expandY         = True
-                  type            = SoExaminerViewer
-                  preferredWidth  = 800
-                  preferredHeight = 800
-                }
-              }
-            }
-          }
-          Box Settings {
-            Field BaseSwitch.currentInput {}
-            Label {
-              title = "Current CSO input: Optic Nerve"
-              textWrap = WordBreak
-              visibleOn = "* BaseSwitch.currentInput == 0 *"
-            }
-            Label {
-              title = "Current CSO input: Pyramidal tract"
-              textWrap = WordBreak
-              visibleOn = "* BaseSwitch.currentInput == 1 *"
-            }
-            
-            Box "CSO" {        
-              ListView CSOList.csoDisplayTree {
-                name                    = csoListView
-                sortByColumn            = 1
-                selectionMode           = Single
-                selectionChangedCommand = CSOSelected
-                headerTitles            = "Id|Label"
-                visibleRows             = 10
-                columnSeparator = "|"
-              }
-              Horizontal {
-                alignX = Left             
-                Field CSOList.csoRemoveSelected {
-                  title = "Remove"
                 }
               }
             }
             preferredWidth  = 400
             preferredHeight = 800
-          }  
-          
-
-          Box 2DView {
-            Field OrthoView2D.layout {}
-            Viewer OrthoView2D.self {
-              expandX = True
-              expandY = True
-              type = SoRenderArea
-            }
-            preferredWidth  = 700
-            preferredHeight = 800
-          }   
+          }
         }
       }
     }

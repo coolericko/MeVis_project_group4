@@ -5,11 +5,11 @@ network  {
 }
 module SoCustomExaminerViewer {
   internal  {
-    frame = "878 194 208 56"
+    frame = "-601 616 208 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _viewer {
-        geometry = "1032 180 783 815"
+        geometry = "282 250 783 815"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -63,11 +63,11 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "183.339141845703 -316.306488037109 70.1324615478516"
-    orientation = "-0.925640642642975 -0.200036510825157 -0.321208298206329 4.90985727310181"
-    nearDistance = 181.5117
-    farDistance = 537.14917
-    focalDistance = 369.0408
+    position = "-108.574363708496 -288.865997314453 113.76944732666"
+    orientation = "-0.954126358032227 0.23364882171154 0.187219351530075 5.04307413101196"
+    nearDistance = 134.58246
+    farDistance = 507.75198
+    focalDistance = 363.59308
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -111,7 +111,7 @@ module SoCustomExaminerViewer {
 }
 module Histogram {
   internal  {
-    frame = "994 602 120 56"
+    frame = "-485 1024 120 56"
     moduleGroupName = "Combined DVR Imaging"
     showNetworkPanel = true
     windows  {
@@ -141,7 +141,7 @@ module Histogram {
 }
 module SoGVRVolumeRenderer {
   internal  {
-    frame = "1374 458 208 56"
+    frame = "33 941 208 56"
     moduleGroupName = "Combined DVR Imaging"
     showNetworkPanel = true
   }
@@ -237,7 +237,7 @@ module SoGVRVolumeRenderer {
 }
 module SoLUTEditor2D {
   internal  {
-    frame = "1074 458 120 56"
+    frame = "-339 925 120 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -268,8 +268,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 404.338012695312 0.0536246001720428 0.0536246001720428 0.0536246001720428, 404.342010498047 0.0777311027050018 0.0777311027050018 0.0777311027050018, 628.018981933594 0.361681014299393 0.361681014299393 0.361681014299393, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 404.338012695312 0, 404.342010498047 0.055214699357748, 628.018981933594 0.00613497011363506, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 696.315979003906 0.247059002518654 1 0, 696.320068359375 0 0 0, 1177.10998535156 0 0 0, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 0.00409500021487474 0, 696.315979003906 0.128833994269371, 696.320068359375 0, 1177.10998535156 0, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -294,11 +294,11 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 0.096000001
+    tagAlpha = 1
     newLutName = asdfb
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
 <General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
-<Untitled=false,1,[0 0 0 0 0, 404.338 0.0536246 0.0536246 0.0536246 0, 404.342 0.0777311 0.0777311 0.0777311 0.0552147, 628.019 0.361681 0.361681 0.361681 0.00613497, 4095 1 1 1 1]>,
+<Untitled=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 696.316 0.247059 1 0 0.128834, 696.32 0 0 0 0, 1177.11 0 0 0 0, 4095 1 1 1 1]>,
 <Veins=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 761.484 0.0530464 0 0.218175 0, 1077.42 1 0 0.0392157 0.602446, 1174.63 1 1 1 0.706422, 4095 1 1 1 1]>"
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
@@ -560,7 +560,7 @@ module SoLUTEditor2D {
 }
 module DisplayLUT {
   internal  {
-    frame = "1066 370 104 56"
+    frame = "-379 869 104 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -580,7 +580,7 @@ module DisplayLUT {
 }
 module SoGVRTagVolume {
   internal  {
-    frame = "1218 458 136 56"
+    frame = "-171 925 136 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -599,7 +599,7 @@ module SoGVRTagVolume {
 }
 module SoBackground {
   internal  {
-    frame = "506 530 120 56"
+    frame = "-819 725 120 56"
     moduleGroupName = "Combined DVR Imaging"
   }
   fields  {
@@ -612,9 +612,8 @@ module SoBackground {
 }
 module SoGVRVolumeRenderer {
   internal  {
-    frame = "798 506 208 56"
+    frame = "-655 925 208 56"
     moduleGroupName = "Combined DVR Imaging"
-    showNetworkPanel = true
     windows  {
       window _default {
         geometry = "764 288 392 560"
@@ -715,7 +714,7 @@ module SoGVRVolumeRenderer {
 }
 module DisplayLUT {
   internal  {
-    frame = "658 474 104 56"
+    frame = "-835 877 104 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -735,7 +734,7 @@ module DisplayLUT {
 }
 module SoLUTEditor {
   internal  {
-    frame = "678 570 112 56"
+    frame = "-791 933 112 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -785,7 +784,7 @@ module SoLUTEditor {
 }
 module LocalImage {
   internal  {
-    frame = "-707 1685 184 72"
+    frame = "-1579 1197 184 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -804,7 +803,7 @@ module LocalImage {
 }
 module LocalImage {
   internal  {
-    frame = "-343 1645 192 72"
+    frame = "-1255 1205 192 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -828,7 +827,7 @@ module LocalImage {
 }
 module LocalImage {
   internal  {
-    frame = "-987 1613 168 72"
+    frame = "-1915 1197 168 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -847,7 +846,7 @@ module LocalImage {
 }
 module Replicate {
   internal  {
-    frame = "-1827 733 88 56"
+    frame = "-2197 -37 88 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -870,7 +869,7 @@ module Replicate {
 }
 module VecBoxConvert {
   internal  {
-    frame = "-2023 829 128 56"
+    frame = "-2393 59 128 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -901,7 +900,7 @@ module VecBoxConvert {
 }
 module SubImage {
   internal  {
-    frame = "-1943 1085 96 56"
+    frame = "-2313 315 96 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -942,7 +941,7 @@ module SubImage {
 }
 module Threshold {
   internal  {
-    frame = "-2031 973 96 56"
+    frame = "-2401 203 96 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -965,7 +964,7 @@ module Threshold {
 }
 module Mask {
   internal  {
-    frame = "-2231 789 80 56"
+    frame = "-2601 19 80 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -985,7 +984,7 @@ module Mask {
 }
 module Info {
   internal  {
-    frame = "-2095 901 64 56"
+    frame = "-2465 131 64 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1001,7 +1000,7 @@ module Info {
 }
 module Morphology {
   internal  {
-    frame = "-1931 949 104 56"
+    frame = "-2301 179 104 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1036,7 +1035,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "-1819 917 104 56"
+    frame = "-2189 147 104 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1071,7 +1070,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "-1699 877 104 56"
+    frame = "-2069 107 104 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1106,7 +1105,7 @@ module Morphology {
 }
 module Morphology {
   internal  {
-    frame = "-1579 829 104 72"
+    frame = "-1949 59 104 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -1142,7 +1141,7 @@ module Morphology {
 }
 module View3D {
   internal  {
-    frame = "-1775 1181 144 56"
+    frame = "-2145 411 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1261,7 +1260,7 @@ module View3D {
 }
 module TensorTractography {
   internal  {
-    frame = "-1343 189 144 56"
+    frame = "-1713 -581 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1273,7 +1272,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.00961295833333333
+    timing = 0.0053872
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -1301,7 +1300,7 @@ module TensorTractography {
 }
 module DTIInfo {
   internal  {
-    frame = "-1615 429 80 56"
+    frame = "-1985 -341 80 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1352,7 +1351,7 @@ module DTIInfo {
 }
 module DiffusionTensorAnalysis {
   internal  {
-    frame = "-1475 429 168 56"
+    frame = "-1845 -341 168 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1409,7 +1408,7 @@ module DiffusionTensorAnalysis {
 }
 module DecodeVendorSpecificDicomTags {
   internal  {
-    frame = "-1567 557 224 56"
+    frame = "-1937 -213 224 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1426,7 +1425,7 @@ module DecodeVendorSpecificDicomTags {
 }
 module SoBackground {
   internal  {
-    frame = "-1531 21 120 56"
+    frame = "-1901 -749 120 56"
     moduleGroupName = "DTI & Distance"
   }
   fields  {
@@ -1439,7 +1438,7 @@ module SoBackground {
 }
 module SoFiberVis {
   internal  {
-    frame = "-1339 -3 104 56"
+    frame = "-1709 -773 104 56"
     moduleGroupName = "DTI & Distance"
   }
   fields  {
@@ -1468,96 +1467,9 @@ module SoFiberVis {
     allowClip = TRUE
   }
 }
-module SoExaminerViewer {
-  internal  {
-    frame = "-1454 -130 144 56"
-    moduleGroupName = "DTI & Distance"
-    windows  {
-      window _viewer {
-        geometry = "602 422 400 400"
-        sizeHint = "400 400"
-        wasOpen = no
-      }
-      window _automatic {
-        geometry = "717 330 500 600"
-        sizeHint = "260 223"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoExaminerViewer3
-    renderCaching = AUTO
-    boundingBoxCaching = AUTO
-    renderCulling = AUTO
-    pickCulling = AUTO
-    border = FALSE
-    background = "0 0 0"
-    transparency = BLEND
-    antialiasing = FALSE
-    antialiasingNumPasses = 1
-    useSampleBuffers = FALSE
-    numSamples = 8
-    grabKeyFocus = TRUE
-    enableKeyCommands = TRUE
-    snapshotFormat = SNAPSHOT_RGB
-    outputAviFile = ""
-    autoRedrawWhenRecording = TRUE
-    frameRate = 7
-    frameRateAvi = 15
-    outputSnapshotFile = none
-    outputSnapshotFileWritten = none
-    autoIncreaseFile = TRUE
-    showSnapshotWithShell = FALSE
-    snapCount = 0
-    inputDevicesList = ""
-    headlight = TRUE
-    decoration = TRUE
-    popupMenuEnabled = FALSE
-    viewing = TRUE
-    autoClipping = TRUE
-    drawStyle = VIEW_AS_IS
-    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
-    viewAllFlag = FALSE
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    applyCameraOrientation = CAMERA_KEEP_AS_IS
-    cameraType = CAMERA_PERSPECTIVE
-    autoApplyUserSettingOrientation = FALSE
-    userSettingOrientation = "0 0 1 0"
-    automaticViewAll = FALSE
-    storeCurrentState = TRUE
-    saveCamera = TRUE
-    cursor = TRUE
-    isCameraStored = TRUE
-    perspective = TRUE
-    stereoViewing = FALSE
-    stereoOffset = 3
-    height = 0.78539819
-    position = "225.712615966797 38.3002128601074 154.824325561523"
-    orientation = "0.43411260843277 0.35174036026001 0.829352200031281 2.20501232147217"
-    nearDistance = 174.05731
-    farDistance = 364.00107
-    focalDistance = 264.31421
-    forceRedrawOnInteraction = FALSE
-    button1events = TO_VIEWER
-    button2events = TO_VIEWER
-    button3events = TO_VIEWER
-    keyEvents = TO_VIEWER
-    animationEnabled = FALSE
-    feedback = FALSE
-    feedbackSize = 32
-    mouseInteraction = ""
-    rotationAxis = "0 1 0"
-    rotationAngle = 360
-    rotationSteps = 80
-    recordRotation = TRUE
-    wheelZoomEnabled = FALSE
-    wheelRotationEnabled = FALSE
-  }
-}
 module View3D {
   internal  {
-    frame = "-2223 637 144 56"
+    frame = "-2593 -133 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1676,7 +1588,7 @@ module View3D {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "-651 821 200 56"
+    frame = "-1021 51 200 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1725,7 +1637,7 @@ module SoView2DCSOExtensibleEditor {
 }
 module SoCSOSplineEditor {
   internal  {
-    frame = "-623 925 144 56"
+    frame = "-993 155 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1779,7 +1691,7 @@ module SoCSOSplineEditor {
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "-643 1013 184 56"
+    frame = "-1013 243 184 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1908,7 +1820,7 @@ module SoCSOVisualizationSettings {
 }
 module OrthoView2D {
   internal  {
-    frame = "-427 645 120 56"
+    frame = "-797 -125 120 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -1933,7 +1845,7 @@ module OrthoView2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     synchronizePosition = FALSE
-    layout = LAYOUT_SAGITTAL
+    layout = LAYOUT_CUBE_EQUAL
     filterMode = FILTER_LINEAR
     synchronizeZoom = TRUE
     synchronizePanning = FALSE
@@ -1953,13 +1865,13 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = FALSE
-    worldPosition = "2.99522638320923 -13.4995937347412 -7.93282127380371"
+    worldPosition = "-17.8269748687744 -15.9707221984863 -2.43935990333557"
     coloredMode = FALSE
   }
 }
 module CSOVoxelizeContours {
   internal  {
-    frame = "-1067 753 152 64"
+    frame = "-1437 -17 152 64"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2013,7 +1925,7 @@ module CSOVoxelizeContours {
 }
 module Resample3D {
   internal  {
-    frame = "-1055 885 112 56"
+    frame = "-1425 115 112 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2039,7 +1951,7 @@ module Resample3D {
 }
 module Bypass {
   internal  {
-    frame = "-1023 1077 112 56"
+    frame = "-1393 307 112 56"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
   }
@@ -2050,7 +1962,7 @@ module Bypass {
 }
 module CSOManager {
   internal  {
-    frame = "-831 905 112 64"
+    frame = "-1201 135 112 64"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2174,7 +2086,7 @@ module CSOManager {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "-907 1149 120 56"
+    frame = "-1277 375 120 64"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2197,7 +2109,7 @@ module LocalCSOLoad {
 }
 module VoxelizeFibers {
   internal  {
-    frame = "-839 141 112 56"
+    frame = "-1209 -629 112 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2217,7 +2129,7 @@ module VoxelizeFibers {
 }
 module MinMaxScan {
   internal  {
-    frame = "-687 125 144 72"
+    frame = "-1053 -645 136 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2237,7 +2149,7 @@ module MinMaxScan {
 }
 module View3D {
   internal  {
-    frame = "-543 -19 144 56"
+    frame = "-913 -789 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2273,7 +2185,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "38.0866889953613 -472.665008544922 -163.836227416992"
-    camOrientation = "0.984877526760101 -0.115100175142288 0.129492551088333 1.96816670894623"
+    camOrientation = "0.984877467155457 -0.115100167691708 0.129492551088333 1.96816670894623"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 647.94598
     camNear = 369.07748
@@ -2356,7 +2268,7 @@ module View3D {
 }
 module Bypass {
   internal  {
-    frame = "-839 341 112 56"
+    frame = "-1209 -429 112 56"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
   }
@@ -2367,7 +2279,7 @@ module Bypass {
 }
 module Scale {
   internal  {
-    frame = "-495 165 192 72"
+    frame = "-865 -605 192 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2381,7 +2293,7 @@ module Scale {
   fields  {
     instanceName = Scale
     inputMin = 0
-    inputMax = 39
+    inputMax = 67
     updateMode = AutoUpdateMinMaxOn
     useTrueRange = FALSE
     typeSelect = UInt16
@@ -2391,7 +2303,7 @@ module Scale {
 }
 module SoDepthPeelRenderer {
   internal  {
-    frame = "-439 -699 160 56"
+    frame = "-809 -1469 160 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2417,7 +2329,7 @@ module SoDepthPeelRenderer {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "-451 -595 168 72"
+    frame = "-821 -1365 168 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2468,7 +2380,7 @@ module SoWEMRenderer {
 }
 module SoLUTEditor {
   internal  {
-    frame = "-255 -467 112 56"
+    frame = "-625 -1237 112 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2498,8 +2410,8 @@ module SoLUTEditor {
     colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
     alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
     alphaFactor = 1
-    newRangeMin = 10.112528
-    newRangeMax = 115.98571
+    newRangeMin = 9.5278778
+    newRangeMax = 116.26673
     newRangeMode = ClipFormerLUT
     colorEditorHeight = 24
     showColorEditor = TRUE
@@ -2523,7 +2435,7 @@ module SoLUTEditor {
 }
 module WEMSurfaceDistance {
   internal  {
-    frame = "-479 -443 192 72"
+    frame = "-849 -1213 192 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2564,7 +2476,7 @@ module WEMSurfaceDistance {
 }
 module IsoSurface {
   internal  {
-    frame = "-143 -103 128 64"
+    frame = "-513 -873 128 64"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2592,7 +2504,7 @@ module IsoSurface {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "-167 -363 144 56"
+    frame = "-537 -1133 144 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _viewer {
@@ -2674,7 +2586,7 @@ module SoExaminerViewer {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "-83 -235 168 72"
+    frame = "-453 -1005 168 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2725,7 +2637,7 @@ module SoWEMRenderer {
 }
 module IsoSurface {
   internal  {
-    frame = "-339 -39 136 64"
+    frame = "-709 -809 136 64"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2751,91 +2663,9 @@ module IsoSurface {
     selectedTab = 0
   }
 }
-module SoExaminerViewer {
-  internal  {
-    frame = "-127 -843 144 56"
-    moduleGroupName = "DTI & Distance"
-    windows  {
-      window _viewer {
-        geometry = "193 246 400 400"
-        sizeHint = "400 400"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoExaminerViewer5
-    renderCaching = AUTO
-    boundingBoxCaching = AUTO
-    renderCulling = AUTO
-    pickCulling = AUTO
-    border = FALSE
-    background = "0 0 0"
-    transparency = BLEND
-    antialiasing = FALSE
-    antialiasingNumPasses = 1
-    useSampleBuffers = FALSE
-    numSamples = 8
-    grabKeyFocus = TRUE
-    enableKeyCommands = TRUE
-    snapshotFormat = SNAPSHOT_RGB
-    outputAviFile = ""
-    autoRedrawWhenRecording = TRUE
-    frameRate = 7
-    frameRateAvi = 15
-    outputSnapshotFile = none
-    outputSnapshotFileWritten = none
-    autoIncreaseFile = TRUE
-    showSnapshotWithShell = FALSE
-    snapCount = 0
-    inputDevicesList = ""
-    headlight = TRUE
-    decoration = TRUE
-    popupMenuEnabled = FALSE
-    viewing = TRUE
-    autoClipping = TRUE
-    drawStyle = VIEW_AS_IS
-    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
-    viewAllFlag = FALSE
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    applyCameraOrientation = CAMERA_KEEP_AS_IS
-    cameraType = CAMERA_PERSPECTIVE
-    autoApplyUserSettingOrientation = FALSE
-    userSettingOrientation = "0 0 1 0"
-    automaticViewAll = FALSE
-    storeCurrentState = TRUE
-    saveCamera = TRUE
-    cursor = TRUE
-    isCameraStored = TRUE
-    perspective = TRUE
-    stereoViewing = FALSE
-    stereoOffset = 3
-    height = 0.78539819
-    position = "152.679473876953 148.983856201172 210.364028930664"
-    orientation = "0.306064307689667 0.206128373742104 0.929427623748779 3.2597815990448"
-    nearDistance = 172.63326
-    farDistance = 387.62195
-    focalDistance = 279.61945
-    forceRedrawOnInteraction = FALSE
-    button1events = TO_VIEWER
-    button2events = TO_VIEWER
-    button3events = TO_VIEWER
-    keyEvents = TO_VIEWER
-    animationEnabled = FALSE
-    feedback = FALSE
-    feedbackSize = 32
-    mouseInteraction = ""
-    rotationAxis = "0 1 0"
-    rotationAngle = 360
-    rotationSteps = 80
-    recordRotation = TRUE
-    wheelZoomEnabled = TRUE
-    wheelRotationEnabled = TRUE
-  }
-}
 module BaseSwitch {
   internal  {
-    frame = "-837 1006 136 72"
+    frame = "-1207 236 136 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2848,7 +2678,7 @@ module BaseSwitch {
   }
   fields  {
     instanceName = BaseSwitch
-    currentInput = 1
+    currentInput = 0
     currentOutput = 0
     numberOfInputs = 2
     numberOfOutputs = 1
@@ -2856,7 +2686,7 @@ module BaseSwitch {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "-747 1149 120 56"
+    frame = "-1117 375 120 64"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
@@ -2874,7 +2704,7 @@ module LocalCSOLoad {
 }
 module PythonArithmetic {
   internal  {
-    frame = "1273 1413 128 56"
+    frame = "-187 1603 128 56"
     moduleGroupName = Masking
     windows  {
       window _default {
@@ -2945,7 +2775,7 @@ outImage.setPageExtent(inImage0.imageExtent())
 }
 module Mask {
   internal  {
-    frame = "749 1245 120 72"
+    frame = "-719 1435 136 72"
     moduleGroupName = Masking
     showNetworkPanel = true
     windows  {
@@ -2966,12 +2796,12 @@ module Mask {
 }
 module Reformat {
   internal  {
-    frame = "1205 1293 120 56"
+    frame = "-247 1483 104 56"
     moduleGroupName = Masking
     windows  {
       window _default {
-        geometry = "1302 198 418 626"
-        sizeHint = "402 626"
+        geometry = "1302 198 502 705"
+        sizeHint = "484 705"
         wasOpen = no
       }
       window _automatic {
@@ -2983,16 +2813,16 @@ module Reformat {
   }
   fields  {
     instanceName = Reformat
-    matrix = "1 0 0 -50
-0 1 0 -50
-0 0 1 -50
+    matrix = "1 0 0 50
+0 1 0 -130
+0 0 1 10
 0 0 0 1"
     useInventorComposition = FALSE
     composeMatrix = TRUE
     scale = "1 1 1"
     rotation = "0 0 1 0"
-    translation = "50 50 50"
-    center = "3.5189102292059 -13.6830211728816 -8.18044732138458"
+    translation = "-50 130 -10"
+    center = "0 0 0"
     fillValue = 0
     interactive = TRUE
     autoCenter = TRUE
@@ -3016,13 +2846,13 @@ module Reformat {
 }
 module VoxelizeInventorScene {
   internal  {
-    frame = "1337 1557 192 56"
+    frame = "-123 1747 192 56"
     moduleGroupName = Masking
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "1003 312 395 365"
-        sizeHint = "381 357"
+        geometry = "1003 312 475 422"
+        sizeHint = "459 414"
         wasOpen = no
       }
       window _automatic {
@@ -3058,7 +2888,7 @@ module VoxelizeInventorScene {
 }
 module GenerateImageForBoundingBox {
   internal  {
-    frame = "1257 1677 208 56"
+    frame = "-203 1867 208 56"
     moduleGroupName = Masking
     windows  {
       window _default {
@@ -3084,7 +2914,7 @@ module GenerateImageForBoundingBox {
 }
 module SoCone {
   internal  {
-    frame = "1481 1677 80 56"
+    frame = "21 1867 80 56"
     moduleGroupName = Masking
     windows  {
       window _default {
@@ -3105,7 +2935,7 @@ module SoCone {
 }
 module MinMaxScan {
   internal  {
-    frame = "1021 1485 152 72"
+    frame = "-439 1675 152 72"
     moduleGroupName = Masking
     showNetworkPanel = true
     windows  {
@@ -3128,13 +2958,341 @@ module MinMaxScan {
     preferredIntType = PreferUnsigned
   }
 }
+module Switch {
+  internal  {
+    frame = "-491 1221 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1158 720 249 74"
+        sizeHint = "245 74"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 1
+    numberOfInputs = 2
+  }
+}
+module SoCustomExaminerViewer {
+  internal  {
+    frame = "-1823 -1043 176 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _viewer {
+        geometry = "1080 557 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCustomExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-214.40348815918 4.76381683349609 248.896667480469"
+    orientation = "0.318695574998856 -0.354424178600311 -0.879099905490875 1.63793540000916"
+    nearDistance = 173.47731
+    farDistance = 501.3219
+    focalDistance = 328.54401
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = FALSE
+    wheelRotationEnabled = FALSE
+    enablePickNView = TRUE
+    enableHome = FALSE
+    enableViewAll = TRUE
+    enableSeek = FALSE
+    enableASC = TRUE
+    enableProjType = FALSE
+    enableRotXWheel = TRUE
+    enableRotYWheel = TRUE
+    enableDollyWheel = TRUE
+    overwriteDollyWheelLabel = FALSE
+    overwriteRotXWheelLabel = FALSE
+    overwriteRotYWheelLabel = FALSE
+    dollyWheelPerspectiveText = Dolly
+    rotXWheelPerspectiveText = Rotx
+    rotYWheelPerspectiveText = Roty
+    dollyWheelOrthographicText = Zoom
+    rotXWheelOrthographicText = Rotx
+    rotYWheelOrthographicText = Roty
+    enableM3Control = FALSE
+    chooseView = VIEW_ANTERIOR
+    transformDeltaIn = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-599 789 96 56"
+    moduleGroupName = "Combined DVR Imaging"
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-191 781 128 56"
+    moduleGroupName = "Combined DVR Imaging"
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-1655 -907 128 56"
+    moduleGroupName = "DTI & Distance"
+  }
+  fields  {
+    instanceName = SoGroup2
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "-1135 -1275 128 72"
+    moduleGroupName = "DTI & Distance"
+    showNetworkPanel = true
+    windows  {
+      window _automatic {
+        geometry = "1410 557 500 600"
+        sizeHint = "260 228"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "1179 708 249 98"
+        sizeHint = "203 98"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch
+    whichChild = 1
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "-622 -1538 128 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _viewer {
+        geometry = "1080 557 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGroup3
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "-1435 -1451 120 56"
+    moduleGroupName = "DTI & Distance"
+  }
+  fields  {
+    instanceName = SoBackground1
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoCustomExaminerViewer {
+  internal  {
+    frame = "-1363 -1531 184 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _viewer {
+        geometry = "2661 160 541 531"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCustomExaminerViewer2
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-126.235946655273 -233.923126220703 191.358596801758"
+    orientation = "0.87064117193222 -0.204509481787682 -0.447392255067825 1.06739354133606"
+    nearDistance = 126.1002
+    farDistance = 522.03271
+    focalDistance = 328.54401
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = FALSE
+    wheelRotationEnabled = FALSE
+    enablePickNView = TRUE
+    enableHome = FALSE
+    enableViewAll = TRUE
+    enableSeek = FALSE
+    enableASC = TRUE
+    enableProjType = FALSE
+    enableRotXWheel = TRUE
+    enableRotYWheel = TRUE
+    enableDollyWheel = TRUE
+    overwriteDollyWheelLabel = FALSE
+    overwriteRotXWheelLabel = FALSE
+    overwriteRotYWheelLabel = FALSE
+    dollyWheelPerspectiveText = Dolly
+    rotXWheelPerspectiveText = Rotx
+    rotYWheelPerspectiveText = Roty
+    dollyWheelOrthographicText = Zoom
+    rotXWheelOrthographicText = Rotx
+    rotYWheelOrthographicText = Roty
+    enableM3Control = FALSE
+    chooseView = VIEW_ANTERIOR
+    transformDeltaIn = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "-1203 -1403 136 72"
+    moduleGroupName = "DTI & Distance"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1179 708 249 98"
+        sizeHint = "203 98"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch1
+    whichChild = 0
+  }
+}
 connections  {
-  SoCustomExaminerViewer1.children = "SoBackground3.self SoLUTEditor2.outInventorLUT SoGVRVolumeRenderer3.self SoLUTEditor2D.outInventorLUT SoGVRTagVolume.self SoGVRVolumeRenderer1.self"
-  Histogram.input0 = Mask.output0
-  SoGVRVolumeRenderer1.image = Mask.output0
+  SoCustomExaminerViewer1.children = "SoBackground3.self SoGroup.self SoGroup1.self"
+  Histogram.input0 = Switch.output0
+  SoGVRVolumeRenderer1.image = Switch.output0
   SoLUTEditor2D.inHistogram = Histogram.outputHistogramCurve
   DisplayLUT2.inLUT = SoLUTEditor2D.outLUT
-  SoGVRTagVolume.image = Mask.output0
+  SoGVRTagVolume.image = Switch.output0
   SoGVRVolumeRenderer3.image = LocalImage3.outImage
   DisplayLUT3.inLUT = SoLUTEditor2.outLUT
   Replicate1.input0 = Morphology7.output0
@@ -3157,7 +3315,6 @@ connections  {
   DiffusionTensorAnalysis1.gradients = DTIInfo1.gradients
   DecodeVendorSpecificDicomTags1.input0 = Mask1.output0
   SoFiberVis2.inFiberSetFld = TensorTractography2.outFiberSet
-  SoExaminerViewer3.children = "SoBackground4.self SoFiberVis2.self"
   View3D2.inImage = Mask1.output0
   SoView2DCSOExtensibleEditor.inCSOList = CSOList.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOSplineEditor.self
@@ -3186,7 +3343,6 @@ connections  {
   SoExaminerViewer4.children = "SubStructure.outScene SoWEMRenderer3.self"
   SoWEMRenderer3.inWEM = Cancer.outWEM
   SubStructure.inImage = Scale.output0
-  SoExaminerViewer5.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self"
   BaseSwitch.inputBaseObject0 = Optic_nerve.outCSOList
   BaseSwitch.inputBaseObject1 = Pyramidal_tract.outCSOList
   PythonArithmetic.input0 = LocalImage4.outImage
@@ -3203,6 +3359,16 @@ connections  {
   VoxelizeInventorScene.voxelValue = MinMaxScan1.maxValue
   GenerateImageForBoundingBox.inputInventorScene = SoCone.self
   MinMaxScan1.input0 = LocalImage4.outImage
+  Switch.input0 = LocalImage4.outImage
+  Switch.input1 = Mask.output0
+  SoCustomExaminerViewer.children = "SoBackground4.self SoGroup2.self"
+  SoGroup.children = "SoLUTEditor2.outInventorLUT SoGVRVolumeRenderer3.self"
+  SoGroup1.children = "SoLUTEditor2D.outInventorLUT SoGVRTagVolume.self SoGVRVolumeRenderer1.self"
+  SoGroup2.children = "SoGroup.self SoFiberVis2.self SoGroup1.self"
+  SoSwitch.children = "SoGroup2.self SoGroup3.self"
+  SoGroup3.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self SoGroup1.self"
+  SoCustomExaminerViewer2.children = "SoBackground1.self SoGroup.self SoSwitch1.self SoGroup1.self"
+  SoSwitch1.children = SoSwitch.self
 }
 networkModel  {
   parentItems  {
