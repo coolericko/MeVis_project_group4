@@ -302,8 +302,8 @@ module SoLUTEditor2D {
 <Veins=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 761.484 0.0530464 0 0.218175 0, 1077.42 1 0 0.0392157 0.602446, 1174.63 1 1 1 0.706422, 4095 1 1 1 1]>"
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
-<Veins,1,1,(1 1 1)>
-<Incision surface,1,1,(1 1 1)>
+<,1,1,(1 1 1)>
+<,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
@@ -2129,7 +2129,7 @@ module VoxelizeFibers {
 }
 module MinMaxScan {
   internal  {
-    frame = "-1053 -645 136 72"
+    frame = "-819 -507 136 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2153,7 +2153,7 @@ module View3D {
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
-        geometry = "298 422 1132 609"
+        geometry = "603 257 1132 609"
         sizeHint = "1132 609"
         wasOpen = no
       }
@@ -2184,11 +2184,11 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "38.0866889953613 -472.665008544922 -163.836227416992"
-    camOrientation = "0.984877526760101 -0.115100175142288 0.129492551088333 1.96816670894623"
+    camPosition = "460.351654052734 -13.3902721405029 240.841232299805"
+    camOrientation = "0.446540117263794 0.577853083610535 0.683145582675934 1.63534450531006"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 647.94598
-    camNear = 369.07748
+    camFar = 656.08728
+    camNear = 360.95258
     camFocal = 508.37289
     camHeight = 0.78539801
     decoration = FALSE
@@ -2279,7 +2279,7 @@ module Bypass {
 }
 module Scale {
   internal  {
-    frame = "-865 -605 192 72"
+    frame = "-839 -651 192 72"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2410,8 +2410,8 @@ module SoLUTEditor {
     colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
     alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
     alphaFactor = 1
-    newRangeMin = 9.5278778
-    newRangeMax = 116.26673
+    newRangeMin = 13.942858
+    newRangeMax = 115.73093
     newRangeMode = ClipFormerLUT
     colorEditorHeight = 24
     showColorEditor = TRUE
@@ -2973,7 +2973,7 @@ module Switch {
   }
   fields  {
     instanceName = Switch
-    currentInput = 1
+    currentInput = 0
     numberOfInputs = 2
   }
 }
@@ -3229,11 +3229,11 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-30.4641742706299 4.61207437515259 256.101440429688"
-    orientation = "0.0498744510114193 -0.0627411156892776 -0.996782958507538 1.58647227287292"
-    nearDistance = 128.21548
-    farDistance = 405.37134
-    focalDistance = 258.96259
+    position = "279.875366210938 58.0871315002441 51.1865348815918"
+    orientation = "0.424857139587402 0.607498109340668 0.671150207519531 2.0283362865448"
+    nearDistance = 166.7332
+    farDistance = 416.29736
+    focalDistance = 283.1525
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -3293,6 +3293,72 @@ module SoSwitch {
     whichChild = 0
   }
 }
+module Morphology {
+  internal  {
+    frame = "-1063 -587 96 72"
+    moduleGroupName = "DTI & Distance"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "812 320 296 497"
+        sizeHint = "296 497"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Erosion
+    kernelX = 1
+    kernelY = 1
+    kernelZ = 1
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "-951 -523 128 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _default {
+        geometry = "547 459 408 392"
+        sizeHint = "408 392"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = ImgMin
+    innerType = ImgOrig
+    upperType = ImgMin
+    centerWidthSet = FALSE
+    threshCenter = 2502.5
+    threshWidth = 4995
+    threshMin = 5
+    threshMax = 5000
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
 connections  {
   SoCustomExaminerViewer1.children = "SoBackground3.self SoGroup.self SoGroup1.self"
   Histogram.input0 = Switch.output0
@@ -3335,7 +3401,7 @@ connections  {
   CSOList.inCSOList = BaseSwitch.outputBaseObject0
   VoxelizeFibers.input0 = Bypass3.output0
   VoxelizeFibers.inputFibers = TensorTractography2.outFiberSet
-  MinMaxScan.input0 = VoxelizeFibers.output0
+  MinMaxScan.input0 = IntervalThreshold.output0
   View3D3.inImage = Scale.output0
   Bypass3.input0 = SubImage2.output0
   Scale.input0 = MinMaxScan.output0
@@ -3376,6 +3442,8 @@ connections  {
   SoGroup3.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self SoGroup1.self"
   SoCustomExaminerViewer2.children = "SoBackground1.self SoSwitch1.self SoGroup1.self"
   SoSwitch1.children = SoSwitch.self
+  Morphology.input0 = VoxelizeFibers.output0
+  IntervalThreshold.input0 = Morphology.output0
 }
 networkModel  {
   parentItems  {
