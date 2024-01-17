@@ -3037,10 +3037,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-214.40348815918 4.76381683349609 248.896667480469"
-    orientation = "0.318695574998856 -0.354424178600311 -0.879099905490875 1.63793540000916"
-    nearDistance = 173.47731
-    farDistance = 501.3219
+    position = "-273.950012207031 120.106147766113 135.893463134766"
+    orientation = "0.253105044364929 -0.617392838001251 -0.744824767112732 1.89336204528809"
+    nearDistance = 161.07022
+    farDistance = 519.01477
     focalDistance = 328.54401
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -3105,6 +3105,13 @@ module SoGroup {
   internal  {
     frame = "-1655 -907 128 56"
     moduleGroupName = "DTI & Distance"
+    windows  {
+      window _viewer {
+        geometry = "3320 370 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = SoGroup2
@@ -3130,7 +3137,7 @@ module SoSwitch {
   }
   fields  {
     instanceName = SoSwitch
-    whichChild = 1
+    whichChild = 0
   }
 }
 module SoGroup {
@@ -3222,10 +3229,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-126.235946655273 -233.923126220703 191.358596801758"
-    orientation = "0.87064117193222 -0.204509481787682 -0.447392255067825 1.06739354133606"
-    nearDistance = 126.1002
-    farDistance = 522.03271
+    position = "-90.7956848144531 28.1576232910156 313.741394042969"
+    orientation = "0.0438592359423637 -0.329524278640747 -0.943127870559692 0.896223247051239"
+    nearDistance = 179.58629
+    farDistance = 496.23126
     focalDistance = 328.54401
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -3367,7 +3374,7 @@ connections  {
   SoGroup2.children = "SoGroup.self SoFiberVis2.self SoGroup1.self"
   SoSwitch.children = "SoGroup2.self SoGroup3.self"
   SoGroup3.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self SoGroup1.self"
-  SoCustomExaminerViewer2.children = "SoBackground1.self SoGroup.self SoSwitch1.self SoGroup1.self"
+  SoCustomExaminerViewer2.children = "SoBackground1.self SoSwitch1.self SoGroup1.self"
   SoSwitch1.children = SoSwitch.self
 }
 networkModel  {
