@@ -254,10 +254,10 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "0 0 0"
-    currentOpacity = 0.32721713
-    currentPosition = 556.41241
-    currentIndex = 3
+    currentColor = "1 1 1"
+    currentOpacity = 0
+    currentPosition = 0
+    currentIndex = 0
     rangeMin = 0
     rangeMax = 4095
     viewMin = 0
@@ -268,8 +268,8 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 361.179962158203 0 0.886274516582489 1, 556.412414550781 0 0 0, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 0.00409500021487474 0, 361.179962158203 0.651376128196716, 556.412414550781 0.327217131853104, 4095 1 ]"
+    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 761.484008789062 0.0530464015901089 0 0.218174993991852, 1077.42004394531 1 0 0.0392156988382339, 1174.63000488281 1 1 1, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 0.00409500021487474 0, 761.484008789062 0, 1077.42004394531 0.602446019649506, 1174.63000488281 0.706421971321106, 4095 1 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 4095
@@ -302,7 +302,7 @@ module SoLUTEditor2D {
 <Veins=false,1,[0 0 0 0 0, 0.004095 0 0 0 0, 761.484 0.0530464 0 0.218175 0, 1077.42 1 0 0.0392157 0.602446, 1174.63 1 1 1 0.706422, 4095 1 1 1 1]>"
     tagData = "<General brain context,0.096,1,(1 1 1)>
 <Detailed brain context,0.274,1,(1 1 1)>
-<,1,1,(1 1 1)>
+<Veins,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
 <,1,1,(1 1 1)>
@@ -2973,7 +2973,7 @@ module Switch {
   }
   fields  {
     instanceName = Switch
-    currentInput = 0
+    currentInput = 1
     numberOfInputs = 2
   }
 }
@@ -3229,8 +3229,8 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "279.875366210938 58.0871315002441 51.1865348815918"
-    orientation = "0.424857139587402 0.607498109340668 0.671150207519531 2.0283362865448"
+    position = "-97.3218002319336 5.36068964004517 254.690002441406"
+    orientation = "-0.174146294593811 0.21662449836731 0.960597157478333 4.77703380584717"
     nearDistance = 166.7332
     farDistance = 416.29736
     focalDistance = 283.1525
