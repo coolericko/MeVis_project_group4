@@ -64,7 +64,7 @@ module SoCustomExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "-108.574363708496 -288.865997314453 113.76944732666"
-    orientation = "-0.954126417636871 0.23364882171154 0.187219351530075 5.04307413101196"
+    orientation = "-0.954126358032227 0.233648791909218 0.187219321727753 5.04307413101196"
     nearDistance = 134.58246
     farDistance = 507.75198
     focalDistance = 363.59308
@@ -254,10 +254,10 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "1 1 1"
-    currentOpacity = 0
-    currentPosition = 0
-    currentIndex = 0
+    currentColor = "1 0 0.0392156988382339"
+    currentOpacity = 0.1
+    currentPosition = 1288.1982
+    currentIndex = 4
     rangeMin = 0
     rangeMax = 4095
     viewMin = 0
@@ -268,9 +268,9 @@ module SoLUTEditor2D {
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
     colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.00409500021487474 0 0 0, 761.484008789062 0.0530464015901089 0 0.218174993991852, 1077.42004394531 1 0 0.0392156988382339, 1174.63000488281 1 1 1, 4095 1 1 1 ]"
-    alphaPoints = "[ 0 0, 0.00409500021487474 0, 761.484008789062 0, 1077.42004394531 0.602446019649506, 1174.63000488281 0.706421971321106, 4095 1 ]"
-    alphaFactor = 1
+    colorPoints = "[ 0 0 0 0, 726.862426757812 0 0 0, 726.864562988281 0 0 0, 1123.59558105469 0.0530464015901089 0 0.218174993991852, 1288.1982421875 1 0 0.0392156988382339, 1338.8447265625 1 1 1, 2860.357421875 1 1 1, 4095 1 1 1 ]"
+    alphaPoints = "[ 0 0, 726.862426757812 0, 726.864562988281 0, 1123.59558105469 0, 1288.1982421875 0.100000001490116, 1338.8447265625 0.0599999986588955, 2860.357421875 1, 4095 1 ]"
+    alphaFactor = 0.27000001
     newRangeMin = 0
     newRangeMax = 4095
     newRangeMode = ClipFormerLUT
@@ -294,7 +294,7 @@ module SoLUTEditor2D {
     useAntiAliasing = TRUE
     tagColor = "1 1 1"
     tagIntensity = 1
-    tagAlpha = 1
+    tagAlpha = 0.096000001
     newLutName = "Incision surface"
     lutData = "<Detailed brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0, 964.006 0 0 0 0, 4095 1 1 1 0.957187]>,
 <General brain context=false,1,[0 0 0 0 0, 477.953 0 0 0 0, 858.694 0 0 0 0.312883, 858.698 0 0 0 0, 4095 1 1 1 0.957187]>,
@@ -1272,7 +1272,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.0168548333333333
+    timing = 0.00768445833333333
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -2184,12 +2184,12 @@ module View3D {
     alphaFactor = 1
     colorFactor = "1 1 1"
     camType = TRUE
-    camPosition = "460.351654052734 -13.3902721405029 240.841232299805"
-    camOrientation = "0.446540117263794 0.577853083610535 0.683145582675934 1.63534450531006"
+    camPosition = "173.336471557617 145.84001159668 71.7944869995117"
+    camOrientation = "0.39830669760704 0.489200532436371 0.775908827781677 2.86058115959167"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 656.08728
-    camNear = 360.95258
-    camFocal = 508.37289
+    camFar = 407.11935
+    camNear = 54.964909
+    camFocal = 230.86635
     camHeight = 0.78539801
     decoration = FALSE
     annotations = TRUE
@@ -2293,7 +2293,7 @@ module Scale {
   fields  {
     instanceName = Scale
     inputMin = 0
-    inputMax = 67
+    inputMax = 39
     updateMode = AutoUpdateMinMaxOn
     useTrueRange = FALSE
     typeSelect = UInt16
@@ -2410,8 +2410,8 @@ module SoLUTEditor {
     colorPoints = "[ -0.477658987045288 0 0 0, -0.272981911897659 0 0 0, -0.0825815200805664 0.278431385755539 0.933333337306976 0, 0.0422481782734394 0.858823537826538 0.20392157137394 0.0745098069310188, 0.322291254997253 0 1 0.152941182255745, 0.93613064289093 0.470588237047195 0.470588237047195 0.470588237047195, 1.04387903213501 0 0 0, 1.15325999259949 0 0 0 ]"
     alphaPoints = "[ -0.477658987045288 0, -0.272981911897659 0.631901860237122, -0.0825815200805664 1, 0.0422481782734394 1, 0.322291254997253 1, 0.93613064289093 1, 1.04387903213501 0.717791438102722, 1.15325999259949 0 ]"
     alphaFactor = 1
-    newRangeMin = 13.942858
-    newRangeMax = 115.73093
+    newRangeMin = 10.112528
+    newRangeMax = 115.98571
     newRangeMode = ClipFormerLUT
     colorEditorHeight = 24
     showColorEditor = TRUE
@@ -2476,7 +2476,7 @@ module WEMSurfaceDistance {
 }
 module IsoSurface {
   internal  {
-    frame = "-513 -873 128 64"
+    frame = "-519 -807 128 64"
     moduleGroupName = "DTI & Distance"
     showNetworkPanel = true
     windows  {
@@ -2562,11 +2562,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "516.91748046875 120.587356567383 44.5642013549805"
-    orientation = "-0.348796755075455 0.933889865875244 -0.0786797478795052 1.54517316818237"
-    nearDistance = 444.18216
-    farDistance = 612.88165
-    focalDistance = 561.15039
+    position = "160.335174560547 149.82292175293 185.402908325195"
+    orientation = "-0.546138286590576 0.779905140399933 0.305746525526047 1.07913160324097"
+    nearDistance = 152.28474
+    farDistance = 390.46271
+    focalDistance = 304.15659
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -2678,7 +2678,7 @@ module BaseSwitch {
   }
   fields  {
     instanceName = BaseSwitch
-    currentInput = 0
+    currentInput = 1
     currentOutput = 0
     numberOfInputs = 2
     numberOfOutputs = 1
@@ -3175,7 +3175,7 @@ module SoCustomExaminerViewer {
     moduleGroupName = "DTI & Distance"
     windows  {
       window _viewer {
-        geometry = "2661 160 541 531"
+        geometry = "700 391 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -3229,10 +3229,10 @@ module SoCustomExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-97.3218002319336 5.36068964004517 254.690002441406"
-    orientation = "-0.174146294593811 0.21662449836731 0.960597157478333 4.77703380584717"
-    nearDistance = 166.7332
-    farDistance = 416.29736
+    position = "-85.5983657836914 180.851684570313 188.143341064453"
+    orientation = "-0.081763282418251 0.396342605352402 0.914454638957977 3.64430618286133"
+    nearDistance = 90.50573
+    farDistance = 484.18896
     focalDistance = 283.1525
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -3293,49 +3293,13 @@ module SoSwitch {
     whichChild = 0
   }
 }
-module Morphology {
-  internal  {
-    frame = "-1063 -587 96 72"
-    moduleGroupName = "DTI & Distance"
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "812 320 296 497"
-        sizeHint = "296 497"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = Morphology
-    borderHandling = PadSrcClamp
-    fillValue = 0
-    referenceExtentMode = Overlap
-    filterMode = Erosion
-    kernelX = 1
-    kernelY = 1
-    kernelZ = 1
-    kernelC = 1
-    kernelT = 1
-    kernelU = 1
-    makeSpherical = FALSE
-    intervalMinOfFilteredVoxels = 0
-    intervalMaxOfFilteredVoxels = 1024
-    useIntervalOfFilteredVoxels = FALSE
-    intervalMinOfVoxelsForFiltering = 0
-    intervalMaxOfVoxelsForFiltering = 1024
-    useIntervalOfVoxelsForFiltering = FALSE
-    externalKernel = ""
-    useExternalKernel = FALSE
-  }
-}
 module IntervalThreshold {
   internal  {
     frame = "-951 -523 128 56"
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
-        geometry = "547 459 408 392"
+        geometry = "253 523 408 392"
         sizeHint = "408 392"
         wasOpen = no
       }
@@ -3347,9 +3311,9 @@ module IntervalThreshold {
     innerType = ImgOrig
     upperType = ImgMin
     centerWidthSet = FALSE
-    threshCenter = 2502.5
-    threshWidth = 4995
-    threshMin = 5
+    threshCenter = 2500.5
+    threshWidth = 4999
+    threshMin = 1
     threshMax = 5000
     lowerUserValue = 0
     innerUserValue = 1
@@ -3442,8 +3406,7 @@ connections  {
   SoGroup3.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self SoGroup1.self"
   SoCustomExaminerViewer2.children = "SoBackground1.self SoSwitch1.self SoGroup1.self"
   SoSwitch1.children = SoSwitch.self
-  Morphology.input0 = VoxelizeFibers.output0
-  IntervalThreshold.input0 = Morphology.output0
+  IntervalThreshold.input0 = VoxelizeFibers.output0
 }
 networkModel  {
   parentItems  {

@@ -141,10 +141,18 @@ To change the name of an LUT, select it, type the name in the 'New LUT name' fie
                     CheckBox SoSwitch1.whichChild {
                       title = "Toggle DTI"
                     }
-                    
+
                     CheckBox SoSwitch.whichChild {
-                      title = "DTI Mode"
+                      title = "IsoSurface Mode"
                     }
+                    Field IntervalThreshold.threshMin {
+                      expandX = yes
+                      title = "IsoSurface min threshold"
+                      step = 1
+                      slider = yes
+                    }
+                    
+                    
                     Label {
                       title = "Current mode: Fiber tracking view"
                       textWrap  = WordBreak
