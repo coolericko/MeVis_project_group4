@@ -22,6 +22,14 @@ Interface {
       type         = String
       internalName = LocalImage3.name
     }
+    Field "Optic nerve" {
+      type         = String
+      internalName = Optic_nerve.name
+    }
+    Field "Pyramidal tract" {
+      type         = String
+      internalName = Pyramidal_tract.name
+    }
   }
 }
 
@@ -55,6 +63,23 @@ Window MyViewer {
             }
             TextView {
               text = "Please select the input images from the dataset."
+            }
+          }
+        }
+
+        Box "CSO datasets" {
+          Vertical {
+            Field "Optic nerve" {
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Pyramidal tract" {
+              browseButton = True
+              browseMode   = open
+            }
+
+            TextView {
+              text = "Please select the input CSO from the dataset."
             }
           }
         }

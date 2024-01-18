@@ -1824,8 +1824,8 @@ module OrthoView2D {
     moduleGroupName = "DTI & Distance"
     windows  {
       window _default {
-        geometry = "1629 562 400 435"
-        sizeHint = "400 435"
+        geometry = "700 376 400 430"
+        sizeHint = "400 430"
         wasOpen = no
       }
       window Settings {
@@ -2293,7 +2293,7 @@ module Scale {
   fields  {
     instanceName = Scale
     inputMin = 0
-    inputMax = 39
+    inputMax = 67
     updateMode = AutoUpdateMinMaxOn
     useTrueRange = FALSE
     typeSelect = UInt16
@@ -2672,6 +2672,11 @@ module BaseSwitch {
       window _default {
         geometry = "815 520 291 101"
         sizeHint = "291 101"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "191 407 500 600"
+        sizeHint = "260 415"
         wasOpen = no
       }
     }
@@ -3323,6 +3328,76 @@ module IntervalThreshold {
     changedMax = 1000
   }
 }
+module CSOSave {
+  internal  {
+    frame = "-1219 -123 88 56"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _default {
+        geometry = "650 507 500 168"
+        sizeHint = "500 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Custom_save_optic_nerve
+    taskVerboseLogging = FALSE
+    fileName = $(NETWORK)/custom_optic_nerve.cso
+    autoApply = TRUE
+    saveSuccess = TRUE
+    binary = TRUE
+    listenToFinishedNotifications = FALSE
+  }
+}
+module BaseSwitch {
+  internal  {
+    frame = "-1215 -19 144 72"
+    moduleGroupName = "DTI & Distance"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "815 520 291 101"
+        sizeHint = "291 101"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "963 403 500 600"
+        sizeHint = "260 415"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = BaseSwitch1
+    currentInput = 1
+    currentOutput = 0
+    numberOfInputs = 1
+    numberOfOutputs = 2
+  }
+}
+module CSOSave {
+  internal  {
+    frame = "-1075 -127 200 64"
+    moduleGroupName = "DTI & Distance"
+    windows  {
+      window _default {
+        geometry = "814 381 500 168"
+        sizeHint = "500 168"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Custom_save_Pyramidal_tract
+    taskVerboseLogging = FALSE
+    fileName = $(NETWORK)/custom_Pyramidal_tract.cso
+    autoApply = TRUE
+    saveSuccess = FALSE
+    binary = TRUE
+    listenToFinishedNotifications = FALSE
+  }
+}
 connections  {
   SoCustomExaminerViewer1.children = "SoBackground3.self SoGroup.self SoGroup1.self"
   Histogram.input0 = Switch.output0
@@ -3407,6 +3482,10 @@ connections  {
   SoCustomExaminerViewer2.children = "SoBackground1.self SoSwitch1.self SoGroup1.self"
   SoSwitch1.children = "SoGroup.self SoSwitch.self"
   IntervalThreshold.input0 = VoxelizeFibers.output0
+  Custom_save_optic_nerve.inCSOList = BaseSwitch1.outputBaseObject0
+  BaseSwitch1.inputBaseObject0 = CSOList.outCSOList
+  BaseSwitch1.currentOutput = BaseSwitch.currentInput
+  Custom_save_Pyramidal_tract.inCSOList = BaseSwitch1.outputBaseObject1
 }
 networkModel  {
   parentItems  {
