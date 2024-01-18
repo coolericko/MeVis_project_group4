@@ -186,7 +186,6 @@ To change the name of an LUT, select it, type the name in the 'New LUT name' fie
                       name                    = csoListView
                       sortByColumn            = 1
                       selectionMode           = Single
-                      selectionChangedCommand = CSOSelected
                       headerTitles            = "Id|Label"
                       visibleRows             = 10
                       columnSeparator         = "|"

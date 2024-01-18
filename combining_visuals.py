@@ -18,9 +18,3 @@ def tagSelected():
     for id in ctx.control("tagListView").selectedItemIds():
         result.append(ctx.control("tagListView").itemForId(id).text(0))
     ctx.field("SoLUTEditor2D.tagListItems").value = "[" + (",".join(result)) + "]"
-
-
-def CSOSelected():
-    ctx.field("CSOManager.CSOListItem").value = (
-        ctx.control("CSOListView").currentItem().text(0)
-    )
