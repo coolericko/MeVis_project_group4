@@ -242,8 +242,8 @@ To change the name of an LUT, select it, type the name in the 'New LUT name' fie
               }
               TabViewItem "CSO selection" {
                 Box 2DView {
-                  Field OrthoView2D.layout {}
-                  Viewer OrthoView2D.self {
+                  Field CSO_selection.layout {}
+                  Viewer CSO_selection.self {
                     expandX = True
                     expandY = True
                     type    = SoRenderArea

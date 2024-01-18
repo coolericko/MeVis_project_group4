@@ -5,7 +5,7 @@ network  {
 }
 module SoCustomExaminerViewer {
   internal  {
-    frame = "-601 616 208 56"
+    frame = "-908 716 184 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _viewer {
@@ -111,7 +111,7 @@ module SoCustomExaminerViewer {
 }
 module Histogram {
   internal  {
-    frame = "-485 1024 120 56"
+    frame = "-804 1124 120 56"
     moduleGroupName = "Combined DVR Imaging"
     showNetworkPanel = true
     windows  {
@@ -141,7 +141,7 @@ module Histogram {
 }
 module SoGVRVolumeRenderer {
   internal  {
-    frame = "33 941 208 56"
+    frame = "-286 1041 208 56"
     moduleGroupName = "Combined DVR Imaging"
     showNetworkPanel = true
   }
@@ -237,7 +237,7 @@ module SoGVRVolumeRenderer {
 }
 module SoLUTEditor2D {
   internal  {
-    frame = "-339 925 120 56"
+    frame = "-658 1025 120 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -560,7 +560,7 @@ module SoLUTEditor2D {
 }
 module DisplayLUT {
   internal  {
-    frame = "-379 869 104 56"
+    frame = "-698 917 104 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -580,7 +580,7 @@ module DisplayLUT {
 }
 module SoGVRTagVolume {
   internal  {
-    frame = "-171 925 136 56"
+    frame = "-490 1025 136 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -599,7 +599,7 @@ module SoGVRTagVolume {
 }
 module SoBackground {
   internal  {
-    frame = "-819 725 120 56"
+    frame = "-1138 825 120 56"
     moduleGroupName = "Combined DVR Imaging"
   }
   fields  {
@@ -612,7 +612,7 @@ module SoBackground {
 }
 module SoGVRVolumeRenderer {
   internal  {
-    frame = "-655 925 208 56"
+    frame = "-958 1025 176 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -714,7 +714,7 @@ module SoGVRVolumeRenderer {
 }
 module DisplayLUT {
   internal  {
-    frame = "-835 877 104 56"
+    frame = "-1138 933 104 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -734,7 +734,7 @@ module DisplayLUT {
 }
 module SoLUTEditor {
   internal  {
-    frame = "-791 933 112 56"
+    frame = "-1110 1033 112 56"
     moduleGroupName = "Combined DVR Imaging"
     windows  {
       window _default {
@@ -784,8 +784,8 @@ module SoLUTEditor {
 }
 module LocalImage {
   internal  {
-    frame = "-1579 1197 184 72"
-    moduleGroupName = ""
+    frame = "-1593 1910 184 72"
+    moduleGroupName = Inputs
     showNetworkPanel = true
     windows  {
       window _default {
@@ -803,8 +803,8 @@ module LocalImage {
 }
 module LocalImage {
   internal  {
-    frame = "-1255 1205 192 72"
-    moduleGroupName = ""
+    frame = "-1382 1910 192 72"
+    moduleGroupName = Inputs
     showNetworkPanel = true
     windows  {
       window _default {
@@ -827,8 +827,8 @@ module LocalImage {
 }
 module LocalImage {
   internal  {
-    frame = "-1915 1197 168 72"
-    moduleGroupName = ""
+    frame = "-1788 1910 168 72"
+    moduleGroupName = Inputs
     showNetworkPanel = true
     windows  {
       window _default {
@@ -847,7 +847,7 @@ module LocalImage {
 module Replicate {
   internal  {
     frame = "-2197 -37 88 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "746 124 384 55"
@@ -870,7 +870,7 @@ module Replicate {
 module VecBoxConvert {
   internal  {
     frame = "-2393 59 128 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "502 499 602 239"
@@ -900,8 +900,8 @@ module VecBoxConvert {
 }
 module SubImage {
   internal  {
-    frame = "-2313 315 96 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1967 333 96 56"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "224 243 543 342"
@@ -942,7 +942,7 @@ module SubImage {
 module Threshold {
   internal  {
     frame = "-2401 203 96 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "293 397 268 87"
@@ -965,7 +965,7 @@ module Threshold {
 module Mask {
   internal  {
     frame = "-2601 19 80 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "721 529 446 124"
@@ -985,7 +985,7 @@ module Mask {
 module Info {
   internal  {
     frame = "-2465 131 64 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "408 98 564 375"
@@ -1001,7 +1001,7 @@ module Info {
 module Morphology {
   internal  {
     frame = "-2301 179 104 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "228 253 400 594"
@@ -1036,7 +1036,7 @@ module Morphology {
 module Morphology {
   internal  {
     frame = "-2189 147 104 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "228 253 400 594"
@@ -1071,7 +1071,7 @@ module Morphology {
 module Morphology {
   internal  {
     frame = "-2069 107 104 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "228 253 400 594"
@@ -1106,7 +1106,7 @@ module Morphology {
 module Morphology {
   internal  {
     frame = "-1949 59 104 72"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -1139,129 +1139,10 @@ module Morphology {
     useExternalKernel = FALSE
   }
 }
-module View3D {
-  internal  {
-    frame = "-2145 411 144 56"
-    moduleGroupName = "DTI & Distance"
-    windows  {
-      window _default {
-        geometry = "14 344 1004 609"
-        sizeHint = "1004 609"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = View3D1
-    autoViewAll = TRUE
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    lutType = Ramp
-    rendererType = Slicer
-    currentTimePoint = 0
-    staticSamplingRate = 1
-    quality = 1
-    filterVolumeData = FilterLinear
-    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
-    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
-    lutEditorRelativeLut = FALSE
-    lutEditorColorInterpolation = InterpolateRGB
-    lutEditorAlphaFactor = 1
-    orientationProjectionType = PERSPECTIVE
-    orientationLocation = LOWER_RIGHT
-    orientationOn = TRUE
-    orientationModel = CUBE
-    greyCenter = 0.209999993443489
-    greyWidth = 0.369999915361404
-    alphaFactor = 1
-    colorFactor = "1 1 1"
-    camType = TRUE
-    camPosition = "458.451080322266 -223.432647705078 43.3096084594727"
-    camOrientation = "-0.754549562931061 -0.383936613798141 -0.532210230827332 4.37166500091553"
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 668.90863
-    camNear = 348.15704
-    camFocal = 508.37289
-    camHeight = 0.78539801
-    decoration = FALSE
-    annotations = TRUE
-    background = TRUE
-    mode = VolumeRendering
-    interactiveQuality = Medium
-  }
-  internalFields  {
-    renderer.gradientQuality = GradientQualityAutomatic
-    renderer.enhancementAlphaMix = 0.25
-    renderer.boundaryEnhancement = FALSE
-    renderer.boundaryEnhancementFactor = 1
-    renderer.boundaryEnhancementExponent = 1
-    renderer.boundaryEnhancementGradientBias = 0
-    renderer.silhouetteEnhancement = FALSE
-    renderer.silhouetteEnhancementExponent = 1
-    renderer.silhouetteEnhancementFactor = 1
-    renderer.toneShading = FALSE
-    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
-    renderer.toneShadingColdColor = "0 0 0.400000005960464"
-    renderer.toneShadingWarmDiffuse = 0.60000002
-    renderer.toneShadingColdDiffuse = 0.2
-    renderer.toneShadingAngle = 45
-    renderer.materialAmbient = 0.60000002
-    renderer.materialDiffuse = 1
-    renderer.materialSpecular = 1
-    renderer.materialSpecularity = 32
-    renderer.light1Enabled = TRUE
-    renderer.light1DiffuseIntensity = 1
-    renderer.light1SpecularIntensity = 1
-    renderer.light1Color = "1 1 1"
-    renderer.light1PolarPhi = 45
-    renderer.light1PolarRho = 0
-    renderer.light2Enabled = FALSE
-    renderer.light2DiffuseIntensity = 1
-    renderer.light2SpecularIntensity = 1
-    renderer.light2Color = "1 1 1"
-    renderer.light2PolarPhi = 0
-    renderer.light2PolarRho = 0
-    renderer.light3Enabled = FALSE
-    renderer.light3DiffuseIntensity = 1
-    renderer.light3SpecularIntensity = 1
-    renderer.light3Color = "1 1 1"
-    renderer.light3PolarPhi = -45
-    renderer.light3PolarRho = 0
-    renderer.sizeOutputX = 128
-    renderer.sizeOutputY = 128
-    renderer.sizeOutputZ = 72
-    renderer.subVolumeStartX = 0
-    renderer.subVolumeStartY = 0
-    renderer.subVolumeStartZ = 0
-    renderer.subVolumeEndX = 128
-    renderer.subVolumeEndY = 128
-    renderer.subVolumeEndZ = 72
-    clip.hideGeometry = FALSE
-    clip.on = FALSE
-    clip.left = FALSE
-    clip.right = FALSE
-    clip.top = FALSE
-    clip.bottom = FALSE
-    clip.rear = FALSE
-    clip.front = FALSE
-    clip.translation0 = "1 0 0"
-    clip.translation1 = "-1 0 0"
-    clip.translation2 = "0 1 0"
-    clip.translation3 = "0 -1 0"
-    clip.translation4 = "0 0 1"
-    clip.translation5 = "0 0 -1"
-    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
-    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
-    clip.rotation2 = "0 0 -1 3.1415901184082"
-    clip.rotation3 = "0 0 1 0"
-    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
-    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
-  }
-}
 module TensorTractography {
   internal  {
-    frame = "-1713 -581 144 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2015 -483 144 56"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "1028 410 487 490"
@@ -1272,7 +1153,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.0015687
+    timing = 0.0218529583333333
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -1300,8 +1181,8 @@ module TensorTractography {
 }
 module DTIInfo {
   internal  {
-    frame = "-1985 -341 80 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2319 -427 80 56"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "158 286 508 560"
@@ -1351,8 +1232,8 @@ module DTIInfo {
 }
 module DiffusionTensorAnalysis {
   internal  {
-    frame = "-1845 -341 168 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2195 -427 168 56"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "831 501 497 287"
@@ -1408,8 +1289,8 @@ module DiffusionTensorAnalysis {
 }
 module DecodeVendorSpecificDicomTags {
   internal  {
-    frame = "-1937 -213 224 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2295 -323 224 56"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "861 558 199 24"
@@ -1425,8 +1306,8 @@ module DecodeVendorSpecificDicomTags {
 }
 module SoBackground {
   internal  {
-    frame = "-1901 -749 120 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1667 -1275 120 56"
+    moduleGroupName = Visualisations
   }
   fields  {
     instanceName = SoBackground4
@@ -1438,8 +1319,8 @@ module SoBackground {
 }
 module SoFiberVis {
   internal  {
-    frame = "-1709 -773 104 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1475 -1299 104 56"
+    moduleGroupName = Visualisations
   }
   fields  {
     instanceName = SoFiberVis2
@@ -1470,7 +1351,7 @@ module SoFiberVis {
 module View3D {
   internal  {
     frame = "-2593 -133 144 56"
-    moduleGroupName = "DTI & Distance"
+    moduleGroupName = "DTI & fibre tracking"
     windows  {
       window _default {
         geometry = "587 126 1004 609"
@@ -1588,8 +1469,8 @@ module View3D {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "-1021 51 200 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2035 709 200 56"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "702 409 396 365"
@@ -1637,8 +1518,8 @@ module SoView2DCSOExtensibleEditor {
 }
 module SoCSOSplineEditor {
   internal  {
-    frame = "-993 155 144 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2111 837 144 56"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "1100 456 313 380"
@@ -1691,8 +1572,8 @@ module SoCSOSplineEditor {
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "-1013 243 184 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2147 933 184 56"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "792 315 351 629"
@@ -1820,8 +1701,8 @@ module SoCSOVisualizationSettings {
 }
 module OrthoView2D {
   internal  {
-    frame = "-797 -125 120 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2131 629 120 56"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "700 376 400 430"
@@ -1841,7 +1722,7 @@ module OrthoView2D {
     }
   }
   fields  {
-    instanceName = OrthoView2D
+    instanceName = CSO_selection
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     synchronizePosition = FALSE
@@ -1871,8 +1752,8 @@ module OrthoView2D {
 }
 module CSOVoxelizeContours {
   internal  {
-    frame = "-1437 -17 152 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2340 657 152 64"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "768 441 399 372"
@@ -1925,8 +1806,8 @@ module CSOVoxelizeContours {
 }
 module Resample3D {
   internal  {
-    frame = "-1425 115 112 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2399 909 112 56"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "845 428 328 331"
@@ -1949,21 +1830,10 @@ module Resample3D {
     useReferenceImage = FALSE
   }
 }
-module Bypass {
-  internal  {
-    frame = "-1393 307 112 56"
-    moduleGroupName = "DTI & Distance"
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = Bypass2
-    noBypass = FALSE
-  }
-}
 module CSOManager {
   internal  {
-    frame = "-1201 135 112 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2607 801 112 64"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "907 235 696 561"
@@ -2086,8 +1956,8 @@ module CSOManager {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "-1277 375 120 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1935 1914 120 64"
+    moduleGroupName = Inputs
     windows  {
       window _default {
         geometry = "719 503 489 252"
@@ -2109,8 +1979,8 @@ module LocalCSOLoad {
 }
 module VoxelizeFibers {
   internal  {
-    frame = "-1209 -629 112 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-185 79 112 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _default {
         geometry = "600 528 238 124"
@@ -2129,8 +1999,8 @@ module VoxelizeFibers {
 }
 module MinMaxScan {
   internal  {
-    frame = "-819 -507 136 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-421 -169 136 72"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2149,8 +2019,8 @@ module MinMaxScan {
 }
 module View3D {
   internal  {
-    frame = "-913 -789 144 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-317 -303 144 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _default {
         geometry = "603 257 1132 609"
@@ -2266,21 +2136,10 @@ module View3D {
     clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
   }
 }
-module Bypass {
-  internal  {
-    frame = "-1209 -429 112 56"
-    moduleGroupName = "DTI & Distance"
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = Bypass3
-    noBypass = FALSE
-  }
-}
 module Scale {
   internal  {
-    frame = "-839 -651 192 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-243 -165 192 72"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2303,8 +2162,8 @@ module Scale {
 }
 module SoDepthPeelRenderer {
   internal  {
-    frame = "-809 -1469 160 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-213 -983 160 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _default {
         geometry = "814 471 287 218"
@@ -2329,8 +2188,8 @@ module SoDepthPeelRenderer {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "-821 -1365 168 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-225 -879 168 72"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2380,8 +2239,8 @@ module SoWEMRenderer {
 }
 module SoLUTEditor {
   internal  {
-    frame = "-625 -1237 112 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-29 -751 112 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _default {
         geometry = "696 345 528 450"
@@ -2435,8 +2294,8 @@ module SoLUTEditor {
 }
 module WEMSurfaceDistance {
   internal  {
-    frame = "-849 -1213 192 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-253 -727 192 72"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2476,8 +2335,8 @@ module WEMSurfaceDistance {
 }
 module IsoSurface {
   internal  {
-    frame = "-519 -807 128 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "77 -321 128 64"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2504,8 +2363,8 @@ module IsoSurface {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "-537 -1133 144 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "59 -647 144 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _viewer {
         geometry = "139 196 400 400"
@@ -2586,8 +2445,8 @@ module SoExaminerViewer {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "-453 -1005 168 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "143 -519 168 72"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2637,8 +2496,8 @@ module SoWEMRenderer {
 }
 module IsoSurface {
   internal  {
-    frame = "-709 -809 136 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-113 -323 136 64"
+    moduleGroupName = "ISO distance calculations"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2665,8 +2524,8 @@ module IsoSurface {
 }
 module BaseSwitch {
   internal  {
-    frame = "-1207 236 136 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2627 925 136 72"
+    moduleGroupName = "CSO selection"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2691,8 +2550,8 @@ module BaseSwitch {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "-1117 375 120 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2082 1914 120 64"
+    moduleGroupName = Inputs
     windows  {
       window _default {
         geometry = "719 503 489 252"
@@ -2709,8 +2568,8 @@ module LocalCSOLoad {
 }
 module PythonArithmetic {
   internal  {
-    frame = "-187 1603 128 56"
-    moduleGroupName = Masking
+    frame = "14 1654 128 56"
+    moduleGroupName = "Incision  Masking"
     windows  {
       window _default {
         geometry = "247 235 485 508"
@@ -2780,8 +2639,8 @@ outImage.setPageExtent(inImage0.imageExtent())
 }
 module Mask {
   internal  {
-    frame = "-719 1435 136 72"
-    moduleGroupName = Masking
+    frame = "-518 1486 136 72"
+    moduleGroupName = "Incision  Masking"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2801,8 +2660,8 @@ module Mask {
 }
 module Reformat {
   internal  {
-    frame = "-247 1483 104 56"
-    moduleGroupName = Masking
+    frame = "-46 1534 104 56"
+    moduleGroupName = "Incision  Masking"
     windows  {
       window _default {
         geometry = "1302 198 502 705"
@@ -2851,8 +2710,8 @@ module Reformat {
 }
 module VoxelizeInventorScene {
   internal  {
-    frame = "-123 1747 192 56"
-    moduleGroupName = Masking
+    frame = "78 1798 192 56"
+    moduleGroupName = "Incision  Masking"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2893,8 +2752,8 @@ module VoxelizeInventorScene {
 }
 module GenerateImageForBoundingBox {
   internal  {
-    frame = "-203 1867 208 56"
-    moduleGroupName = Masking
+    frame = "-2 1918 208 56"
+    moduleGroupName = "Incision  Masking"
     windows  {
       window _default {
         geometry = "775 397 370 346"
@@ -2919,8 +2778,8 @@ module GenerateImageForBoundingBox {
 }
 module SoCone {
   internal  {
-    frame = "21 1867 80 56"
-    moduleGroupName = Masking
+    frame = "222 1918 80 56"
+    moduleGroupName = "Incision  Masking"
     windows  {
       window _default {
         geometry = "875 472 198 196"
@@ -2940,8 +2799,8 @@ module SoCone {
 }
 module MinMaxScan {
   internal  {
-    frame = "-439 1675 152 72"
-    moduleGroupName = Masking
+    frame = "-238 1726 152 72"
+    moduleGroupName = "Incision  Masking"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -2965,7 +2824,7 @@ module MinMaxScan {
 }
 module Switch {
   internal  {
-    frame = "-491 1221 120 72"
+    frame = "-627 1245 120 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -2984,8 +2843,8 @@ module Switch {
 }
 module SoCustomExaminerViewer {
   internal  {
-    frame = "-1823 -1043 176 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1591 -1571 176 56"
+    moduleGroupName = Visualisations
     windows  {
       window _viewer {
         geometry = "1080 557 400 400"
@@ -3090,7 +2949,7 @@ module SoCustomExaminerViewer {
 }
 module SoGroup {
   internal  {
-    frame = "-599 789 96 56"
+    frame = "-918 889 96 56"
     moduleGroupName = "Combined DVR Imaging"
   }
   fields  {
@@ -3099,7 +2958,7 @@ module SoGroup {
 }
 module SoGroup {
   internal  {
-    frame = "-191 781 128 56"
+    frame = "-510 881 128 56"
     moduleGroupName = "Combined DVR Imaging"
   }
   fields  {
@@ -3108,8 +2967,8 @@ module SoGroup {
 }
 module SoGroup {
   internal  {
-    frame = "-1655 -907 128 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1423 -1435 128 56"
+    moduleGroupName = Visualisations
     windows  {
       window _viewer {
         geometry = "3320 370 400 400"
@@ -3124,8 +2983,8 @@ module SoGroup {
 }
 module SoSwitch {
   internal  {
-    frame = "-1135 -1275 128 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-995 -1625 128 72"
+    moduleGroupName = Visualisations
     showNetworkPanel = true
     windows  {
       window _automatic {
@@ -3147,8 +3006,8 @@ module SoSwitch {
 }
 module SoGroup {
   internal  {
-    frame = "-622 -1538 128 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-26 -1052 128 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _viewer {
         geometry = "1080 557 400 400"
@@ -3163,8 +3022,8 @@ module SoGroup {
 }
 module SoBackground {
   internal  {
-    frame = "-1435 -1451 120 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1295 -1801 120 56"
+    moduleGroupName = Visualisations
   }
   fields  {
     instanceName = SoBackground1
@@ -3176,8 +3035,8 @@ module SoBackground {
 }
 module SoCustomExaminerViewer {
   internal  {
-    frame = "-1363 -1531 184 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1223 -1881 184 56"
+    moduleGroupName = Visualisations
     windows  {
       window _viewer {
         geometry = "700 391 400 400"
@@ -3282,8 +3141,8 @@ module SoCustomExaminerViewer {
 }
 module SoSwitch {
   internal  {
-    frame = "-1203 -1403 136 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-1063 -1753 136 72"
+    moduleGroupName = Visualisations
     showNetworkPanel = true
     windows  {
       window _default {
@@ -3300,8 +3159,8 @@ module SoSwitch {
 }
 module IntervalThreshold {
   internal  {
-    frame = "-951 -523 128 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-355 -37 128 56"
+    moduleGroupName = "ISO distance calculations"
     windows  {
       window _default {
         geometry = "253 523 408 392"
@@ -3330,8 +3189,8 @@ module IntervalThreshold {
 }
 module CSOSave {
   internal  {
-    frame = "-1219 -123 88 56"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2695 553 176 64"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "650 507 500 168"
@@ -3352,8 +3211,8 @@ module CSOSave {
 }
 module BaseSwitch {
   internal  {
-    frame = "-1215 -19 144 72"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2615 669 144 72"
+    moduleGroupName = "CSO selection"
     showNetworkPanel = true
     windows  {
       window _default {
@@ -3378,8 +3237,8 @@ module BaseSwitch {
 }
 module CSOSave {
   internal  {
-    frame = "-1075 -127 200 64"
-    moduleGroupName = "DTI & Distance"
+    frame = "-2499 553 200 64"
+    moduleGroupName = "CSO selection"
     windows  {
       window _default {
         geometry = "814 381 500 168"
@@ -3396,6 +3255,125 @@ module CSOSave {
     saveSuccess = FALSE
     binary = TRUE
     listenToFinishedNotifications = FALSE
+  }
+}
+module View3D {
+  internal  {
+    frame = "-1783 1805 144 56"
+    moduleGroupName = Inputs
+    windows  {
+      window _default {
+        geometry = "14 344 1004 609"
+        sizeHint = "1004 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D1
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Ramp
+    rendererType = Slicer
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.209999993443489
+    greyWidth = 0.369999915361404
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "458.451080322266 -223.432647705078 43.3096084594727"
+    camOrientation = "-0.754549562931061 -0.383936613798141 -0.532210230827332 4.37166500091553"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 668.90863
+    camNear = 348.15704
+    camFocal = 508.37289
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 128
+    renderer.sizeOutputY = 128
+    renderer.sizeOutputZ = 72
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 128
+    renderer.subVolumeEndY = 128
+    renderer.subVolumeEndZ = 72
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
   }
 }
 connections  {
@@ -3419,7 +3397,6 @@ connections  {
   Morphology5.input0 = Morphology4.output0
   Morphology6.input0 = Morphology5.output0
   Morphology7.input0 = Morphology6.output0
-  View3D1.inImage = LocalImage5.outImage
   TensorTractography2.input0 = DiffusionTensorAnalysis1.output0
   TensorTractography2.markerList = CSOConvertToImage.outputXMarkerList
   DTIInfo1.input0 = DecodeVendorSpecificDicomTags1.output0
@@ -3431,18 +3408,16 @@ connections  {
   SoView2DCSOExtensibleEditor.inCSOList = CSOList.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOSplineEditor.self
   SoCSOSplineEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
-  OrthoView2D.image = LocalImage4.outImage
-  OrthoView2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
+  CSO_selection.image = LocalImage4.outImage
+  CSO_selection.inInvPreLUT = SoView2DCSOExtensibleEditor.self
   CSOConvertToImage.input0 = Resample3D2.output0
   CSOConvertToImage.inCSOList = CSOList.outCSOList
-  Resample3D2.input0 = Bypass2.output0
-  Bypass2.input0 = LocalImage5.outImage
+  Resample3D2.input0 = LocalImage5.outImage
   CSOList.inCSOList = BaseSwitch.outputBaseObject0
-  VoxelizeFibers.input0 = Bypass3.output0
+  VoxelizeFibers.input0 = SubImage2.output0
   VoxelizeFibers.inputFibers = TensorTractography2.outFiberSet
   MinMaxScan.input0 = IntervalThreshold.output0
   View3D3.inImage = Scale.output0
-  Bypass3.input0 = SubImage2.output0
   Scale.input0 = MinMaxScan.output0
   SoDepthPeelRenderer1.children = SoWEMRenderer1.self
   SoWEMRenderer1.inWEM = WEMSurfaceDistance2.outWEM
@@ -3486,6 +3461,7 @@ connections  {
   BaseSwitch1.inputBaseObject0 = CSOList.outCSOList
   BaseSwitch1.currentOutput = BaseSwitch.currentInput
   Custom_save_Pyramidal_tract.inCSOList = BaseSwitch1.outputBaseObject1
+  View3D1.inImage = LocalImage5.outImage
 }
 networkModel  {
   parentItems  {
@@ -3503,7 +3479,7 @@ networkModel  {
       }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 283
-        objectName = "DTI & Distance"
+        objectName = "DTI & fibre tracking"
         parentUniqueId = 0
         color  {
           r = 45
@@ -3514,7 +3490,51 @@ networkModel  {
       }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 173
-        objectName = Masking
+        objectName = "Incision  Masking"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 203
+        objectName = "CSO selection"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 374
+        objectName = Inputs
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 435
+        objectName = "ISO distance calculations"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 667
+        objectName = Visualisations
         parentUniqueId = 0
         color  {
           r = 45
