@@ -1,5 +1,5 @@
 // MDL v1 utf8
-mevislabVersion = 3.7.1.15
+mevislabVersion = 3.7.2.12
 network  {
   watchlist = ""
 }
@@ -64,7 +64,7 @@ module SoCustomExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "-108.574363708496 -288.865997314453 113.76944732666"
-    orientation = "-0.954126358032227 0.233648791909218 0.187219321727753 5.04307413101196"
+    orientation = "-0.954126358032227 0.233648791909218 0.187219306826591 5.04307413101196"
     nearDistance = 134.58246
     farDistance = 507.75198
     focalDistance = 363.59308
@@ -254,10 +254,10 @@ module SoLUTEditor2D {
   }
   fields  {
     instanceName = SoLUTEditor2D
-    currentColor = "1 0 0.0392156988382339"
-    currentOpacity = 0.1
-    currentPosition = 1288.1982
-    currentIndex = 4
+    currentColor = "0 0 0"
+    currentOpacity = 0
+    currentPosition = 0
+    currentIndex = 0
     rangeMin = 0
     rangeMax = 4095
     viewMin = 0
@@ -1272,7 +1272,7 @@ module TensorTractography {
   }
   fields  {
     instanceName = TensorTractography2
-    timing = 0.00768445833333333
+    timing = 0.0015687
     autoApply = TRUE
     autoUpdate = TRUE
     progress = 1
@@ -2185,7 +2185,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "173.336471557617 145.84001159668 71.7944869995117"
-    camOrientation = "0.39830669760704 0.489200532436371 0.775908827781677 2.86058115959167"
+    camOrientation = "0.398306727409363 0.489200562238693 0.775908887386322 2.86058115959167"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 407.11935
     camNear = 54.964909
@@ -3230,7 +3230,7 @@ module SoCustomExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "-85.5983657836914 180.851684570313 188.143341064453"
-    orientation = "-0.081763282418251 0.396342605352402 0.914454638957977 3.64430618286133"
+    orientation = "-0.0817632898688316 0.396342635154724 0.914454698562622 3.64430618286133"
     nearDistance = 90.50573
     farDistance = 484.18896
     focalDistance = 283.1525
@@ -3405,7 +3405,7 @@ connections  {
   SoSwitch.children = "SoGroup2.self SoGroup3.self"
   SoGroup3.children = "SoDepthPeelRenderer1.self SoWEMRenderer3.self SoGroup1.self"
   SoCustomExaminerViewer2.children = "SoBackground1.self SoSwitch1.self SoGroup1.self"
-  SoSwitch1.children = SoSwitch.self
+  SoSwitch1.children = "SoGroup.self SoSwitch.self"
   IntervalThreshold.input0 = VoxelizeFibers.output0
 }
 networkModel  {
