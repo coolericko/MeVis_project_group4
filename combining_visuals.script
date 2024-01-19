@@ -198,7 +198,6 @@ Window MyViewer {
                       name                    = csoListView
                       sortByColumn            = 1
                       selectionMode           = Single
-                      selectionChangedCommand = CSOSelected
                       headerTitles            = "Id|Label"
                       visibleRows             = 10
                       columnSeparator         = "|"
