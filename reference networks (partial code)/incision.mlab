@@ -1,0 +1,837 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.1.15
+network  {
+  watchlist = ""
+}
+module SoCone {
+  internal  {
+    frame = "2137 429 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "874 470 209 196"
+        sizeHint = "173 196"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCone
+    parts = ALL
+    bottomRadius = 1
+    height = 2
+    sides = 0
+    sections = 0
+  }
+}
+module GenerateImageForBoundingBox {
+  internal  {
+    frame = "1913 429 208 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "774 400 373 336"
+        sizeHint = "373 336"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GenerateImageForBoundingBox
+    boundingBoxMode = InventorInput
+    minBoundingBox = "0 0 0"
+    maxBoundingBox = "1 1 1"
+    margin = "0 0 0"
+    voxelSetup = ImageExtent
+    imageExtent = "100 100 100"
+    voxelSize = "1 1 1"
+    voxelMargin = 0
+    dataType = float
+    updateMode = Off
+  }
+}
+module VoxelizeInventorScene {
+  internal  {
+    frame = "1929 309 192 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1024 522 395 357"
+        sizeHint = "382 357"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VoxelizeInventorScene
+    allowCollectPoints = FALSE
+    allowCollectLines = FALSE
+    allowCollectTriangles = TRUE
+    voxelValue = 2759
+    lineWidth = 1
+    useAntiAliasing = TRUE
+    copyInputImage = TRUE
+    drawStyleAsScene = FALSE
+    voxelizeFilled = TRUE
+    includeBorderOnFill = FALSE
+    fillColor = "1 1 1"
+    fillAlpha = 1
+    voxelizeSurface = FALSE
+    autoUpdateInvScene = TRUE
+    autoUpdateMLImage = TRUE
+    autoUpdateParameter = TRUE
+    distanceMode = VoxelDistance
+    voxelizeColored = FALSE
+    showNumCollectedPrimitives = FALSE
+    useSuperSampling = FALSE
+  }
+}
+module ApplyTransformationMatrix {
+  internal  {
+    frame = "593 229 208 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "794 326 366 484"
+        sizeHint = "332 484"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "708 322 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ApplyTransformationMatrix
+    inTransformation = "-0.342020034790039 -0.939692616462708 0 0
+0.939692616462708 -0.342020034790039 0 0
+0 0 1 0
+0 0 0 1"
+    inInvert = FALSE
+    onInputChangeBehavior = Update
+  }
+}
+module TransformEdit {
+  internal  {
+    frame = "457 229 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "164 327 500 600"
+        sizeHint = "256 192"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "126 192 401 747"
+        sizeHint = "392 747"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TransformEdit
+    translationOffset = "1 0 0"
+    currentTranslation = "0 0 0"
+    defaultTranslation = "0 0 0"
+    scaleOffset = "0.1 0.1 0.1"
+    currentScale = "1 1 1"
+    defaultScale = "1 1 1"
+    rotationAxisOffset = "1 0 0 10"
+    currentRotationAxis = "0 0 1"
+    defaultRotationAxis = "0 0 1"
+    rotationAngleOffset = 10
+    currentRotationAngle = 250
+    defaultRotationAngle = 0
+    matrix = "-0.342020034790039 -0.939692616462708 0 0
+0.939692616462708 -0.342020034790039 0 0
+0 0 1 0
+0 0 0 1"
+    transposedMatrix = "-0.342020034790039 0.939692616462708 0 0
+-0.939692616462708 -0.342020034790039 0 0
+0 0 1 0
+0 0 0 1"
+    inverseMatrix = "-0.342020062961442 0.939692693863025 0 0
+-0.939692693863025 -0.342020062961442 0 0
+0 0 1 0
+0 0 0 1"
+    inverseTransposedMatrix = "-0.342020062961442 -0.939692693863025 0 0
+0.939692693863025 -0.342020062961442 0 0
+0 0 1 0
+0 0 0 1"
+    transposedInverseMatrix = "-0.342020062961442 -0.939692693863025 0 0
+0.939692693863025 -0.342020062961442 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module PythonArithmetic {
+  internal  {
+    frame = "1225 189 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "844 230 781 731"
+        sizeHint = "494 512"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "710 268 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic
+    calculateOutputSubImage = "out = numpy.zeros(out.shape)
+out = numpy.squeeze(out)
+
+in_img = in0
+
+# Translation matrix (homogeneous coordinates)
+def T(tx, ty, tz):
+  return numpy.matrix(
+    [[1,  0,  0,  tx],
+     [0,  1,  0,  ty],
+     [0,  0,  1,  tz],
+     [0,  0,  0,  1]]
+  )
+
+# Scaling matrix (homogeneous coordinates)
+def S(sx, sy, sz):
+  return numpy.matrix(
+    [[sx,  0,   0,  0],
+     [0,  sy,   0,  0],
+     [0,   0,  sz,  0],
+     [0,   0,   0,  1]]
+  )
+
+# Rotation matrix (homogeneous coordinates)
+def Rx(x_angle):
+  return numpy.matrix(
+    [[1,  0,  0,  0],
+     [0,  numpy.cos(x_angle),  -numpy.sin(x_angle),  0],
+     [0,  numpy.sin(x_angle),   numpy.cos(x_angle),  0],
+     [0,  0,  0,  1]]
+  )
+
+def Ry(y_angle):
+  return numpy.matrix(
+    [[numpy.cos(y_angle),  0,  numpy.sin(y_angle),  0],
+     [0,  1,  0,  0],
+     [-numpy.sin(y_angle),  0,  numpy.cos(y_angle),  0],
+     [0,  0,  0,  1]]
+  )
+
+def Rz(z_angle):
+  return numpy.matrix(
+    [[numpy.cos(z_angle),  -numpy.sin(z_angle),  0,  0],
+     [numpy.sin(z_angle),   numpy.cos(z_angle),  0,  0],
+     [0,  0,  1,  0],
+     [0,  0,  0,  1]]
+  )
+"
+    calculateInputSubImageBox = ""
+    calculateOutputImageProperties = "extent = 255
+outImage.setImageExtent(extent,extent,extent)  # Just keep Image and Page extent equal
+outImage.setPageExtent(extent,extent,extent,1,1,1)
+outImage.setMinVoxelValue(0.)
+outImage.setMaxVoxelValue(255.)"
+    numberOfInputs = 1
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 100
+    doubleConstant3 = 50
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = theta
+    doubleConstantName1 = phi
+    doubleConstantName2 = cone_height
+    doubleConstantName3 = base_radius
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 128
+    intConstant1 = 128
+    intConstant2 = 128
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = center_x
+    intConstantName1 = center_y
+    intConstantName2 = center_z
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = FALSE
+    minVoxelValue = 0
+    maxVoxelValue = 0
+    setDataType = FALSE
+    dataType = "unsigned int8"
+    inputDataType0 = "unsigned int8"
+    inputDataType1 = "output type"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module View2D {
+  internal  {
+    frame = "1229 69 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "95 168 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 127
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module PythonArithmetic {
+  internal  {
+    frame = "1845 117 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "961 29 958 1002"
+        sizeHint = "494 512"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = PythonArithmetic1
+    calculateOutputSubImage = "out = numpy.zeros(in0.shape)
+out = numpy.squeeze(out)
+
+img_in = numpy.squeeze(in0)
+cone = numpy.squeeze(in1)
+
+# out = img_in
+out[0:100, 0:100, 0:100] = numpy.clip(out[0:100, 0:100, 0:100] + cone[0:100, 0:100, 0:100], 0, 2759)"
+    calculateInputSubImageBox = ""
+    calculateOutputImageProperties = "extent = 512
+outImage.setImageExtent(extent,extent,176)  # Just keep Image and Page extent equal
+outImage.setPageExtent(extent,extent,176,1,1,1)
+outImage.setMinVoxelValue(0.)
+outImage.setMaxVoxelValue(2759.)"
+    numberOfInputs = 2
+    doubleConstant0 = 0
+    doubleConstant1 = 0
+    doubleConstant2 = 0
+    doubleConstant3 = 0
+    doubleConstant4 = 0
+    doubleConstant5 = 0
+    doubleConstantName0 = ""
+    doubleConstantName1 = ""
+    doubleConstantName2 = ""
+    doubleConstantName3 = ""
+    doubleConstantName4 = ""
+    doubleConstantName5 = ""
+    intConstant0 = 0
+    intConstant1 = 0
+    intConstant2 = 0
+    intConstant3 = 0
+    intConstant4 = 0
+    intConstant5 = 0
+    intConstantName0 = ""
+    intConstantName1 = ""
+    intConstantName2 = ""
+    intConstantName3 = ""
+    intConstantName4 = ""
+    intConstantName5 = ""
+    setMinMaxValues = FALSE
+    minVoxelValue = 0
+    maxVoxelValue = 0
+    setDataType = TRUE
+    dataType = "unsigned int16"
+    inputDataType0 = "unsigned int16"
+    inputDataType1 = "unsigned int16"
+    inputDataType2 = "output type"
+    inputDataType3 = "output type"
+    inputDataType4 = "output type"
+    inputHandling0 = AllowAny
+    inputHandling1 = AllowAny
+    inputHandling2 = AllowAny
+    inputHandling3 = AllowAny
+    inputHandling4 = AllowAny
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "1649 269 192 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "721 392 479 353"
+        sizeHint = "479 353"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad
+    filename = $(NETWORK)/contestData/case1_T1_post.mlimage
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module Mask {
+  internal  {
+    frame = "1645 -131 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "781 506 446 124"
+        sizeHint = "358 124"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginalInv
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 0
+  }
+}
+module Reformat {
+  internal  {
+    frame = "1821 -3 120 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "1326 248 421 620"
+        sizeHint = "405 620"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Reformat
+    matrix = "0.862318872287684 -0.506365641109759 0 43.5558757401509
+0.506365641109759 0.862318872287684 0 -103.665749019813
+0 0 1 100
+0 0 0 1"
+    useInventorComposition = FALSE
+    composeMatrix = TRUE
+    scale = "1 1 1"
+    rotation = "0 0 1 100"
+    translation = "-50 100 -100"
+    center = "3.5189102292059 -13.6830211728816 -8.18044732138458"
+    fillValue = 0
+    interactive = TRUE
+    autoCenter = TRUE
+    interpolation = Trilinear
+    borderHandling = UseFillValue
+    memoryAccess = Global
+    button1Translate = Pressed
+    button2Translate = Released
+    button3Translate = Released
+    shiftTranslate = Released
+    ctrlTranslate = Released
+    altTranslate = Released
+    button1Rotate = Pressed
+    button2Rotate = Released
+    button3Rotate = Released
+    shiftRotate = Pressed
+    ctrlRotate = Released
+    altRotate = Released
+    updateMode = AutoUpdate
+  }
+}
+module View2D {
+  internal  {
+    frame = "1645 -251 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "919 215 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 107
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 583.747009277344
+    lutWidth = 1207.10998535156
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "1797 -219 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "219 354 400 435"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D2
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 88
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 583.747009277344
+    lutWidth = 1207.10998535156
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "2029 -19 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "760 368 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D3
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 88
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 583.747009277344
+    lutWidth = 1207.10998535156
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module View3D {
+  internal  {
+    frame = "1945 -219 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "267 230 1004 609"
+        sizeHint = "1004 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View3D
+    autoViewAll = TRUE
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    lutType = Ramp
+    rendererType = Slicer
+    currentTimePoint = 0
+    staticSamplingRate = 1
+    quality = 1
+    filterVolumeData = FilterLinear
+    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
+    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
+    lutEditorRelativeLut = FALSE
+    lutEditorColorInterpolation = InterpolateRGB
+    lutEditorAlphaFactor = 1
+    orientationProjectionType = PERSPECTIVE
+    orientationLocation = LOWER_RIGHT
+    orientationOn = TRUE
+    orientationModel = CUBE
+    greyCenter = 0.5
+    greyWidth = 0.5
+    alphaFactor = 1
+    colorFactor = "1 1 1"
+    camType = TRUE
+    camPosition = "-372.352661132813 -331.856170654297 243.3662109375"
+    camOrientation = "0.751539707183838 -0.371119320392609 -0.545397579669952 1.3447870016098"
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    camFar = 737.68811
+    camNear = 368.64429
+    camFocal = 552.98224
+    camHeight = 0.78539801
+    decoration = FALSE
+    annotations = TRUE
+    background = TRUE
+    mode = VolumeRendering
+    interactiveQuality = Medium
+  }
+  internalFields  {
+    renderer.gradientQuality = GradientQualityAutomatic
+    renderer.enhancementAlphaMix = 0.25
+    renderer.boundaryEnhancement = FALSE
+    renderer.boundaryEnhancementFactor = 1
+    renderer.boundaryEnhancementExponent = 1
+    renderer.boundaryEnhancementGradientBias = 0
+    renderer.silhouetteEnhancement = FALSE
+    renderer.silhouetteEnhancementExponent = 1
+    renderer.silhouetteEnhancementFactor = 1
+    renderer.toneShading = FALSE
+    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    renderer.toneShadingColdColor = "0 0 0.400000005960464"
+    renderer.toneShadingWarmDiffuse = 0.60000002
+    renderer.toneShadingColdDiffuse = 0.2
+    renderer.toneShadingAngle = 45
+    renderer.materialAmbient = 0.60000002
+    renderer.materialDiffuse = 1
+    renderer.materialSpecular = 1
+    renderer.materialSpecularity = 32
+    renderer.light1Enabled = TRUE
+    renderer.light1DiffuseIntensity = 1
+    renderer.light1SpecularIntensity = 1
+    renderer.light1Color = "1 1 1"
+    renderer.light1PolarPhi = 45
+    renderer.light1PolarRho = 0
+    renderer.light2Enabled = FALSE
+    renderer.light2DiffuseIntensity = 1
+    renderer.light2SpecularIntensity = 1
+    renderer.light2Color = "1 1 1"
+    renderer.light2PolarPhi = 0
+    renderer.light2PolarRho = 0
+    renderer.light3Enabled = FALSE
+    renderer.light3DiffuseIntensity = 1
+    renderer.light3SpecularIntensity = 1
+    renderer.light3Color = "1 1 1"
+    renderer.light3PolarPhi = -45
+    renderer.light3PolarRho = 0
+    renderer.sizeOutputX = 512
+    renderer.sizeOutputY = 512
+    renderer.sizeOutputZ = 176
+    renderer.subVolumeStartX = 0
+    renderer.subVolumeStartY = 0
+    renderer.subVolumeStartZ = 0
+    renderer.subVolumeEndX = 512
+    renderer.subVolumeEndY = 512
+    renderer.subVolumeEndZ = 176
+    clip.hideGeometry = FALSE
+    clip.on = FALSE
+    clip.left = FALSE
+    clip.right = FALSE
+    clip.top = FALSE
+    clip.bottom = FALSE
+    clip.rear = FALSE
+    clip.front = FALSE
+    clip.translation0 = "1 0 0"
+    clip.translation1 = "-1 0 0"
+    clip.translation2 = "0 1 0"
+    clip.translation3 = "0 -1 0"
+    clip.translation4 = "0 0 1"
+    clip.translation5 = "0 0 -1"
+    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
+    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
+    clip.rotation2 = "0 0 -1 3.1415901184082"
+    clip.rotation3 = "0 0 1 0"
+    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
+    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
+  }
+}
+connections  {
+  GenerateImageForBoundingBox.inputInventorScene = SoCone.self
+  VoxelizeInventorScene.input0 = GenerateImageForBoundingBox.output0
+  VoxelizeInventorScene.inInventorScene = SoCone.self
+  ApplyTransformationMatrix.inTransformation = TransformEdit.matrix
+  View2D.inImage = PythonArithmetic.output0
+  PythonArithmetic1.input0 = ImageLoad.output0
+  PythonArithmetic1.input1 = VoxelizeInventorScene.output0
+  Mask.input0 = ImageLoad.output0
+  Mask.input1 = Reformat.output0
+  Reformat.input0 = PythonArithmetic1.output0
+  Reformat.input1 = PythonArithmetic1.output0
+  View2D1.inImage = Mask.output0
+  View2D2.inImage = Reformat.output0
+  View2D3.inImage = PythonArithmetic1.output0
+  View3D.inImage = Reformat.output0
+}
+networkModel = ""

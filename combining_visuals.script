@@ -1,0 +1,274 @@
+Description {
+
+}
+
+Interface {
+  Inputs {
+
+  }
+  Outputs {
+    
+  }
+  Parameters {
+    Field "DTI Image" {
+      type         = String
+      internalName = LocalImage5.name
+    }
+    Field "Post data" {
+      type         = String
+      internalName = LocalImage4.name
+    }
+    Field "Tumor Mask" {
+      type         = String
+      internalName = LocalImage3.name
+    }
+    Field "Optic nerve" {
+      type         = String
+      internalName = Optic_nerve.name
+    }
+    Field "Pyramidal tract" {
+      type         = String
+      internalName = Pyramidal_tract.name
+    }
+  }
+}
+
+
+Commands {
+  source = $(LOCAL)/combining_visuals.py
+}
+
+
+Window MyViewer {
+
+  // Vertical and Horizontal are layout controls.
+  Vertical {
+    expandY = YES
+        
+    TabView {
+      // This is where the user can switch input to use their own custom datasets.
+      TabViewItem "Source" {
+        Box "Input images" {
+          Vertical {
+            Field "DTI Image" {
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Post data" {
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Tumor Mask" {
+              browseButton = True
+              browseMode   = open
+            }
+            TextView {
+              text = "Please select the input images from the dataset."
+            }
+          }
+        }
+
+        Box "CSO datasets" {
+          Vertical {
+            Field "Optic nerve" {
+              browseButton = True
+              browseMode   = open
+            }
+            Field "Pyramidal tract" {
+              browseButton = True
+              browseMode   = open
+            }
+
+            TextView {
+              text = "Please select the input CSO from the dataset."
+            }
+          }
+        }
+      }
+
+      TabViewItem "Viewer" {
+      // This is where the user can view and manipulate the network.
+        Horizontal {
+          // The viewer is a 3D viewer.
+          Box 3DView {
+            Viewer SoCustomExaminerViewer2.self {
+              expandX = True
+              expandY = True
+              type    = SoCustomExaminerViewer
+            }
+            preferredWidth  = 800
+            preferredHeight = 800
+          }    
+
+          // This where the user can toggle the different components of the network.
+          Box Settings {
+            preferredWidth  = 400
+            preferredHeight = 800
+            
+            TabView {
+              
+              // LUT settings
+              TabViewItem "LUT Settings" {
+                Box LUTs {
+                  ListView SoLUTEditor2D.lutList {
+                    name                    = lutListView
+                    layout                  = "e"
+                    header                  = No
+                    selectionMode           = Single
+                    visibleRows             = 8
+                    selectionChangedCommand = lutSelected
+                    itemRenamedCommand      = lutRenamed
+                  }
+                  Field SoLUTEditor2D.addLut {}
+                  Field SoLUTEditor2D.removeLut {}
+                  Field SoLUTEditor2D.newLutName {}
+                  Field SoLUTEditor2D.lutNameChanged {
+                    title = "Change name"
+                  }
+              
+                  ListView SoLUTEditor2D.tagList {
+                    name                    = tagListView
+                    selectionChangedCommand = tagSelected
+                  }
+                  Field SoLUTEditor2D.tagListItems {}
+                  Field SoLUTEditor2D.assignToLut{}
+                  Field SoLUTEditor2D.clear{}
+                }
+                TextView {
+                  text = "In this tab, you can create, edit or remove an LUT. Make sure to apply the LUT to a tag. To change the name of an LUT, select it, type the name in the 'New LUT name' field and click 'Change name'."
+                }
+              }
+
+              // Cone masking settings
+              TabViewItem "Mask Settings" {
+                CheckBox Switch.currentInput { title = "Toggle mask"}
+                Field Reformat.composeMatrix {}
+                Box Components { dependsOn = Reformat.composeMatrix layout = Vertical
+                  Field Reformat.resetMatrix {}
+                  Field Reformat.scale {}
+                  Field Reformat.translation {}
+                  Field Reformat.center      {}
+                  Field Reformat.rotation    {}
+                }
+                TextView {
+                  text = "This panel lets you toggle the mask. Edit the matrix to transform the mask."
+                }
+              }
+
+              // DTI settings
+              TabViewItem "DTI" {
+                Vertical {
+                  Box Settings {
+                    CheckBox BaseSwitch.currentInput {
+                      title = "Toggle input CSO"
+                    }
+                    Label {
+                      title     = "Current CSO input: Optic Nerve"
+                      textWrap  = WordBreak
+                      visibleOn = "* BaseSwitch.currentInput == 0 *"
+                    }
+                    Label {
+                      title     = "Current CSO input: Pyramidal tract"
+                      textWrap  = WordBreak
+                      visibleOn = "* BaseSwitch.currentInput == 1 *"
+                    }
+                    
+                    CheckBox SoSwitch1.whichChild {
+                      title = "Toggle DTI"
+                    }
+                    
+                    CheckBox SoSwitch.whichChild {
+                      title = "DTI Mode"
+                    }
+                    Label {
+                      title     = "Current mode: Fiber tracking view"
+                      textWrap  = WordBreak
+                      visibleOn = "* SoSwitch.whichChild == 0 *"
+                    }
+                    Label {
+                      title     = "Current mode: IsoSurface view"
+                      textWrap  = WordBreak
+                      visibleOn = "* SoSwitch.whichChild == 1 *"
+                    }
+                  }
+
+                  // CSO settings
+                  Box "DTI - CSO" {        
+                    ListView CSOList.csoDisplayTree {
+                      name                    = csoListView
+                      sortByColumn            = 1
+                      selectionMode           = Single
+                      headerTitles            = "Id|Label"
+                      visibleRows             = 10
+                      columnSeparator         = "|"
+                    }
+                    Horizontal {
+                      alignX = Left             
+                      Field CSOList.csoRemoveSelected {
+                        title = "Remove"
+                      }
+                    }
+                  }
+                  TextView {
+                    text = "Here you can toggle the DTI fiber tracking settings. A CSO can be added by drawing in the 'CSO selection' tab. A CSO can be deleted by selecting the drawn CSO in that tab and pressing 'delete' on the keyboard."
+                  }
+                  preferredWidth  = 400
+                  preferredHeight = 800
+                }
+              }
+            }
+          }
+
+          Box "LUT and CSO" {
+            TabView {
+              TabViewItem "Head" {
+                Vertical {
+                  Box Editor {
+                    Panel { module = SoLUTEditor2D panel = editor }
+                  }
+                  Box Settings {
+                    Field SoLUTEditor2D.relativeLut {}
+                    Field SoLUTEditor2D.alphaFactor { slider = yes }
+                    Field SoLUTEditor2D.colorInterpolation {}
+                  }
+                }
+                TextView {
+                  text = "Select the LUT you wish to edit in the 'LUT Settings tab'. The tumor has its own LUT, which you can find in the 'Tumor' panel"
+                }
+              }
+              TabViewItem "Tumor" {
+                Vertical {
+                  Box Editor {
+                    Panel { module = SoLUTEditor2 panel = editor }
+                  }
+                  Box Settings {
+                    Field SoLUTEditor2.relativeLut {}
+                    Field SoLUTEditor2.alphaFactor { slider = yes }
+                    Field SoLUTEditor2.colorInterpolation {}
+                  }
+                  Box Range {
+                    Panel { module = SoLUTEditor2 panel = range }
+                  }
+                }
+              }
+              TabViewItem "CSO selection" {
+                Box 2DView {
+                  Field CSO_selection.layout {}
+                  Viewer CSO_selection.self {
+                    expandX = True
+                    expandY = True
+                    type    = SoRenderArea
+                  }
+                  preferredWidth  = 700
+                  preferredHeight = 800
+                }
+              }
+            }
+            preferredWidth  = 400
+            preferredHeight = 800
+          }
+        }
+      }
+    }
+  }
+}
