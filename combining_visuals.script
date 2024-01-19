@@ -46,6 +46,7 @@ Window MyViewer {
     expandY = YES
         
     TabView {
+      // This is where the user can switch input to use their own custom datasets.
       TabViewItem "Source" {
         Box "Input images" {
           Vertical {
@@ -84,8 +85,11 @@ Window MyViewer {
           }
         }
       }
+
       TabViewItem "Viewer" {
+      // This is where the user can view and manipulate the network.
         Horizontal {
+          // The viewer is a 3D viewer.
           Box 3DView {
             Viewer SoCustomExaminerViewer2.self {
               expandX = True
@@ -96,11 +100,14 @@ Window MyViewer {
             preferredHeight = 800
           }    
 
+          // This where the user can toggle the different components of the network.
           Box Settings {
             preferredWidth  = 400
             preferredHeight = 800
             
             TabView {
+              
+              // LUT settings
               TabViewItem "LUT Settings" {
                 Box LUTs {
                   ListView SoLUTEditor2D.lutList {
@@ -128,10 +135,11 @@ Window MyViewer {
                   Field SoLUTEditor2D.clear{}
                 }
                 TextView {
-                  text = "In this tab, you can create, edit or remove an LUT. Make sure to apply the LUT to a tag.
-To change the name of an LUT, select it, type the name in the 'New LUT name' field and click 'Change name'."
+                  text = "In this tab, you can create, edit or remove an LUT. Make sure to apply the LUT to a tag. To change the name of an LUT, select it, type the name in the 'New LUT name' field and click 'Change name'."
                 }
               }
+
+              // Cone masking settings
               TabViewItem "Mask Settings" {
                 CheckBox Switch.currentInput { title = "Toggle mask"}
                 Field Reformat.composeMatrix {}
@@ -146,6 +154,8 @@ To change the name of an LUT, select it, type the name in the 'New LUT name' fie
                   text = "This panel lets you toggle the mask. Edit the matrix to transform the mask."
                 }
               }
+
+              // DTI settings
               TabViewItem "DTI" {
                 Vertical {
                   Box Settings {
@@ -181,6 +191,8 @@ To change the name of an LUT, select it, type the name in the 'New LUT name' fie
                       visibleOn = "* SoSwitch.whichChild == 1 *"
                     }
                   }
+
+                  // CSO settings
                   Box "DTI - CSO" {        
                     ListView CSOList.csoDisplayTree {
                       name                    = csoListView

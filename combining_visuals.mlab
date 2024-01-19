@@ -1469,7 +1469,7 @@ module View3D {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "-2035 709 200 56"
+    frame = "-2024 991 200 56"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1518,7 +1518,7 @@ module SoView2DCSOExtensibleEditor {
 }
 module SoCSOSplineEditor {
   internal  {
-    frame = "-2111 837 144 56"
+    frame = "-2100 1119 144 56"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1572,7 +1572,7 @@ module SoCSOSplineEditor {
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "-2147 933 184 56"
+    frame = "-2136 1215 184 56"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1701,7 +1701,7 @@ module SoCSOVisualizationSettings {
 }
 module OrthoView2D {
   internal  {
-    frame = "-2131 629 120 56"
+    frame = "-2120 907 120 64"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1752,7 +1752,7 @@ module OrthoView2D {
 }
 module CSOVoxelizeContours {
   internal  {
-    frame = "-2340 657 152 64"
+    frame = "-2329 939 152 64"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1806,7 +1806,7 @@ module CSOVoxelizeContours {
 }
 module Resample3D {
   internal  {
-    frame = "-2399 909 112 56"
+    frame = "-2388 1191 112 56"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -1832,7 +1832,7 @@ module Resample3D {
 }
 module CSOManager {
   internal  {
-    frame = "-2607 801 112 64"
+    frame = "-2596 1083 112 64"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -2055,7 +2055,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "173.336471557617 145.84001159668 71.7944869995117"
-    camOrientation = "0.398306727409363 0.489200562238693 0.775908887386322 2.86058115959167"
+    camOrientation = "0.398306757211685 0.489200562238693 0.775908887386322 2.86058115959167"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 407.11935
     camNear = 54.964909
@@ -2361,88 +2361,6 @@ module IsoSurface {
     selectedTab = 0
   }
 }
-module SoExaminerViewer {
-  internal  {
-    frame = "59 -647 144 56"
-    moduleGroupName = "ISO distance calculations"
-    windows  {
-      window _viewer {
-        geometry = "139 196 400 400"
-        sizeHint = "400 400"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoExaminerViewer4
-    renderCaching = AUTO
-    boundingBoxCaching = AUTO
-    renderCulling = AUTO
-    pickCulling = AUTO
-    border = FALSE
-    background = "0 0 0"
-    transparency = BLEND
-    antialiasing = FALSE
-    antialiasingNumPasses = 1
-    useSampleBuffers = FALSE
-    numSamples = 8
-    grabKeyFocus = TRUE
-    enableKeyCommands = TRUE
-    snapshotFormat = SNAPSHOT_RGB
-    outputAviFile = ""
-    autoRedrawWhenRecording = TRUE
-    frameRate = 7
-    frameRateAvi = 15
-    outputSnapshotFile = none
-    outputSnapshotFileWritten = none
-    autoIncreaseFile = TRUE
-    showSnapshotWithShell = FALSE
-    snapCount = 0
-    inputDevicesList = ""
-    headlight = TRUE
-    decoration = TRUE
-    popupMenuEnabled = FALSE
-    viewing = TRUE
-    autoClipping = TRUE
-    drawStyle = VIEW_AS_IS
-    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
-    viewAllFlag = FALSE
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    applyCameraOrientation = CAMERA_KEEP_AS_IS
-    cameraType = CAMERA_PERSPECTIVE
-    autoApplyUserSettingOrientation = FALSE
-    userSettingOrientation = "0 0 1 0"
-    automaticViewAll = FALSE
-    storeCurrentState = TRUE
-    saveCamera = TRUE
-    cursor = TRUE
-    isCameraStored = TRUE
-    perspective = TRUE
-    stereoViewing = FALSE
-    stereoOffset = 3
-    height = 0.78539819
-    position = "160.335174560547 149.82292175293 185.402908325195"
-    orientation = "-0.546138286590576 0.779905140399933 0.305746525526047 1.07913160324097"
-    nearDistance = 152.28474
-    farDistance = 390.46271
-    focalDistance = 304.15659
-    forceRedrawOnInteraction = FALSE
-    button1events = TO_VIEWER
-    button2events = TO_VIEWER
-    button3events = TO_VIEWER
-    keyEvents = TO_VIEWER
-    animationEnabled = FALSE
-    feedback = FALSE
-    feedbackSize = 32
-    mouseInteraction = ""
-    rotationAxis = "0 1 0"
-    rotationAngle = 360
-    rotationSteps = 80
-    recordRotation = TRUE
-    wheelZoomEnabled = TRUE
-    wheelRotationEnabled = TRUE
-  }
-}
 module SoWEMRenderer {
   internal  {
     frame = "143 -519 168 72"
@@ -2524,7 +2442,7 @@ module IsoSurface {
 }
 module BaseSwitch {
   internal  {
-    frame = "-2627 925 136 72"
+    frame = "-2616 1207 136 72"
     moduleGroupName = "CSO selection"
     showNetworkPanel = true
     windows  {
@@ -2572,7 +2490,7 @@ module PythonArithmetic {
     moduleGroupName = "Incision  Masking"
     windows  {
       window _default {
-        geometry = "247 235 485 508"
+        geometry = "1160 281 485 556"
         sizeHint = "485 508"
         wasOpen = no
       }
@@ -3189,7 +3107,7 @@ module IntervalThreshold {
 }
 module CSOSave {
   internal  {
-    frame = "-2695 553 176 64"
+    frame = "-2684 835 176 64"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -3211,7 +3129,7 @@ module CSOSave {
 }
 module BaseSwitch {
   internal  {
-    frame = "-2615 669 144 72"
+    frame = "-2604 951 144 72"
     moduleGroupName = "CSO selection"
     showNetworkPanel = true
     windows  {
@@ -3237,7 +3155,7 @@ module BaseSwitch {
 }
 module CSOSave {
   internal  {
-    frame = "-2499 553 200 64"
+    frame = "-2488 835 200 64"
     moduleGroupName = "CSO selection"
     windows  {
       window _default {
@@ -3427,7 +3345,6 @@ connections  {
   WEMSurfaceDistance2.inWEM = SubStructure.outWEM
   WEMSurfaceDistance2.inWEM2 = Cancer.outWEM
   Cancer.inImage = LocalImage3.outImage
-  SoExaminerViewer4.children = "SubStructure.outScene SoWEMRenderer3.self"
   SoWEMRenderer3.inWEM = Cancer.outWEM
   SubStructure.inImage = Scale.output0
   BaseSwitch.inputBaseObject0 = Optic_nerve.outCSOList
@@ -3477,6 +3394,41 @@ networkModel  {
           a = 40
         }
       }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 237
+        objectName = ""
+        parentUniqueId = 521
+        frame = "-271 715 206 191"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "This is where the DVR lut happens"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>This is where the DVR lut happens</p>
+
+
+  </body>
+</html>*"
+        titleText = "Combined DVR imaging"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-266 720 196 22"
+      }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 283
         objectName = "DTI & fibre tracking"
@@ -3487,6 +3439,79 @@ networkModel  {
           b = 226
           a = 40
         }
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 236
+        objectName = ""
+        parentUniqueId = 283
+        frame = "-2570 -473 224 124"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "The top part of this group convert the DTI image into gradients that are then converted into fibers using the TensorTractography module 
+"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>The top part of this group convert the DTI image into gradients that are then converted into fibers using the TensorTractography module</p>
+
+
+  </body>
+</html>*"
+        titleText = "Gradient and fibre creation"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-2565 -468 214 22"
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 235
+        objectName = ""
+        parentUniqueId = 283
+        frame = "-2667 210 200 200"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "This lower part of the group converts manipulates the 4d DTI image in such a way that the Mask1 contains a clean output with little artifacts especially on the borders of the DTI image. This part was inspired by the TensorTractography example network.
+
+"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>This lower part of the group converts manipulates the 4d DTI image in such a way that the Mask1 contains a clean output with little artifacts especially on the borders of the DTI image. This part was inspired by the TensorTractography example network.</p>
+
+
+  </body>
+</html>*"
+        titleText = Pre-processing
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-2662 215 190 22"
       }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 173
@@ -3499,6 +3524,47 @@ networkModel  {
           a = 40
         }
       }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 238
+        objectName = ""
+        parentUniqueId = 173
+        frame = "164 1481 206 191"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "We start of with a SoCone that is voxelized to to a 100x100x100 image. 
+
+The PythonArithmatic module will insert the cone in the upper left corner and out put an image with the same dimensions as the T1 post input image.
+
+The reformat module allows for the translation, scale and rotation of the cone in the scene "
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>We start of with a SoCone that is voxelized to to a 100x100x100 image.</p>
+<p>The PythonArithmatic module will insert the cone in the upper left corner and out put an image with the same dimensions as the T1 post input image.</p>
+<p>The reformat module allows for the translation, scale and rotation of the cone in the scene</p>
+
+
+  </body>
+</html>*"
+        titleText = "Incision masking"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "169 1486 196 22"
+      }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 203
         objectName = "CSO selection"
@@ -3509,6 +3575,44 @@ networkModel  {
           b = 226
           a = 40
         }
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 234
+        objectName = ""
+        parentUniqueId = 203
+        frame = "-1807 753 193 342"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "This group handles the CSO selection that is used for masking the DTI image. The BaseSwitch determines which CSO dataset is loaded from the input group. This switch can also be manipulated in the UI under Viewer > Settings > DTI > Toggle input CSO.
+
+The CSO selection orthoviewer allows users to draw new CSOs to be added to the CSOList. In this CSOList module a CSO element can be removed. Both elements are part of the UI"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>This group handles the CSO selection that is used for masking the DTI image. The BaseSwitch determines which CSO dataset is loaded from the input group. This switch can also be manipulated in the UI under Viewer &gt; Settings &gt; DTI &gt; Toggle input CSO.</p>
+<p>The CSO selection orthoviewer allows users to draw new CSOs to be added to the CSOList. In this CSOList module a CSO element can be removed. Both elements are part of the UI</p>
+
+
+  </body>
+</html>*"
+        titleText = "CSO selection"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-1802 758 183 22"
       }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 374
@@ -3521,6 +3625,44 @@ networkModel  {
           a = 40
         }
       }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 233
+        objectName = ""
+        parentUniqueId = 374
+        frame = "-2315 1764 200 200"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "Input can be set manually here in the network. Alternatively, these inputs can be changed in the UI in the 'source' tab. 
+
+The two inputs for CSO are on the left, centre is the 4D DTI image, the right two images are T1 post images  "
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>Input can be set manually here in the network. Alternatively, these inputs can be changed in the UI in the ‘source’ tab.</p>
+<p>The two inputs for CSO are on the left, centre is the 4D DTI image, the right two images are T1 post images</p>
+
+
+  </body>
+</html>*"
+        titleText = "Input handeling"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-2310 1769 190 22"
+      }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 435
         objectName = "ISO distance calculations"
@@ -3532,6 +3674,44 @@ networkModel  {
           a = 40
         }
       }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 239
+        objectName = ""
+        parentUniqueId = 435
+        frame = "-408 -586 206 191"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "This group combines to the left a set of fibers and to the right an isosurface of the T1 post tumor. 
+
+We first convert the fibers to isosurfaces with. Using the WEMSurfaceDistance module, we combine the two iso surfaces to determine the distances to each other. the SOLUT editor determines the color each triangle will have in relation to the distance of the tumor."
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>This group combines to the left a set of fibers and to the right an isosurface of the T1 post tumor.</p>
+<p>We first convert the fibers to isosurfaces with. Using the WEMSurfaceDistance module, we combine the two iso surfaces to determine the distances to each other. the SOLUT editor determines the color each triangle will have in relation to the distance of the tumor.</p>
+
+
+  </body>
+</html>*"
+        titleText = "Distance calculations"
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-403 -581 196 22"
+      }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 667
         objectName = Visualisations
@@ -3542,6 +3722,42 @@ networkModel  {
           b = 226
           a = 40
         }
+      }
+      MLABNetworkModelItem MLABNoteItem {
+        uniqueId = 240
+        objectName = ""
+        parentUniqueId = 667
+        frame = "-1586 -1863 206 191"
+        backgroundColor  {
+          r = 252
+          g = 242
+          b = 2
+          a = 255
+        }
+        text = "This is where we combine all visualisations that were created in the other groups and add some switches to allow the end-user to determine what sub-structures are visible in the 3DView panel
+"
+        richText = "*<html>
+  <head>
+    <style type="text/css">
+      a.headerlink {
+        visibility: hidden;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p>This is where we combine all visualisations that were created in the other groups and add some switches to allow the end-user to determine what sub-structures are visible in the 3DView panel</p>
+
+
+  </body>
+</html>*"
+        titleText = Visualisations
+        isCollapsed = False
+        drawAsComment = False
+        titleFrame = "-1581 -1858 196 22"
       }
     }
   }
